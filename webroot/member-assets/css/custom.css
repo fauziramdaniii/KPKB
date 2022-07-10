@@ -1,0 +1,8 @@
+
+#kt_calendar .fc-list-item {
+    cursor: pointer;
+}
+
+#kt_calendar .fc-event-container {
+    cursor: pointer;
+}

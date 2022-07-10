@@ -1,0 +1,3058 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-10-08 15:26+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AuthController.php:36
+msgid "Did you really think you are allowed to see that?"
+msgstr ""
+
+#: Controller/ForgotPasswordController.php:45
+msgid "Email address does not exist."
+msgstr ""
+
+#: Controller/ForgotPasswordController.php:51
+msgid "Email with instructions for creating a new password has been sent to you."
+msgstr ""
+
+#: Controller/ForgotPasswordController.php:63
+msgid "Error saving reset passkey/timeout"
+msgstr ""
+
+#: Controller/ForgotPasswordController.php:68
+#: Controller/LoginController.php:116
+#: Controller/SignUpController.php:297
+msgid "Invalid captcha"
+msgstr ""
+
+#: Controller/LoginController.php:100
+msgid "Incorrect password"
+msgstr ""
+
+#: Controller/LoginController.php:109
+msgid "This account is blocked"
+msgstr ""
+
+#: Controller/LoginController.php:113
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: Controller/ResetController.php:28
+#: Controller/ResetController.php:54
+msgid "Invalid reset code"
+msgstr ""
+
+#: Controller/ResetController.php:47
+msgid "The password has been changed."
+msgstr ""
+
+#: Controller/ResetController.php:50
+msgid "The password could not be updated."
+msgstr ""
+
+#: Controller/SignUpController.php:114
+msgid "Please check the terms and conditions first"
+msgstr ""
+
+#: Controller/SignUpController.php:159
+msgid "Refferal not exists"
+msgstr ""
+
+#: Controller/SignUpController.php:211
+msgid "Invalid upline"
+msgstr ""
+
+#: Controller/SignUpController.php:287
+msgid "Registration success, please login to your account and complete activation account."
+msgstr ""
+
+#: Controller/SignUpController.php:294
+msgid "Registration failed. Check the form and try again."
+msgstr ""
+
+#: Form/LoginForm.php:35
+msgid "A password is required"
+msgstr ""
+
+#: Form/LoginForm.php:38
+msgid "A valid email address is required"
+msgstr ""
+
+#: Template/ForgotPassword/index.ctp:20
+msgid "Forgot password"
+msgstr ""
+
+#: Template/ForgotPassword/index.ctp:22
+msgid "To receive a new password, enter your email address below."
+msgstr ""
+
+#: Template/ForgotPassword/index.ctp:56
+msgid "Submit"
+msgstr ""
+
+#: Template/ForgotPassword/index.ctp:64
+#: Template/Login/index.ctp:67
+msgid "Don't have an account yet?"
+msgstr ""
+
+#: Template/ForgotPassword/index.ctp:64
+#: Template/Login/index.ctp:67
+msgid "Create new account"
+msgstr ""
+
+#: Template/Login/index.ctp:14
+msgid "SIGN IN"
+msgstr ""
+
+#: Template/Login/index.ctp:39
+#: Template/Login/index.ctp:44
+#: Template/SignUp/index.ctp:110
+msgid "Password"
+msgstr ""
+
+#: Template/Login/index.ctp:40
+msgid "Forgot password?"
+msgstr ""
+
+#: Template/Login/index.ctp:59
+#: Template/SignUp/index.ctp:151
+msgid "Sign In"
+msgstr ""
+
+#: Template/Reset/index.ctp:7
+#: Template/Reset/index.ctp:37
+msgid "Reset Password"
+msgstr ""
+
+#: Template/SignUp/index.ctp:10
+msgid "SIGN UP"
+msgstr ""
+
+#: Template/SignUp/index.ctp:11
+msgid "Create an new account by entering the information below."
+msgstr ""
+
+#: Template/SignUp/index.ctp:33
+msgid "First Name"
+msgstr ""
+
+#: Template/SignUp/index.ctp:36
+msgid "Last Name"
+msgstr ""
+
+#: Template/SignUp/index.ctp:39
+msgid "KTP / SIM"
+msgstr ""
+
+#: Template/SignUp/index.ctp:42
+msgid "Email"
+msgstr ""
+
+#: Template/SignUp/index.ctp:46
+msgid "Province"
+msgstr ""
+
+#: Template/SignUp/index.ctp:49
+#: Template/SignUp/index.ctp:202
+msgid "City"
+msgstr ""
+
+#: Template/SignUp/index.ctp:53
+#: Template/SignUp/index.ctp:206
+msgid "District"
+msgstr ""
+
+#: Template/SignUp/index.ctp:53
+msgid "Subdistrict"
+msgstr ""
+
+#: Template/SignUp/index.ctp:56
+msgid "Zip"
+msgstr ""
+
+#: Template/SignUp/index.ctp:59
+msgid "Address"
+msgstr ""
+
+#: Template/SignUp/index.ctp:86
+msgid "Name of Inheritance"
+msgstr ""
+
+#: Template/SignUp/index.ctp:89
+msgid "Inheritance Relation"
+msgstr ""
+
+#: Template/SignUp/index.ctp:93
+msgid "Name of birth mother"
+msgstr ""
+
+#: Template/SignUp/index.ctp:97
+msgid "Bank"
+msgstr ""
+
+#: Template/SignUp/index.ctp:100
+msgid "Account Name"
+msgstr ""
+
+#: Template/SignUp/index.ctp:103
+msgid "Account Number"
+msgstr ""
+
+#: Template/SignUp/index.ctp:122
+msgid "Phone"
+msgstr ""
+
+#: Template/SignUp/index.ctp:129
+msgid "I agree with the term and conditions"
+msgstr ""
+
+#: Template/SignUp/index.ctp:139
+msgid "Sign Up"
+msgstr ""
+
+#: Template/SignUp/index.ctp:151
+msgid "Already have an account?"
+msgstr ""
+
+
+#: Controller/ActivationController.php:85
+#: Controller/OrdersController.php:889
+msgid "Success payment confirmation."
+msgstr ""
+
+#: Controller/AddressController.php:184
+#: Controller/AddressController.php:227
+msgid "The address has been saved."
+msgstr ""
+
+#: Controller/AddressController.php:188
+#: Controller/AddressController.php:231
+msgid "The address could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AddressController.php:306
+msgid "The address has been deleted."
+msgstr ""
+
+#: Controller/AddressController.php:308
+msgid "The address could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/BanksController.php:113
+#: Controller/BanksController.php:169
+msgid "The bank has been saved."
+msgstr ""
+
+#: Controller/BanksController.php:117
+#: Controller/BanksController.php:173
+msgid "The bank could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BanksController.php:208
+#: Controller/BanksController.php:212
+#: Controller/TestimonialsController.php:213
+#: Controller/TestimonialsController.php:217
+msgid "Invalid serial number"
+msgstr ""
+
+#: Controller/BanksController.php:229
+msgid "The bank has been deleted."
+msgstr ""
+
+#: Controller/BanksController.php:232
+#: Controller/BanksController.php:236
+msgid "The bank could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:31
+#: Controller/SerialsController.php:29
+msgid "Oops...Authorization for customer only"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:51
+#: Controller/CustomerOrdersController.php:106
+#: Controller/CustomerOrdersController.php:296
+#: Controller/OrdersController.php:529
+#: Controller/OrdersController.php:651
+#: Controller/OrdersController.php:944
+msgid "Please complete your order first"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:134
+#: Controller/OrdersController.php:984
+msgid "Unable to process, please complete your shipping address"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:225
+#: Controller/OrdersController.php:1087
+msgid "The order {0} has been success, please do confirmation bank transfer."
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:232
+#: Controller/OrdersController.php:1094
+msgid "The order has been failed"
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:322
+#: Controller/OrdersController.php:686
+msgid "Success added product to cart."
+msgstr ""
+
+#: Controller/CustomerOrdersController.php:356
+msgid "Please select stockist first"
+msgstr ""
+
+#: Controller/DashboardController.php:169
+#: Controller/DashboardController.php:174
+msgid "Your account has not activated, please activate and confirm payment via the link provided in the menu list."
+msgstr ""
+
+#: Controller/DashboardController.php:172
+msgid "Please wait 1 x 24 hour, your request account activation is under process."
+msgstr ""
+
+#: Controller/EventsController.php:34
+msgid "Failed to update attendance"
+msgstr ""
+
+#: Controller/EventsController.php:68
+msgid "Success update attendance"
+msgstr ""
+
+#: Controller/NetworksController.php:60
+msgid "The search with keyword {0} not found"
+msgstr ""
+
+#: Controller/NetworksController.php:104
+msgid "The target not in your network."
+msgstr ""
+
+#: Controller/OrdersController.php:101
+msgid "The order has been success before, cannot do double process"
+msgstr ""
+
+#: Controller/OrdersController.php:134
+msgid "Stock is not enough, please add stock."
+msgstr ""
+
+#: Controller/OrdersController.php:234
+#: Controller/OrdersController.php:269
+msgid "The order has been update."
+msgstr ""
+
+#: Controller/OrdersController.php:236
+msgid "Order total not balace with stock. please add new stock"
+msgstr ""
+
+#: Controller/OrdersController.php:524
+msgid "Please select warehouse first to continue order"
+msgstr ""
+
+#: Controller/OrdersController.php:540
+msgid "Please complete address information first."
+msgstr ""
+
+#: Controller/OrdersController.php:856
+#: Controller/TransfersController.php:151
+#: Controller/WithdrawalsController.php:179
+msgid "This amount must be greater than {0}"
+msgstr ""
+
+#: Controller/OrdersController.php:966
+msgid "Please select stock type"
+msgstr ""
+
+#: Controller/OrdersController.php:1052
+msgid "Error, Order minimal amount {0}"
+msgstr ""
+
+#: Controller/OrdersController.php:1217
+msgid "The order has been deleted."
+msgstr ""
+
+#: Controller/OrdersController.php:1220
+#: Controller/OrdersController.php:1224
+msgid "The order could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/OrdersController.php:1228
+#: Controller/OrdersController.php:1232
+#: Controller/OrdersController.php:1265
+#: Controller/TransfersController.php:200
+#: Controller/WithdrawalsController.php:197
+msgid "Invalid password"
+msgstr ""
+
+#: Controller/OrdersController.php:1279
+msgid "Invalid serial number."
+msgstr ""
+
+#: Controller/OrdersController.php:1335
+msgid "The card has been saved."
+msgstr ""
+
+#: Controller/OrdersController.php:1338
+msgid "The card could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProfilesController.php:66
+msgid "The profile has been changed."
+msgstr ""
+
+#: Controller/ProfilesController.php:74
+msgid "The profile could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProfilesController.php:107
+msgid "Old password doesn't match"
+msgstr ""
+
+#: Controller/ProfilesController.php:119
+msgid "The password has been changed."
+msgstr ""
+
+#: Controller/ProfilesController.php:121
+msgid "The password could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TestimonialsController.php:119
+#: Controller/TestimonialsController.php:175
+msgid "The testimonial has been saved."
+msgstr ""
+
+#: Controller/TestimonialsController.php:123
+#: Controller/TestimonialsController.php:179
+msgid "The testimonial could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TestimonialsController.php:232
+msgid "The testimonial has been deleted."
+msgstr ""
+
+#: Controller/TestimonialsController.php:235
+#: Controller/TestimonialsController.php:239
+msgid "The testimonial could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TransfersController.php:146
+#: Controller/WithdrawalsController.php:172
+msgid "This amount must be less than {0}"
+msgstr ""
+
+#: Controller/TransfersController.php:147
+#: Controller/WithdrawalsController.php:173
+msgid "Insufficient balance"
+msgstr ""
+
+#: Controller/TransfersController.php:176
+msgid "Invalid destination username"
+msgstr ""
+
+#: Controller/TransfersController.php:182
+msgid "Can't transfer to yourself"
+msgstr ""
+
+#: Controller/TransfersController.php:239
+msgid "The transfer could not be saved, Error system 500."
+msgstr ""
+
+#: Controller/TransfersController.php:244
+msgid "The transfer has been saved."
+msgstr ""
+
+#: Controller/TransfersController.php:248
+msgid "The transfer could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WithdrawalsController.php:128
+msgid "The withdrawal requests can only be used on dates {0}"
+msgstr ""
+
+#: Controller/WithdrawalsController.php:178
+msgid "This bank not allowed"
+msgstr ""
+
+#: Controller/WithdrawalsController.php:260
+#: Controller/WithdrawalsController.php:269
+msgid "The withdrawal could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WithdrawalsController.php:265
+msgid "The withdrawal has been saved."
+msgstr ""
+
+#: Controller/WithdrawalsController.php:291
+msgid "The withdrawal has been deleted."
+msgstr ""
+
+#: Controller/WithdrawalsController.php:293
+msgid "The withdrawal could not be deleted. Please, try again."
+msgstr ""
+
+#: Form/ActivationForm.php:31
+msgid "A password is required"
+msgstr ""
+
+#: Form/ActivationForm.php:34
+msgid "A serial is required"
+msgstr ""
+
+#: Template/Activation/index.ctp:18
+#: Template/Activation/index.ctp:44
+#: Template/Element/Menu/side-menu.ctp:72
+msgid "Activation Account"
+msgstr ""
+
+#: Template/Activation/index.ctp:24
+msgid "Activation"
+msgstr ""
+
+#: Template/Activation/index.ctp:58
+#: Template/Orders/confirm_order.ctp:81
+msgid "Confirmation Date"
+msgstr ""
+
+#: Template/Activation/index.ctp:72
+#: Template/Orders/confirm_order.ctp:95
+msgid "Destination Transfer"
+msgstr ""
+
+#: Template/Activation/index.ctp:85
+#: Template/Orders/confirm_order.ctp:108
+msgid "Transfer From Bank"
+msgstr ""
+
+#: Template/Activation/index.ctp:90
+#: Template/Banks/add.ctp:73
+#: Template/Banks/edit.ctp:73
+#: Template/Orders/confirm_order.ctp:113
+#: Template/Withdrawals/add.ctp:76
+msgid "Please Select Bank"
+msgstr ""
+
+#: Template/Activation/index.ctp:98
+#: Template/Banks/add.ctp:29
+#: Template/Banks/index.ctp:50
+msgid "Add Bank"
+msgstr ""
+
+#: Template/Activation/index.ctp:105
+#: Template/Dashboard/index.ctp:297
+#: Template/Dashboard/index.ctp:361
+#: Template/Orders/confirm_order.ctp:125
+#: Template/Transactions/index.ctp:191
+#: Template/Transfers/add.ctp:82
+#: Template/Transfers/index.ctp:170
+#: Template/Withdrawals/add.ctp:86
+#: Template/Withdrawals/index.ctp:195
+msgid "Amount"
+msgstr ""
+
+#: Template/Activation/index.ctp:119
+#: Template/Orders/confirm_order.ctp:138
+#: Template/Transfers/add.ctp:96
+msgid "Note"
+msgstr ""
+
+#: Template/Activation/index.ctp:132
+#: Template/Orders/confirm_order.ctp:151
+msgid "File Browser"
+msgstr ""
+
+#: Template/Activation/index.ctp:143
+#: Template/Orders/confirm_order.ctp:162
+msgid "Choose file"
+msgstr ""
+
+#: Template/Activation/index.ctp:153
+#: Template/Address/add.ctp:164
+#: Template/Address/edit.ctp:165
+#: Template/Banks/add.ctp:159
+#: Template/Banks/edit.ctp:159
+#: Template/Orders/activation.ctp:101
+#: Template/Orders/confirm_order.ctp:172
+#: Template/Profiles/change_password.ctp:158
+#: Template/Profiles/index.ctp:208
+#: Template/Testimonials/add.ctp:113
+#: Template/Testimonials/edit.ctp:107
+#: Template/Transfers/add.ctp:138
+#: Template/Withdrawals/add.ctp:128
+#: View/Helper/FormHelper.php:2030
+msgid "Submit"
+msgstr ""
+
+#: Template/Address/add.ctp:17
+#: Template/Address/add.ctp:23
+#: Template/Address/add.ctp:45
+#: Template/Address/index.ctp:51
+msgid "Add Shipping Address"
+msgstr ""
+
+#: Template/Address/add.ctp:51
+#: Template/Address/edit.ctp:51
+msgid "List Shipping Address"
+msgstr ""
+
+#: Template/Address/add.ctp:62
+#: Template/Address/edit.ctp:62
+#: Template/Address/index.ctp:159
+msgid "Receiver Name"
+msgstr ""
+
+#: Template/Address/add.ctp:73
+#: Template/Address/edit.ctp:73
+#: Template/Address/index.ctp:164
+msgid "Receiver Phone"
+msgstr ""
+
+#: Template/Address/add.ctp:84
+#: Template/Address/edit.ctp:85
+#: Template/Address/index.ctp:169
+#: Template/Orders/lists.ctp:386
+msgid "Province"
+msgstr ""
+
+#: Template/Address/add.ctp:90
+#: Template/Address/edit.ctp:91
+msgid "Please Select Province"
+msgstr ""
+
+#: Template/Address/add.ctp:100
+#: Template/Address/add.ctp:211
+#: Template/Address/edit.ctp:101
+#: Template/Address/edit.ctp:212
+#: Template/Address/index.ctp:174
+#: Template/Banks/add.ctp:83
+#: Template/Banks/edit.ctp:83
+#: Template/Banks/index.ctp:181
+#: Template/Orders/lists.ctp:391
+#: Template/Withdrawals/index.ctp:179
+msgid "City"
+msgstr ""
+
+#: Template/Address/add.ctp:106
+#: Template/Address/edit.ctp:107
+msgid "Please Select City"
+msgstr ""
+
+#: Template/Address/add.ctp:116
+#: Template/Address/add.ctp:215
+#: Template/Address/edit.ctp:117
+#: Template/Address/edit.ctp:216
+#: Template/Address/index.ctp:179
+msgid "District"
+msgstr ""
+
+#: Template/Address/add.ctp:122
+#: Template/Address/edit.ctp:123
+msgid "Please Select District"
+msgstr ""
+
+#: Template/Address/add.ctp:132
+#: Template/Address/edit.ctp:133
+#: Template/Address/index.ctp:183
+msgid "Zip"
+msgstr ""
+
+#: Template/Address/add.ctp:144
+#: Template/Address/edit.ctp:145
+#: Template/Address/index.ctp:187
+#: Template/Element/Menu/side-menu.ctp:62
+#: Template/Orders/detail_order.ctp:136
+#: Template/Orders/lists.ctp:396
+msgid "Address"
+msgstr ""
+
+#: Template/Address/edit.ctp:17
+#: Template/Address/edit.ctp:23
+#: Template/Address/edit.ctp:45
+msgid "Edit Shipping Address"
+msgstr ""
+
+#: Template/Address/index.ctp:16
+#: Template/Address/index.ctp:22
+#: Template/Address/index.ctp:44
+#: Template/CustomerOrders/cart.ctp:132
+#: Template/Orders/cart.ctp:141
+msgid "Shipping Address"
+msgstr ""
+
+#: Template/Address/index.ctp:70
+msgid "Set Primary Address"
+msgstr ""
+
+#: Template/Address/index.ctp:191
+#: Template/Address/index.ctp:193
+msgid "Primary Address"
+msgstr ""
+
+#: Template/Address/index.ctp:198
+#: Template/Banks/index.ctp:204
+#: Template/Generations/index.ctp:162
+#: Template/Orders/lists.ctp:445
+#: Template/Testimonials/index.ctp:206
+msgid "Actions"
+msgstr ""
+
+#: Template/Affiliates/index.ctp:16
+#: Template/Affiliates/index.ctp:22
+#: Template/Affiliates/index.ctp:39
+#: Template/Element/Menu/side-menu.ctp:47
+msgid "Affiliate"
+msgstr ""
+
+#: Template/Affiliates/index.ctp:45
+msgid "Refer to your friends, relatives or coworkers. You will get extra bonus by your refered members."
+msgstr ""
+
+#: Template/Affiliates/index.ctp:50
+#: Template/Affiliates/index.ctp:92
+#: Template/Affiliates/index.ctp:95
+#: Template/Affiliates/index.ctp:98
+msgid "Copied!"
+msgstr ""
+
+#: Template/Affiliates/index.ctp:50
+#: Template/Affiliates/index.ctp:92
+#: Template/Affiliates/index.ctp:95
+#: Template/Affiliates/index.ctp:98
+msgid "Copy to clipboard"
+msgstr ""
+
+#: Template/Affiliates/index.ctp:56
+msgid "If you have a blog or website, you can use banners below to promote and potentially earn lifetime passive income by introducing to your website's visitors."
+msgstr ""
+
+#: Template/Banks/add.ctp:20
+#: Template/Banks/add.ctp:51
+#: Template/Banks/add.ctp:68
+#: Template/Banks/edit.ctp:20
+#: Template/Banks/edit.ctp:51
+#: Template/Banks/edit.ctp:68
+#: Template/Banks/index.ctp:16
+#: Template/Banks/index.ctp:22
+#: Template/Banks/index.ctp:44
+#: Template/Banks/index.ctp:177
+#: Template/Element/Menu/side-menu.ctp:42
+#: Template/Withdrawals/add.ctp:71
+#: Template/Withdrawals/index.ctp:175
+msgid "Bank"
+msgstr ""
+
+#: Template/Banks/add.ctp:26
+#: Template/Banks/add.ctp:57
+#: Template/Banks/edit.ctp:26
+#: Template/Banks/edit.ctp:57
+msgid "List Bank"
+msgstr ""
+
+#: Template/Banks/add.ctp:95
+#: Template/Banks/edit.ctp:95
+#: Template/Banks/index.ctp:185
+#: Template/Withdrawals/index.ctp:183
+msgid "Branch"
+msgstr ""
+
+#: Template/Banks/add.ctp:107
+#: Template/Banks/edit.ctp:107
+#: Template/Banks/index.ctp:189
+#: Template/Withdrawals/index.ctp:187
+msgid "Account Name"
+msgstr ""
+
+#: Template/Banks/add.ctp:119
+#: Template/Banks/edit.ctp:119
+#: Template/Banks/index.ctp:193
+#: Template/Withdrawals/index.ctp:191
+msgid "Account Number"
+msgstr ""
+
+#: Template/Banks/edit.ctp:29
+msgid "Edit Bank"
+msgstr ""
+
+#: Template/Banks/index.ctp:82
+#: Template/Testimonials/index.ctp:84
+msgid "Confirm serial number"
+msgstr ""
+
+#: Template/Banks/index.ctp:85
+#: Template/Testimonials/index.ctp:87
+msgid "Please input your serial number"
+msgstr ""
+
+#: Template/Banks/index.ctp:197
+#: Template/Dashboard/index.ctp:367
+#: Template/Dashboard/index.ctp:465
+#: Template/Orders/lists.ctp:438
+#: Template/Testimonials/index.ctp:199
+#: Template/Transactions/index.ctp:205
+#: Template/Withdrawals/index.ctp:230
+msgid "Date"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:16
+#: Template/CustomerOrders/cart.ctp:43
+msgid "Order to Stockist {0}"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:22
+#: Template/CustomerOrders/index.ctp:22
+#: Template/CustomerOrders/orders.ctp:24
+#: Template/CustomerOrders/stockist.ctp:23
+#: Template/Orders/cart.ctp:16
+#: Template/Orders/detail_order.ctp:17
+#: Template/Orders/index.ctp:16
+msgid "Orders"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:61
+#: Template/Orders/cart.ctp:63
+#: Template/Orders/detail_order.ctp:154
+#: Template/Orders/stocks.ctp:163
+msgid "Product Name"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:62
+#: Template/Orders/cart.ctp:64
+#: Template/Orders/detail_order.ctp:155
+msgid "Qty"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:63
+#: Template/Orders/cart.ctp:65
+msgid "Weight"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:64
+#: Template/Orders/cart.ctp:66
+msgid "Sub Total Weight"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:65
+#: Template/Orders/cart.ctp:67
+#: Template/Orders/detail_order.ctp:156
+msgid "Price"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:66
+#: Template/Orders/cart.ctp:68
+#: Template/Orders/detail_order.ctp:157
+msgid "Sub Total"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:67
+#: Template/Orders/cart.ctp:69
+msgid "Action"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:94
+#: Template/Orders/cart.ctp:96
+msgid "Total Weight"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:98
+#: Template/Generations/index.ctp:155
+#: Template/Orders/cart.ctp:100
+#: Template/Orders/detail_order.ctp:140
+#: Template/Orders/lists.ctp:400
+#: Template/Orders/stocks.ctp:199
+msgid "Total"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:138
+#: Template/Orders/cart.ctp:147
+#: Template/Profiles/index.ctp:143
+msgid "Phone"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:142
+#: Template/Orders/cart.ctp:164
+msgid "Notes"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:148
+#: Template/Orders/cart.ctp:170
+msgid "Text your notes such as delivery point location, etc."
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:155
+#: Template/Orders/cart.ctp:177
+msgid "Detail Payments"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:158
+#: Template/Orders/cart.ctp:180
+msgid "Total Payment"
+msgstr ""
+
+#: Template/CustomerOrders/cart.ctp:180
+#: Template/Orders/cart.ctp:202
+msgid "Order Now"
+msgstr ""
+
+#: Template/CustomerOrders/index.ctp:16
+#: Template/CustomerOrders/index.ctp:44
+msgid "Customer Orders"
+msgstr ""
+
+#: Template/CustomerOrders/index.ctp:56
+msgid "Order to Company"
+msgstr ""
+
+#: Template/CustomerOrders/index.ctp:62
+msgid "Order to Stokis"
+msgstr ""
+
+#: Template/CustomerOrders/orders.ctp:18
+#: Template/CustomerOrders/orders.ctp:40
+msgid "Products on Stockist {0}"
+msgstr ""
+
+#: Template/CustomerOrders/orders.ctp:47
+#: Template/Orders/index.ctp:52
+msgid "Checkout"
+msgstr ""
+
+#: Template/CustomerOrders/orders.ctp:74
+msgid "Stock Available : {0}"
+msgstr ""
+
+#: Template/CustomerOrders/orders.ctp:85
+#: Template/Orders/index.ctp:84
+msgid "PURCHASE"
+msgstr ""
+
+#: Template/CustomerOrders/stockist.ctp:17
+#: Template/CustomerOrders/stockist.ctp:45
+msgid "Customer Orders to Stockist"
+msgstr ""
+
+#: Template/CustomerOrders/stockist.ctp:56
+msgid "Your are registered in area {0}"
+msgstr ""
+
+#: Template/CustomerOrders/stockist.ctp:57
+msgid "Select stockis on your area"
+msgstr ""
+
+#: Template/CustomerOrders/stockist.ctp:68
+msgid "Select Stockist"
+msgstr ""
+
+#: Template/CustomerOrders/stockist.ctp:75
+msgid "Send"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:16
+#: Template/Dashboard/index.ctp:22
+#: Template/Element/Menu/side-menu.ctp:32
+msgid "Dashboard"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:52
+msgid "Total Member"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:76
+msgid "Current Rank"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:99
+msgid "Total Reward"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:123
+msgid "Request Order Waiting"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:150
+msgid "Product Stock Available"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:168
+msgid "Serials"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:181
+msgid "Recent Ranks"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:202
+msgid "Log Periods"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:285
+#: Template/Dashboard/index.ctp:291
+#: Template/Events/index.ctp:107
+msgid "Start Date"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:355
+#: Template/Dashboard/index.ctp:445
+#: Template/Generations/detail.ctp:170
+#: Template/Transactions/detail.ctp:131
+msgid "Username"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:358
+msgid "Invoice Number"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:450
+#: Template/Generations/detail.ctp:174
+#: Template/Profiles/index.ctp:103
+#: Template/Profiles/index.ctp:109
+#: Template/Transactions/detail.ctp:135
+msgid "First Name"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:455
+#: Template/Generations/detail.ctp:178
+#: Template/Profiles/index.ctp:115
+#: Template/Profiles/index.ctp:121
+#: Template/Transactions/detail.ctp:139
+msgid "Last Name"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:460
+#: Template/Generations/detail.ctp:74
+#: Template/Generations/detail.ctp:182
+msgid "Rank"
+msgstr ""
+
+#: Template/Element/Header/top-bar.ctp:88
+msgid "My Profile"
+msgstr ""
+
+#: Template/Element/Header/top-bar.ctp:104
+#: Template/Element/Menu/top-menu.ctp:103
+msgid "Sign Out"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:14
+msgid "Acccount Information"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:23
+#: Template/Element/Partial/Profiles/menu.ctp:51
+#: Template/Profiles/change_password.ctp:32
+#: Template/Profiles/change_password.ctp:68
+msgid "Change Password"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:32
+msgid "Change Email"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:41
+msgid "Change Phone Number"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:50
+msgid "Change Address"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:59
+msgid "Security"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:68
+msgid "Bank Account"
+msgstr ""
+
+#: Template/Element/Menu/setting.ctp:77
+msgid "Language & Timezone"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:37
+msgid "Change Profile"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:52
+#: Template/Testimonials/add.ctp:51
+#: Template/Testimonials/edit.ctp:51
+msgid "Testimonial"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:57
+#: Template/Events/index.ctp:16
+#: Template/Events/index.ctp:22
+#: Template/Events/index.ctp:44
+msgid "Events"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:127
+msgid "Account Member"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:133
+msgid "Stockist Order"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:136
+#: Template/Element/Menu/side-menu.ctp:174
+msgid "Order Product"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:141
+#: Template/Element/Menu/side-menu.ctp:179
+#: Template/Orders/confirm_order.ctp:24
+#: Template/Orders/confirm_order.ctp:55
+msgid "Order List"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:146
+#: Template/Orders/request.ctp:16
+#: Template/Orders/request.ctp:43
+msgid "Request Order"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:151
+#: Template/Orders/stocks.ctp:16
+#: Template/Orders/stocks.ctp:43
+msgid "Stock Mutations"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:156
+#: Template/Serials/index.ctp:22
+msgid "Product Serials"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:161
+msgid "Activation Product"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:171
+msgid "Customer Order"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:188
+#: Template/Generations/detail.ctp:16
+#: Template/Generations/index.ctp:16
+#: Template/Transactions/detail.ctp:16
+msgid "Network"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:191
+msgid "Network Diagram"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:196
+#: Template/Generations/index.ctp:44
+msgid "Generation"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:204
+#: Template/Transactions/index.ctp:16
+#: Template/Transactions/index.ctp:22
+#: Template/Transactions/index.ctp:44
+msgid "Transactions"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:209
+msgid "Withdrawals"
+msgstr ""
+
+#: Template/Element/Menu/side-menu.ctp:214
+#: Template/Transfers/add.ctp:20
+#: Template/Transfers/index.ctp:16
+msgid "Transfer"
+msgstr ""
+
+#: Template/Element/Menu/top-menu.ctp:19
+msgid "Client"
+msgstr ""
+
+#: Template/Element/Menu/top-menu.ctp:88
+msgid "Assets"
+msgstr ""
+
+#: Template/Element/Menu/top-menu.ctp:91
+msgid "Verification"
+msgstr ""
+
+#: Template/Element/Menu/top-menu.ctp:95
+msgid "Notifications"
+msgstr ""
+
+#: Template/Element/Menu/top-menu.ctp:99
+msgid "Settings"
+msgstr ""
+
+#: Template/Element/Partial/Profiles/menu.ctp:44
+#: Template/Profiles/index.ctp:64
+msgid "Personal Information"
+msgstr ""
+
+#: Template/Events/index.ctp:75
+msgid "Detail Event"
+msgstr ""
+
+#: Template/Events/index.ctp:84
+msgid "Title"
+msgstr ""
+
+#: Template/Events/index.ctp:85
+msgid "No title"
+msgstr ""
+
+#: Template/Events/index.ctp:89
+#: Template/Orders/stocks.ctp:171
+#: Template/Transactions/index.ctp:187
+#: Template/Transfers/index.ctp:184
+msgid "Description"
+msgstr ""
+
+#: Template/Events/index.ctp:90
+msgid "No description"
+msgstr ""
+
+#: Template/Events/index.ctp:94
+msgid "Category"
+msgstr ""
+
+#: Template/Events/index.ctp:95
+msgid "No Category"
+msgstr ""
+
+#: Template/Events/index.ctp:99
+msgid "Location"
+msgstr ""
+
+#: Template/Events/index.ctp:100
+msgid "No location detail"
+msgstr ""
+
+#: Template/Events/index.ctp:113
+msgid "End Date"
+msgstr ""
+
+#: Template/Events/index.ctp:120
+msgid "Participant"
+msgstr ""
+
+#: Template/Events/index.ctp:123
+#: Template/Events/index.ctp:308
+msgid "No participants"
+msgstr ""
+
+#: Template/Events/index.ctp:133
+msgid "Confirm"
+msgstr ""
+
+#: Template/Events/index.ctp:134
+#: View/Widget/DateTimeWidget.php:543
+msgid "May"
+msgstr ""
+
+#: Template/Events/index.ctp:135
+msgid "Decline"
+msgstr ""
+
+#: Template/Events/index.ctp:136
+msgid "Close"
+msgstr ""
+
+#: Template/Generations/detail.ctp:22
+#: Template/Transactions/detail.ctp:22
+msgid "Detail Generation"
+msgstr ""
+
+#: Template/Generations/detail.ctp:44
+#: Template/Transactions/detail.ctp:44
+msgid "Detail Generation Level {0}"
+msgstr ""
+
+#: Template/Generations/detail.ctp:52
+msgid "Back"
+msgstr ""
+
+#: Template/Generations/detail.ctp:65
+#: Template/Orders/lists.ctp:63
+msgid "Search"
+msgstr ""
+
+#: Template/Generations/detail.ctp:186
+#: Template/Transactions/detail.ctp:143
+msgid "Join On"
+msgstr ""
+
+#: Template/Generations/index.ctp:22
+msgid "Generations"
+msgstr ""
+
+#: Template/Generations/index.ctp:148
+msgid "Generation Level"
+msgstr ""
+
+#: Template/Networks/index.ctp:17
+#: Template/Networks/index.ctp:23
+#: Template/Networks/index.ctp:45
+msgid "Networks"
+msgstr ""
+
+#: Template/Networks/index.ctp:87
+msgid "Upline"
+msgstr ""
+
+#: Template/Networks/index.ctp:106
+msgid "Downline"
+msgstr ""
+
+#: Template/Orders/activation.ctp:20
+msgid "Product Activation"
+msgstr ""
+
+#: Template/Orders/activation.ctp:26
+#: Template/Orders/index.ctp:22
+#: Template/Serials/index.ctp:153
+msgid "Product"
+msgstr ""
+
+#: Template/Orders/activation.ctp:46
+msgid "Activation Products"
+msgstr ""
+
+#: Template/Orders/activation.ctp:62
+msgid "Product Serial"
+msgstr ""
+
+#: Template/Orders/activation.ctp:74
+#: Template/Orders/activation.ctp:85
+#: Template/Transfers/add.ctp:109
+#: Template/Transfers/add.ctp:119
+#: Template/Withdrawals/add.ctp:99
+#: Template/Withdrawals/add.ctp:109
+msgid "Password"
+msgstr ""
+
+#: Template/Orders/cart.ctp:22
+#: Template/Orders/cart.ctp:44
+msgid "Cart"
+msgstr ""
+
+#: Template/Orders/cart.ctp:156
+msgid "Stock Type"
+msgstr ""
+
+#: Template/Orders/cart.ctp:160
+msgid "Select Stock Type"
+msgstr ""
+
+#: Template/Orders/confirm_order.ctp:18
+msgid "Stockist"
+msgstr ""
+
+#: Template/Orders/confirm_order.ctp:27
+msgid "Confirmation"
+msgstr ""
+
+#: Template/Orders/confirm_order.ctp:49
+msgid "Confirmation Order"
+msgstr ""
+
+#: Template/Orders/confirm_order.ctp:67
+#: Template/Orders/detail_order.ctp:123
+#: Template/Orders/lists.ctp:381
+msgid "Invoice"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:23
+#: Template/Orders/detail_order.ctp:100
+msgid "Detail Order"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:45
+msgid "Please transfer to one of this bank accounts"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:107
+msgid "Back Orders"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:126
+#: Template/Orders/lists.ctp:72
+#: Template/Orders/lists.ctp:417
+#: Template/Serials/index.ctp:171
+#: Template/Withdrawals/index.ctp:72
+#: Template/Withdrawals/index.ctp:210
+msgid "Status"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:149
+msgid "Detail Product"
+msgstr ""
+
+#: Template/Orders/detail_order.ctp:175
+msgid "Grand Total"
+msgstr ""
+
+#: Template/Orders/index.ctp:44
+msgid "Order to werehouse {0}"
+msgstr ""
+
+#: Template/Orders/index.ctp:76
+msgid "Available Stocks : {0}"
+msgstr ""
+
+#: Template/Orders/lists.ctp:16
+#: Template/Orders/lists.ctp:43
+#: Template/Orders/request.ctp:22
+#: Template/Orders/warehouse.ctp:22
+msgid "Order"
+msgstr ""
+
+#: Template/Orders/lists.ctp:22
+msgid "List"
+msgstr ""
+
+#: Template/Orders/lists.ctp:285
+msgid "Confirm password"
+msgstr ""
+
+#: Template/Orders/lists.ctp:288
+msgid "Please input your password"
+msgstr ""
+
+#: Template/Orders/lists.ctp:408
+msgid "Order To"
+msgstr ""
+
+#: Template/Orders/stocks.ctp:22
+msgid "Products"
+msgstr ""
+
+#: Template/Orders/stocks.ctp:63
+msgid "Attention, when the customer checks out, the stock of your goods will decrease according to the number of checkout made by the customer which is valid only temporarily until you confirm that the payment is received, if the customer does not make a payment until the specified deadline, the stock will be returned. provided that the time limit is 1x24 hours"
+msgstr ""
+
+#: Template/Orders/stocks.ctp:179
+msgid "Qty In"
+msgstr ""
+
+#: Template/Orders/stocks.ctp:189
+msgid "Qty Out"
+msgstr ""
+
+#: Template/Orders/warehouse.ctp:16
+msgid "Warehouse"
+msgstr ""
+
+#: Template/Orders/warehouse.ctp:43
+#: Template/Orders/warehouse.ctp:82
+msgid "Select Warehouse"
+msgstr ""
+
+#: Template/Orders/warehouse.ctp:66
+msgid "Warehouse {0}"
+msgstr ""
+
+#: Template/Orders/warehouse.ctp:72
+msgid "Available Stocks"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:19
+#: Template/Profiles/change_password.ctp:25
+#: Template/Profiles/index.ctp:19
+#: Template/Profiles/index.ctp:25
+msgid "Profiles"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:28
+#: Template/Profiles/index.ctp:28
+msgid "Edit Profile"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:87
+#: Template/Profiles/change_password.ctp:96
+msgid "Current Password"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:107
+#: Template/Profiles/change_password.ctp:116
+msgid "New Password"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:127
+#: Template/Profiles/change_password.ctp:136
+msgid "Repeat Password"
+msgstr ""
+
+#: Template/Profiles/change_password.ctp:159
+msgid "Cancel"
+msgstr ""
+
+#: Template/Profiles/index.ctp:64
+msgid "update your personal informaiton"
+msgstr ""
+
+#: Template/Profiles/index.ctp:84
+msgid "Customer Info"
+msgstr ""
+
+#: Template/Profiles/index.ctp:88
+msgid "Avatar"
+msgstr ""
+
+#: Template/Profiles/index.ctp:130
+msgid "Contact Info"
+msgstr ""
+
+#: Template/Profiles/index.ctp:134
+msgid "Contact Phone"
+msgstr ""
+
+#: Template/Profiles/index.ctp:154
+msgid "Email Address"
+msgstr ""
+
+#: Template/Profiles/index.ctp:163
+msgid "Email"
+msgstr ""
+
+#: Template/Serials/index.ctp:16
+#: Template/Serials/index.ctp:44
+msgid "Product Serials Order"
+msgstr ""
+
+#: Template/Serials/index.ctp:161
+msgid "Card"
+msgstr ""
+
+#: Template/Serials/index.ctp:166
+msgid "Serial Number"
+msgstr ""
+
+#: Template/Serials/index.ctp:179
+msgid "Used By"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:20
+#: Template/Testimonials/edit.ctp:20
+#: Template/Testimonials/index.ctp:16
+#: Template/Testimonials/index.ctp:22
+#: Template/Testimonials/index.ctp:44
+msgid "Testimonials"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:26
+#: Template/Testimonials/edit.ctp:26
+msgid "List Testimonials"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:29
+#: Template/Testimonials/index.ctp:51
+msgid "Create Testimonial"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:57
+#: Template/Testimonials/edit.ctp:57
+msgid "List Testimonial"
+msgstr ""
+
+#: Template/Testimonials/add.ctp:72
+#: Template/Testimonials/edit.ctp:68
+#: Template/Testimonials/index.ctp:195
+msgid "Message"
+msgstr ""
+
+#: Template/Testimonials/edit.ctp:29
+msgid "Edit Testimonial"
+msgstr ""
+
+#: Template/Testimonials/index.ctp:179
+msgid "Approved"
+msgstr ""
+
+#: Template/Transactions/index.ctp:71
+#: Template/Transfers/index.ctp:166
+msgid "Type"
+msgstr ""
+
+#: Template/Transactions/index.ctp:165
+msgid "Transaction Type"
+msgstr ""
+
+#: Template/Transactions/index.ctp:198
+msgid "Balance"
+msgstr ""
+
+#: Template/Transfers/add.ctp:26
+#: Template/Transfers/add.ctp:57
+#: Template/Transfers/index.ctp:22
+#: Template/Transfers/index.ctp:44
+msgid "List Transfer"
+msgstr ""
+
+#: Template/Transfers/add.ctp:29
+#: Template/Transfers/add.ctp:51
+#: Template/Transfers/index.ctp:50
+msgid "New Transfer"
+msgstr ""
+
+#: Template/Transfers/add.ctp:71
+msgid "Destination Username"
+msgstr ""
+
+#: Template/Transfers/add.ctp:91
+#: Template/Withdrawals/add.ctp:95
+msgid "Your balance"
+msgstr ""
+
+#: Template/Transfers/index.ctp:158
+msgid "From"
+msgstr ""
+
+#: Template/Transfers/index.ctp:162
+msgid "To"
+msgstr ""
+
+#: Template/Transfers/index.ctp:177
+#: Template/Withdrawals/index.ctp:202
+msgid "Fee"
+msgstr ""
+
+#: Template/Transfers/index.ctp:188
+msgid "Created"
+msgstr ""
+
+#: Template/Withdrawals/add.ctp:20
+#: Template/Withdrawals/index.ctp:16
+#: Template/Withdrawals/index.ctp:22
+#: Template/Withdrawals/index.ctp:44
+msgid "Withdrawal"
+msgstr ""
+
+#: Template/Withdrawals/add.ctp:26
+#: Template/Withdrawals/add.ctp:57
+msgid "List Withdrawal"
+msgstr ""
+
+#: Template/Withdrawals/add.ctp:29
+#: Template/Withdrawals/add.ctp:51
+#: Template/Withdrawals/index.ctp:50
+msgid "Request Withdrawal"
+msgstr ""
+
+#: View/Helper/PaginatorHelper.php:1271
+msgid "View"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:502
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:181
+#: Http/Middleware/CsrfProtectionMiddleware.php:228
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:185
+#: Http/Middleware/CsrfProtectionMiddleware.php:232
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:301
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:303
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2679
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2700
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:89
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:91
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:93
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:95
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:87
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154
+#: I18n/RelativeTimeFormatter.php:332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155
+#: I18n/RelativeTimeFormatter.php:333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156
+#: I18n/RelativeTimeFormatter.php:334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157
+#: I18n/RelativeTimeFormatter.php:335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171
+#: I18n/RelativeTimeFormatter.php:346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172
+#: I18n/RelativeTimeFormatter.php:347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173
+#: I18n/RelativeTimeFormatter.php:348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174
+#: I18n/RelativeTimeFormatter.php:349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47
+#: I18n/RelativeTimeFormatter.php:126
+#: I18n/RelativeTimeFormatter.php:316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51
+#: I18n/RelativeTimeFormatter.php:129
+#: I18n/RelativeTimeFormatter.php:319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57
+#: I18n/RelativeTimeFormatter.php:132
+#: I18n/RelativeTimeFormatter.php:322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59
+#: I18n/RelativeTimeFormatter.php:135
+#: I18n/RelativeTimeFormatter.php:325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64
+#: I18n/RelativeTimeFormatter.php:138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68
+#: I18n/RelativeTimeFormatter.php:141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72
+#: I18n/RelativeTimeFormatter.php:144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:56
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:103
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:127
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:934
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:2437
+#: View/Form/ArrayContext.php:226
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:2459
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2610
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1108
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1110
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:818
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:539
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "December"
+msgstr ""
+
+
+
+#: Controller/ActivationsController.php:85
+msgid "The confirmation has been success before, cannot do double process"
+msgstr ""
+
+#: Controller/ActivationsController.php:103
+msgid "The customer not set refferal id"
+msgstr ""
+
+#: Controller/ActivationsController.php:177
+#: Controller/OrdersController.php:82
+#: Controller/OrdersController.php:266
+#: Controller/OrdersController.php:300
+msgid "The order has been update."
+msgstr ""
+
+#: Controller/BlogsController.php:142
+#: Controller/DownloadsController.php:252
+#: Controller/GalleriesController.php:305
+msgid "Gagal upload"
+msgstr ""
+
+#: Controller/BlogsController.php:148
+#: Controller/DownloadsController.php:258
+#: Controller/GalleriesController.php:311
+msgid "file harus jpg, png"
+msgstr ""
+
+#: Controller/BlogsController.php:188
+#: Controller/BlogsController.php:220
+msgid "The blog has been saved."
+msgstr ""
+
+#: Controller/BlogsController.php:192
+#: Controller/BlogsController.php:224
+msgid "The blog could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BlogsController.php:244
+msgid "The blog has been deleted."
+msgstr ""
+
+#: Controller/BlogsController.php:246
+#: Controller/BlogsController.php:249
+msgid "The blog could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/CustomersController.php:133
+msgid "The customer has been saved."
+msgstr ""
+
+#: Controller/CustomersController.php:137
+msgid "The customer could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/DashboardController.php:62
+msgid "Please select date range filter."
+msgstr ""
+
+#: Controller/DownloadsController.php:96
+#: Controller/DownloadsController.php:116
+#: Controller/EventsController.php:91
+#: Controller/EventsController.php:109
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/DownloadsController.php:100
+#: Controller/DownloadsController.php:120
+#: Controller/EventsController.php:95
+#: Controller/EventsController.php:113
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/DownloadsController.php:131
+#: Controller/EventsController.php:126
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/DownloadsController.php:133
+#: Controller/DownloadsController.php:136
+#: Controller/EventsController.php:128
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/DownloadsController.php:218
+msgid "The files has been deleted."
+msgstr ""
+
+#: Controller/DownloadsController.php:220
+#: Controller/DownloadsController.php:223
+msgid "The files could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EventsController.php:165
+msgid "Success move calendar or event"
+msgstr ""
+
+#: Controller/FaqCategoriesController.php:110
+#: Controller/FaqCategoriesController.php:136
+msgid "The faq category has been saved."
+msgstr ""
+
+#: Controller/FaqCategoriesController.php:114
+#: Controller/FaqCategoriesController.php:140
+msgid "The faq category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/FaqCategoriesController.php:158
+msgid "The faq category has been deleted."
+msgstr ""
+
+#: Controller/FaqCategoriesController.php:160
+#: Controller/FaqCategoriesController.php:163
+msgid "The faq category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/FaqsController.php:109
+#: Controller/FaqsController.php:136
+msgid "The faq has been saved."
+msgstr ""
+
+#: Controller/FaqsController.php:113
+#: Controller/FaqsController.php:140
+msgid "The faq could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/FaqsController.php:159
+msgid "The faq has been deleted."
+msgstr ""
+
+#: Controller/FaqsController.php:161
+#: Controller/FaqsController.php:164
+msgid "The faq could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/GalleriesController.php:99
+msgid "The album has been saved."
+msgstr ""
+
+#: Controller/GalleriesController.php:103
+msgid "The album could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GalleriesController.php:125
+msgid "The Albums has been saved."
+msgstr ""
+
+#: Controller/GalleriesController.php:129
+msgid "The Albums could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GalleriesController.php:147
+msgid "The Albums has been deleted."
+msgstr ""
+
+#: Controller/GalleriesController.php:149
+#: Controller/GalleriesController.php:152
+msgid "The Albums could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/GalleriesController.php:165
+msgid "The Image has been deleted."
+msgstr ""
+
+#: Controller/GalleriesController.php:167
+#: Controller/GalleriesController.php:170
+msgid "The Image could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:101
+msgid "Aco Syncronize has been complete"
+msgstr ""
+
+#: Controller/GroupsController.php:121
+#: Controller/GroupsController.php:154
+msgid "The group has been saved."
+msgstr ""
+
+#: Controller/GroupsController.php:125
+#: Controller/GroupsController.php:158
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:147
+#: Controller/GroupsController.php:185
+#: Controller/UsersController.php:238
+msgid "Your privilege not enough to edit this user."
+msgstr ""
+
+#: Controller/GroupsController.php:189
+msgid "The group has been deleted."
+msgstr ""
+
+#: Controller/GroupsController.php:191
+msgid "The group could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MenuAdminsController.php:124
+#: Controller/MenuAdminsController.php:149
+msgid "The menu admin has been saved."
+msgstr ""
+
+#: Controller/MenuAdminsController.php:128
+#: Controller/MenuAdminsController.php:153
+msgid "The menu admin could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MenuAdminsController.php:172
+msgid "The menu admin has been deleted."
+msgstr ""
+
+#: Controller/MenuAdminsController.php:174
+#: Controller/MenuAdminsController.php:177
+msgid "The menu admin could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/OrdersController.php:111
+msgid "The order has been success before, cannot do double process"
+msgstr ""
+
+#: Controller/OrdersController.php:141
+msgid "Stock is not enough, please add stock."
+msgstr ""
+
+#: Controller/OrdersController.php:268
+msgid "Order total not balace with stock. please add new stock"
+msgstr ""
+
+#: Controller/PagesController.php:107
+#: Controller/PagesController.php:132
+msgid "The page has been saved."
+msgstr ""
+
+#: Controller/PagesController.php:111
+#: Controller/PagesController.php:136
+msgid "The page could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PagesController.php:154
+msgid "The page has been deleted."
+msgstr ""
+
+#: Controller/PagesController.php:156
+#: Controller/PagesController.php:159
+msgid "The page could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProductStocksController.php:151
+msgid "Stock produk berhasil di update"
+msgstr ""
+
+#: Controller/ProductStocksController.php:153
+msgid "Gagal update stock produk silahkan periksa kembali"
+msgstr ""
+
+#: Controller/ProductUnitsController.php:105
+#: Controller/ProductUnitsController.php:129
+msgid "The product unit has been saved."
+msgstr ""
+
+#: Controller/ProductUnitsController.php:109
+#: Controller/ProductUnitsController.php:133
+msgid "The product unit could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProductUnitsController.php:151
+msgid "The product unit has been deleted."
+msgstr ""
+
+#: Controller/ProductUnitsController.php:153
+#: Controller/ProductUnitsController.php:156
+msgid "The product unit could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProductsController.php:107
+#: Controller/ProductsController.php:135
+msgid "The product has been saved."
+msgstr ""
+
+#: Controller/ProductsController.php:111
+#: Controller/ProductsController.php:139
+msgid "The product could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProductsController.php:160
+msgid "The product has been deleted."
+msgstr ""
+
+#: Controller/ProductsController.php:162
+#: Controller/ProductsController.php:165
+msgid "The product could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProvincesController.php:104
+#: Controller/ProvincesController.php:128
+msgid "The province has been saved."
+msgstr ""
+
+#: Controller/ProvincesController.php:108
+#: Controller/ProvincesController.php:132
+msgid "The province could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProvincesController.php:150
+msgid "The province has been deleted."
+msgstr ""
+
+#: Controller/ProvincesController.php:152
+#: Controller/ProvincesController.php:155
+msgid "The province could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/SuppliersController.php:105
+#: Controller/SuppliersController.php:129
+msgid "The supplier has been saved."
+msgstr ""
+
+#: Controller/SuppliersController.php:109
+#: Controller/SuppliersController.php:133
+msgid "The supplier could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SuppliersController.php:151
+msgid "The supplier has been deleted."
+msgstr ""
+
+#: Controller/SuppliersController.php:153
+#: Controller/SuppliersController.php:156
+msgid "The supplier could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:107
+#: Controller/TagsController.php:132
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:111
+#: Controller/TagsController.php:136
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:154
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:156
+#: Controller/TagsController.php:159
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TestimonialsController.php:113
+msgid "Successfully approved testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:115
+msgid "failed approved testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:137
+msgid "Successfully un approved testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:139
+msgid "failed un approved testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:160
+msgid "Successfully delete testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:162
+msgid "failed delete testimonial"
+msgstr ""
+
+#: Controller/TestimonialsController.php:185
+msgid "The testimonial has been saved."
+msgstr ""
+
+#: Controller/TestimonialsController.php:189
+msgid "The testimonial could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TopicsController.php:107
+#: Controller/TopicsController.php:132
+msgid "The topic has been saved."
+msgstr ""
+
+#: Controller/TopicsController.php:111
+#: Controller/TopicsController.php:136
+msgid "The topic could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TopicsController.php:154
+msgid "The topic has been deleted."
+msgstr ""
+
+#: Controller/TopicsController.php:156
+#: Controller/TopicsController.php:159
+msgid "The topic could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TransactionMutationsController.php:109
+msgid "The transaction mutation has been deleted."
+msgstr ""
+
+#: Controller/TransactionMutationsController.php:111
+#: Controller/TransactionMutationsController.php:114
+msgid "The transaction mutation could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:136
+msgid "The password has been changed."
+msgstr ""
+
+#: Controller/UsersController.php:138
+msgid "The password could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:205
+#: Controller/UsersController.php:249
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:209
+#: Controller/UsersController.php:253
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:285
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:287
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:310
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: Controller/WithdrawalsController.php:189
+msgid "The withdrawal has been deleted."
+msgstr ""
+
+#: Controller/WithdrawalsController.php:191
+#: Controller/WithdrawalsController.php:194
+msgid "The withdrawal could not be deleted. Please, try again."
+msgstr ""
+
+#: Model/Table/CustomersTable.php:184
+msgid "Please enter alphaNumeric format"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:185
+msgid "Please enter 6 - 16 characters"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:187
+msgid "Please enter a valid username"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:192
+msgid "Please enter a valid email"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:197
+#: Model/Table/CustomersTable.php:199
+#: Model/Table/CustomersTable.php:204
+#: Model/Table/CustomersTable.php:206
+msgid "Please enter a valid name"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:210
+#: Model/Table/CustomersTable.php:211
+#: Model/Table/CustomersTable.php:214
+msgid "Please enter a valid phone"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:212
+msgid "Please enter a valid phone number"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:220
+#: Model/Table/CustomersTable.php:267
+#: Model/Table/CustomersTable.php:283
+msgid "password min 6 char at least one uppercase letter, one lowercase letter and one number"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:222
+msgid "Please enter a valid password"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:225
+msgid "Please upload a avatar."
+msgstr ""
+
+#: Model/Table/CustomersTable.php:265
+msgid "New password cannot match with your current password"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:270
+msgid "Repeat password does not match with your password"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:271
+msgid "Repeat password cannot match with your current password"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:281
+msgid "password min 6 - 20 character"
+msgstr ""
+
+#: Model/Table/CustomersTable.php:286
+msgid "Confirmation password does not match with your password"
+msgstr ""
+
+#: Template/Activations/index.ctp:33
+msgid "List Request"
+msgstr ""
+
+#: Template/Blogs/add.ctp:29
+msgid "Add Blog"
+msgstr ""
+
+#: Template/Blogs/edit.ctp:29
+msgid "Edit Blog"
+msgstr ""
+
+#: Template/Blogs/index.ctp:32
+msgid "List Blogs"
+msgstr ""
+
+#: Template/Blogs/index.ctp:38
+msgid "New Blog"
+msgstr ""
+
+#: Template/Blogs/view.ctp:13
+msgid "Topic"
+msgstr ""
+
+#: Template/Blogs/view.ctp:17
+msgid "User"
+msgstr ""
+
+#: Template/Blogs/view.ctp:21
+msgid "Image"
+msgstr ""
+
+#: Template/Blogs/view.ctp:25
+#: Template/FaqCategories/view.ctp:17
+#: Template/Faqs/view.ctp:29
+#: Template/MenuAdmins/view.ctp:29
+#: Template/Pages/view.ctp:29
+#: Template/ProductUnits/view.ctp:17
+#: Template/Products/view.ctp:29
+#: Template/Provinces/view.ctp:17
+#: Template/Suppliers/view.ctp:25
+#: Template/Tags/view.ctp:17
+#: Template/Topics/view.ctp:17
+#: Template/Withdrawals/view.ctp:53
+msgid "Id"
+msgstr ""
+
+#: Template/Blogs/view.ctp:29
+msgid "View"
+msgstr ""
+
+#: Template/Blogs/view.ctp:33
+msgid "Status"
+msgstr ""
+
+#: Template/Blogs/view.ctp:37
+#: Template/Pages/view.ctp:37
+#: Template/Withdrawals/view.ctp:61
+msgid "Created"
+msgstr ""
+
+#: Template/Blogs/view.ctp:41
+#: Template/Pages/view.ctp:41
+#: Template/Withdrawals/view.ctp:65
+msgid "Modified"
+msgstr ""
+
+#: Template/Cards/index.ctp:13
+#: Template/Cards/index.ctp:32
+msgid "Product Serials"
+msgstr ""
+
+#: Template/Cards/index.ctp:149
+msgid "Product"
+msgstr ""
+
+#: Template/Cards/index.ctp:165
+msgid "Werehouse"
+msgstr ""
+
+#: Template/Cards/index.ctp:200
+msgid "Used By"
+msgstr ""
+
+#: Template/Customers/edit.ctp:29
+msgid "Edit Customer"
+msgstr ""
+
+#: Template/Customers/index.ctp:32
+msgid "List Customers"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:221
+msgid "Stock Warehouse {0}"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:232
+msgid "Available Stock"
+msgstr ""
+
+#: Template/Dashboard/index.ctp:242
+msgid "Serials"
+msgstr ""
+
+#: Template/Downloads/add_category.ctp:29
+msgid "Add Category Downloads"
+msgstr ""
+
+#: Template/Downloads/category.ctp:32
+msgid "Categories Download"
+msgstr ""
+
+#: Template/Downloads/category.ctp:38
+msgid "New Categories"
+msgstr ""
+
+#: Template/Downloads/edit_category.ctp:29
+msgid "Edit Category Downloads"
+msgstr ""
+
+#: Template/Downloads/files.ctp:65
+msgid "New Files"
+msgstr ""
+
+#: Template/Element/Email/header.ctp:45
+msgid "Gardukita - Ganti rokok dapat duit kita."
+msgstr ""
+
+#: Template/Events/add_categories.ctp:23
+msgid "Add Category"
+msgstr ""
+
+#: Template/Events/categories.ctp:32
+msgid "List Categories"
+msgstr ""
+
+#: Template/Events/categories.ctp:38
+msgid "Add Categories"
+msgstr ""
+
+#: Template/Events/edit_categories.ctp:23
+msgid "Edit Category"
+msgstr ""
+
+#: Template/Events/index.ctp:32
+msgid "List Events"
+msgstr ""
+
+#: Template/Events/index.ctp:38
+msgid "Add Events"
+msgstr ""
+
+#: Template/Events/index.ctp:136
+#: Template/Events/index.ctp:379
+msgid "No participants"
+msgstr ""
+
+#: Template/Events/participants.ctp:32
+msgid "List Participants"
+msgstr ""
+
+#: Template/FaqCategories/add.ctp:29
+msgid "Add Faq Category"
+msgstr ""
+
+#: Template/FaqCategories/edit.ctp:29
+msgid "Edit Faq Category"
+msgstr ""
+
+#: Template/FaqCategories/index.ctp:32
+msgid "List Faq Categories"
+msgstr ""
+
+#: Template/FaqCategories/index.ctp:38
+msgid "New Faq Category"
+msgstr ""
+
+#: Template/FaqCategories/view.ctp:13
+#: Template/MenuAdmins/view.ctp:17
+#: Template/ProductUnits/view.ctp:13
+#: Template/Products/view.ctp:13
+#: Template/Provinces/view.ctp:13
+#: Template/Suppliers/view.ctp:13
+#: Template/Tags/view.ctp:13
+#: Template/Topics/view.ctp:13
+msgid "Name"
+msgstr ""
+
+#: Template/Faqs/add.ctp:29
+msgid "Add Faq"
+msgstr ""
+
+#: Template/Faqs/edit.ctp:29
+msgid "Edit Faq"
+msgstr ""
+
+#: Template/Faqs/index.ctp:32
+msgid "List Faqs"
+msgstr ""
+
+#: Template/Faqs/index.ctp:38
+msgid "New Faq"
+msgstr ""
+
+#: Template/Faqs/view.ctp:13
+msgid "Faq Category"
+msgstr ""
+
+#: Template/Faqs/view.ctp:17
+msgid "Question"
+msgstr ""
+
+#: Template/Faqs/view.ctp:21
+msgid "Faqs Question Translation"
+msgstr ""
+
+#: Template/Faqs/view.ctp:25
+msgid "Faqs Answer Translation"
+msgstr ""
+
+#: Template/Galleries/add_album.ctp:29
+msgid "Add Album"
+msgstr ""
+
+#: Template/Galleries/album.ctp:32
+msgid "List Albums"
+msgstr ""
+
+#: Template/Galleries/album.ctp:38
+msgid "New Album"
+msgstr ""
+
+#: Template/Galleries/edit_album.ctp:29
+msgid "Edit Album"
+msgstr ""
+
+#: Template/Galleries/index.ctp:66
+msgid "New Images"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/MenuAdmins/add.ctp:29
+msgid "Add Menu Admin"
+msgstr ""
+
+#: Template/MenuAdmins/edit.ctp:29
+msgid "Edit Menu Admin"
+msgstr ""
+
+#: Template/MenuAdmins/index.ctp:32
+msgid "List Menu Admins"
+msgstr ""
+
+#: Template/MenuAdmins/index.ctp:38
+msgid "New Menu Admin"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:13
+msgid "Parent Menu Admin"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:21
+msgid "Controller"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:25
+msgid "Action"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:33
+msgid "Icon"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:37
+msgid "Lft"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:41
+msgid "Rght"
+msgstr ""
+
+#: Template/Orders/index.ctp:32
+msgid "List Orders"
+msgstr ""
+
+#: Template/Orders/print.ctp:45
+msgid "INVOICE"
+msgstr ""
+
+#: Template/Orders/print.ctp:53
+#: Template/Suppliers/view.ctp:17
+msgid "Email"
+msgstr ""
+
+#: Template/Orders/print.ctp:54
+msgid "WhatsApp"
+msgstr ""
+
+#: Template/Orders/print.ctp:62
+msgid "Bill to"
+msgstr ""
+
+#: Template/Orders/print.ctp:71
+msgid "Date"
+msgstr ""
+
+#: Template/Orders/print.ctp:72
+msgid "Invoice Number"
+msgstr ""
+
+#: Template/Orders/print.ctp:73
+msgid "Order Notes"
+msgstr ""
+
+#: Template/Orders/print.ctp:85
+msgid "Product Name"
+msgstr ""
+
+#: Template/Orders/print.ctp:86
+#: Template/Withdrawals/view.ctp:57
+msgid "Amount"
+msgstr ""
+
+#: Template/Orders/print.ctp:87
+#: Template/Products/view.ctp:33
+msgid "Price"
+msgstr ""
+
+#: Template/Orders/print.ctp:88
+msgid "Total"
+msgstr ""
+
+#: Template/Orders/print.ctp:101
+msgid "Total Weight"
+msgstr ""
+
+#: Template/Orders/print.ctp:103
+msgid "Sub Total Product"
+msgstr ""
+
+#: Template/Orders/print.ctp:118
+msgid "Grand Total"
+msgstr ""
+
+#: Template/Orders/print.ctp:139
+msgid "Print Invoice"
+msgstr ""
+
+#: Template/Pages/add.ctp:29
+#: Template/Pages/edit.ctp:29
+msgid "Add Page"
+msgstr ""
+
+#: Template/Pages/index.ctp:32
+msgid "List Pages"
+msgstr ""
+
+#: Template/Pages/index.ctp:38
+msgid "New Page"
+msgstr ""
+
+#: Template/Pages/view.ctp:13
+msgid "Title"
+msgstr ""
+
+#: Template/Pages/view.ctp:17
+msgid "Slug"
+msgstr ""
+
+#: Template/Pages/view.ctp:21
+msgid "Pages Title Translation"
+msgstr ""
+
+#: Template/Pages/view.ctp:25
+msgid "Pages Content Translation"
+msgstr ""
+
+#: Template/Pages/view.ctp:33
+msgid "Enable"
+msgstr ""
+
+#: Template/ProductInquery/index.ctp:32
+msgid "Purchasing"
+msgstr ""
+
+#: Template/ProductStockMutations/index.ctp:13
+#: Template/ProductStockMutations/index.ctp:32
+msgid "Product Stock Mutations"
+msgstr ""
+
+#: Template/ProductStocks/index.ctp:33
+msgid "Product Stock"
+msgstr ""
+
+#: Template/ProductUnits/add.ctp:29
+msgid "Add Product Unit"
+msgstr ""
+
+#: Template/ProductUnits/edit.ctp:29
+msgid "Edit Product Unit"
+msgstr ""
+
+#: Template/ProductUnits/index.ctp:32
+msgid "List Product Units"
+msgstr ""
+
+#: Template/ProductUnits/index.ctp:38
+msgid "New Product Unit"
+msgstr ""
+
+#: Template/Products/add.ctp:29
+msgid "Add Product"
+msgstr ""
+
+#: Template/Products/edit.ctp:29
+msgid "Edit Product"
+msgstr ""
+
+#: Template/Products/index.ctp:32
+msgid "List Products"
+msgstr ""
+
+#: Template/Products/index.ctp:38
+msgid "New Product"
+msgstr ""
+
+#: Template/Products/view.ctp:17
+msgid "Sku"
+msgstr ""
+
+#: Template/Products/view.ctp:21
+msgid "Supplier"
+msgstr ""
+
+#: Template/Products/view.ctp:25
+msgid "Product Unit"
+msgstr ""
+
+#: Template/Products/view.ctp:37
+msgid "Point"
+msgstr ""
+
+#: Template/Provinces/edit.ctp:11
+#: Template/Provinces/edit.ctp:29
+#: Template/Provinces/index.ctp:32
+msgid "Zone Config"
+msgstr ""
+
+#: Template/Reports/bonus.ctp:6
+#: Template/Reports/bonus.ctp:43
+msgid "Income Report"
+msgstr ""
+
+#: Template/Reports/salesby.ctp:13
+#: Template/Reports/salesby.ctp:48
+msgid "Sales Users"
+msgstr ""
+
+#: Template/Suppliers/add.ctp:29
+msgid "Add Supplier"
+msgstr ""
+
+#: Template/Suppliers/edit.ctp:29
+msgid "Edit Supplier"
+msgstr ""
+
+#: Template/Suppliers/index.ctp:32
+msgid "List Suppliers"
+msgstr ""
+
+#: Template/Suppliers/index.ctp:38
+msgid "New Supplier"
+msgstr ""
+
+#: Template/Suppliers/view.ctp:21
+msgid "Phone"
+msgstr ""
+
+#: Template/Tags/add.ctp:29
+msgid "Add Tag"
+msgstr ""
+
+#: Template/Tags/edit.ctp:29
+msgid "Edit Tag"
+msgstr ""
+
+#: Template/Tags/index.ctp:32
+msgid "List Tags"
+msgstr ""
+
+#: Template/Tags/index.ctp:38
+msgid "New Tag"
+msgstr ""
+
+#: Template/Testimonials/edit.ctp:29
+msgid "Edit Testimonial"
+msgstr ""
+
+#: Template/Testimonials/index.ctp:32
+msgid "List Testimonial"
+msgstr ""
+
+#: Template/Topics/add.ctp:29
+msgid "Add Topic"
+msgstr ""
+
+#: Template/Topics/edit.ctp:29
+msgid "Edit Topic"
+msgstr ""
+
+#: Template/Topics/index.ctp:32
+msgid "List Topics"
+msgstr ""
+
+#: Template/Topics/index.ctp:38
+msgid "New Topic"
+msgstr ""
+
+#: Template/TransactionMutations/index.ctp:32
+msgid "Transaction Logs"
+msgstr ""
+
+#: Template/Withdrawals/add.ctp:29
+msgid "Add Withdrawal"
+msgstr ""
+
+#: Template/Withdrawals/edit.ctp:29
+msgid "Edit Withdrawal"
+msgstr ""
+
+#: Template/Withdrawals/index.ctp:32
+msgid "List Withdrawals"
+msgstr ""
+
+#: Template/Withdrawals/index.ctp:65
+msgid "Pending Requests"
+msgstr ""
+
+#: Template/Withdrawals/index.ctp:70
+msgid "Success Requests"
+msgstr ""
+
+#: Template/Withdrawals/index.ctp:75
+msgid "Failed Requests"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:13
+msgid "Customer"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:17
+msgid "Bank Name"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:21
+msgid "Bank City"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:25
+msgid "Bank Branch"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:29
+msgid "Bank Account Name"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:33
+msgid "Bank Account Number"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:37
+msgid "Customer Bank"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:41
+msgid "Withdrawal Status"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:45
+msgid "Transaction"
+msgstr ""
+
+#: Template/Withdrawals/view.ctp:49
+msgid "Note"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+

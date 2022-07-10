@@ -1,0 +1,2398 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-11-14 14:52+0000\n"
+"PO-Revision-Date: 2019-11-15 15:32+0700\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: id_ID\n"
+
+#: Controller/ActivationController.php:25;37
+msgid "Invalid activation code"
+msgstr "Kode Aktivasi Salah"
+
+#: Controller/ActivationController.php:35
+msgid "Congratulations! Your account has been successfully activated!"
+msgstr "Selamat! Aktivasi akun anda berhasil."
+
+#: Controller/AuthController.php:33
+msgid "Did you really think you are allowed to see that?"
+msgstr "Anda tidak memiliki izin akses ke halaman ini!"
+
+#: Controller/ForgotPasswordController.php:45
+msgid "Email address does not exist."
+msgstr "Alamat email tidak terdaftar."
+
+#: Controller/ForgotPasswordController.php:51
+msgid "Email with instructions for creating a new password has been sent to you."
+msgstr "Panduan membuat kata sandi baru telah terkirim ke email anda."
+
+#: Controller/ForgotPasswordController.php:63
+msgid "Error saving reset passkey/timeout"
+msgstr "Error saving reset passkey/timeout"
+
+#: Controller/ForgotPasswordController.php:68 Controller/LoginController.php:82
+#: Controller/SignUpController.php:156
+msgid "Invalid captcha"
+msgstr "Captcha salah"
+
+#: Controller/LoginController.php:56
+msgid "This account not yet active."
+msgstr "Akun belum aktif."
+
+msgid "Serial Installments Lists"
+msgstr "Daftar Serial Installment"
+
+msgid "Serial Installment Lists"
+msgstr "Daftar Serial Installment"
+
+#: Controller/LoginController.php:68
+msgid "Incorrect password"
+msgstr "Kata sandi salah"
+
+#: Controller/LoginController.php:75
+msgid "This account is blocked"
+msgstr "Akun di blokir"
+
+#: Controller/LoginController.php:79
+msgid "Username or password is incorrect"
+msgstr "Nama pengguna atau kata sandi salah"
+
+#: Controller/ResetController.php:28;54
+msgid "Invalid reset code"
+msgstr "Kode reset salah"
+
+#: Controller/ResetController.php:47
+msgid "The password has been changed."
+msgstr "Kata sandi berhasil diubah."
+
+#: Controller/ResetController.php:50
+msgid "The password could not be updated."
+msgstr "Kata sandi tidak dapat di simpan."
+
+#: Controller/SignUpController.php:83
+msgid "Refferal not exists"
+msgstr "Tidak ada referral"
+
+#: Controller/SignUpController.php:93
+msgid "Serial not exists"
+msgstr "Nomor serial tidak ada"
+
+#: Controller/SignUpController.php:99
+msgid "Serial is not active or already use."
+msgstr "Nomor serial tidak aktif atau sudah digunakan."
+
+#: Controller/SignUpController.php:143;229
+msgid "Registration success, check your email and complete registration"
+msgstr "Pendaftaran berhasil"
+
+#: Controller/SignUpController.php:153;231
+msgid "Registration failed. Check the form and try again."
+msgstr "Pendaftaran gagal. Periksa data anda dan coba lagi."
+
+#: Form/LoginForm.php:35
+msgid "A password is required"
+msgstr "Kata sandi diperlukan"
+
+#: Form/LoginForm.php:38
+msgid "A valid email address is required"
+msgstr "Diperlukan alamat email yang benar"
+
+#: Template/Activation/index.ctp:15
+msgid "Account activation"
+msgstr "Aktifasi akun"
+
+#: Template/Blogs/topic.ctp:9;22 Template/Blogs/view.ctp:24
+#: Template/Element/Home/home_content.ctp:91
+#: Template/Element/Partial/header.ctp:71
+msgid "News & Event"
+msgstr "Berita & Acara"
+
+#: Template/Blogs/topic.ctp:20 Template/Blogs/view.ctp:22
+msgid "Home"
+msgstr "Beranda"
+
+#: Template/Blogs/topic.ctp:21 Template/Blogs/view.ctp:23
+#: Template/Element/Partial/header.ctp:69
+msgid "Informations"
+msgstr "Informasi"
+
+#: Template/Downloads/index.ctp:9 Template/Element/Partial/header.ctp:72
+msgid "Downloads"
+msgstr "Unduhan"
+
+#: Template/Downloads/index.ctp:21
+msgid "Download File"
+msgstr "Unduh file"
+
+#: Template/Downloads/index.ctp:34
+msgid "Categories"
+msgstr "Kategori"
+
+#: Template/Element/Blogs/top_blog.ctp:4
+msgid "Topic"
+msgstr "Bahasan"
+
+#: Template/Element/Blogs/top_blog.ctp:17
+msgid "No Topic"
+msgstr "Tidak ada bahasan"
+
+#: Template/Element/Blogs/top_blog.ctp:25
+msgid "Popular Posts"
+msgstr "Postingan Populer"
+
+#: Template/Element/Blogs/top_blog.ctp:44
+msgid "No Popular Posts"
+msgstr "Tidak ada postingan"
+
+#: Template/Element/Blogs/topic_tag.ctp:3
+msgid "Tag"
+msgstr "Tag"
+
+#: Template/Element/Home/home_content.ctp:16
+msgid "What’s in a Cigarette?"
+msgstr "Bahan racikan di dalam rokok kami?"
+
+#: Template/Element/Home/home_content.ctp:18
+msgid "Our cigarettes are produced in best cigarette factory in Tasikmalaya, and each variants has its own unique recipe. Our cigarettes are made from:"
+msgstr "Rokok kami diproduksi di pabrik rokok terbaik di kota Tasikmalaya, dan setiap varian memiliki resep uniknya sendiri. Rokok kami terbuat dari:"
+
+#: Template/Element/Home/home_content.ctp:20
+msgid "Tobacco, selected according to specific blends and leaf grades to maintain the consistency and distinctive character of each brand"
+msgstr "Tembakau, dipilih berdasarkan campuran tertentu dan nilai daun untuk mempertahankan konsistensi dan karakter khas masing-masing merek"
+
+#: Template/Element/Home/home_content.ctp:21
+msgid "Best ingredients, added to many of our brands to keep the tobacco moist, aid the manufacturing process, replenish natural sugars lost during leaf curing, and contribute to each brand’s unique taste"
+msgstr "Bahan-bahan terbaik, ditambahkan ke banyak merek kami untuk menjaga tembakau tetap lembab, membantu proses pembuatan, mengisi kembali gula alami yang hilang selama perawatan daun, dan berkontribusi pada rasa unik setiap merek"
+
+#: Template/Element/Home/home_content.ctp:22
+msgid "Nontobacco materials, such as cigarette paper and filters"
+msgstr "Bahan non-tembakau, seperti kertas rokok dan filter pilihan"
+
+#: Template/Element/Home/home_content.ctp:27
+msgid "How are our cigarettes made?"
+msgstr "Bagaimana Rokok kami dibuat?"
+
+#: Template/Element/Home/home_content.ctp:29
+msgid "Cigarettes are produced in best cigarette factory in Tasikmalaya by processing the tobacco leaf, manufacturing the cigarettes, and preparing the final pack."
+msgstr "Rokok diproduksi di pabrik rokok terbaik di Tasikmalaya dengan mengolah daun tembakau, membuat rokok, dan penyortiran produk akhir."
+
+#: Template/Element/Home/home_content.ctp:33
+msgid "Processing Tobacco Leaf"
+msgstr "Pengolahan Daun Tembakau"
+
+#: Template/Element/Home/home_content.ctp:35
+msgid "Our experts use their detailed knowledge to carefully select the blend of different tobacco types and leaf grades used in our cigarette brands. The tobaccos are selected to maintain the consistency and distinctive character of each variants."
+msgstr "Pakar kami menggunakan pengetahuan terperinci mereka untuk memilih dengan cermat campuran berbagai jenis tembakau dan nilai daun yang digunakan dalam merek rokok kami. Daun daun tembakau dipilih untuk mempertahankan konsistensi dan karakter khas masing-masing varian rokok."
+
+#: Template/Element/Home/home_content.ctp:36
+msgid "In addition to tobacco, which is the main ingredient in all of our cigarettes, other ingredients are added to many of our brands. Some ingredients, such as humectants, help maintain the moisture and pliability of the tobacco leaf. Others ingredients contribute to the taste and aroma of the tobacco leaf smoke."
+msgstr "Selain tembakau, yang merupakan bahan utama dalam semua rokok kami, bahan lainnya ditambahkan ke banyak merek kami. Beberapa bahan, seperti humektan, membantu menjaga kelembaban dan kelenturan daun tembakau. Bahan-bahan lain berkontribusi pada rasa dan aroma asap daun tembakau."
+
+#: Template/Element/Home/home_content.ctp:37
+msgid "After the tobaccos are blended together, the tobacco blend is finely cut before it passes through a drying cylinder to reduce moisture. When the moisture is at an optimal level, the blend is ready for cigarette manufacturing."
+msgstr "Setelah tembakau dicampur bersama, campuran tembakau dipotong halus sebelum melewati silinder pengeringan untuk mengurangi kelembaban. Ketika uap air berada pada tingkat optimal, campuran siap untuk pembuatan rokok."
+
+#: Template/Element/Home/home_content.ctp:41
+msgid "Manufacturing Cigarettes"
+msgstr "Produksi Rokok"
+
+#: Template/Element/Home/home_content.ctp:43
+msgid "Our machines can produce up to 2.000 cigarettes every minute."
+msgstr "Mesin kami dapat menghasilkan hingga 2.000 rokok setiap menit."
+
+#: Template/Element/Home/home_content.ctp:44
+msgid "The process begins by creating one long cigarette, called a ‘rod.’ To produce the rod, a spool of cigarette paper up 7,000 meters long is unrolled and a line of tobacco is placed on it. The cigarette paper is then wrapped around the tobacco, forming the rod."
+msgstr "Prosesnya dimulai dengan membuat satu batang rokok panjang, yang disebut 'batang.' Untuk menghasilkan batang itu, gulungan kertas rokok sepanjang 7.000 meter terbuka dan gulungan tembakau ditempatkan di atasnya. Kertas rokok kemudian dililit tembakau, membentuk batang."
+
+#: Template/Element/Home/home_content.ctp:45
+msgid "Machines slice the super-sized rod into shorter pieces, inserting filters at both ends. The filters are then connected with ‘tipping paper’, the paper consumers see wrapped around the filter tip of a cigarette. Each shorter rod is then cut in half, producing two filtered cigarettes. The construction quality of each cigarette is checked at three different stages."
+msgstr "Mesin mengiris batang super-ukuran menjadi potongan-potongan yang lebih pendek, memasukkan filter di kedua ujungnya. Filter kemudian dihubungkan dengan 'kertas ujung', yang dilihat konsumen melilit ujung filter rokok. Setiap batang yang lebih pendek kemudian dipotong menjadi dua, menghasilkan dua batang rokok yang disaring. Kualitas konstruksi setiap rokok diperiksa pada tiga tahap berbeda."
+
+#: Template/Element/Home/home_content.ctp:58
+msgid "PRODUCTS INTRODUCTION"
+msgstr "PENGENALAN PRODUK"
+
+#: Template/Element/Home/home_content.ctp:62
+msgid "BONUS & GENERATIONS"
+msgstr "BONUS & GENERASI"
+
+#: Template/Element/Home/home_content.ctp:66
+msgid "CAREER OPPORUNITY"
+msgstr "JENJANG KARIR"
+
+#: Template/Element/Home/home_content.ctp:70
+msgid "MARKETING TOOLS"
+msgstr "MARKETING TOOLS"
+
+#: Template/Element/Home/home_content.ctp:83
+msgid "Download presentation slides"
+msgstr "Unduh Slide Presentasi"
+
+#: Template/Element/Home/section_intro.ctp:9
+msgid "We are proud to present the best ROTAMA products and are equipped with an efficient marketing system for partner of Dwi Sukma Mitra Rotama, join now and get benefits by becoming a partner."
+msgstr "Dengan bangga kami persembahkan produk terbaik dari ROTAMA dan di lengkapi dengan sistem marketing yang efisien untuk mitra dari Dwisukma Mitra Rotama, Bergabung sekarang dan dapatkan banyak keuntungan sebagai mitra."
+
+#: Template/Element/Home/section_intro.ctp:10 Template/SignUp/index.ctp:82
+msgid "Sign Up"
+msgstr "Daftar"
+
+#: Template/Element/Partial/footer.ctp:23
+#: Template/Element/Partial/header.ctp:49
+msgid "About Company"
+msgstr "Tentang Perusahaan"
+
+#: Template/Element/Partial/footer.ctp:24
+#: Template/Element/Partial/header.ctp:50
+msgid "About Rotama"
+msgstr "Tentang Rotama"
+
+#: Template/Element/Partial/footer.ctp:25
+msgid "Privacy Policies"
+msgstr "Kebijakan Privasi"
+
+#: Template/Element/Partial/footer.ctp:26
+msgid "Term & Condition"
+msgstr "Syarat & Ketentuan"
+
+#: Template/Element/Partial/footer.ctp:27
+msgid "FAQS"
+msgstr "Pertanyaan Umum"
+
+#: Template/Element/Partial/header.ctp:47
+msgid "About Us"
+msgstr "Tentang Kami"
+
+#: Template/Element/Partial/header.ctp:53
+msgid "Products"
+msgstr "Produk"
+
+#: Template/Element/Partial/header.ctp:55
+msgid "Rotama Aksa"
+msgstr "Rotama Aksa"
+
+#: Template/Element/Partial/header.ctp:56
+msgid "Rotama Arsen"
+msgstr "Rotama Arsen"
+
+#: Template/Element/Partial/header.ctp:57
+msgid "Rotama Koper"
+msgstr "Rotama Koper"
+
+#: Template/Element/Partial/header.ctp:58
+msgid "Rotama Pulen"
+msgstr "Rotama Pulen"
+
+#: Template/Element/Partial/header.ctp:61
+msgid "Marketing Plan"
+msgstr "Sistem Pemasaran"
+
+#: Template/Element/Partial/header.ctp:63
+msgid "Register Package"
+msgstr "Paket Pendaftaran"
+
+#: Template/Element/Partial/header.ctp:64
+msgid "Generation Bonus"
+msgstr "Bonus Generasi"
+
+#: Template/Element/Partial/header.ctp:65
+msgid "Career Opportunity"
+msgstr "Jenjang Karir"
+
+#: Template/Element/Partial/header.ctp:66
+msgid "Stockist & Branch Commissions"
+msgstr "Komisi Stokis & Cabang "
+
+#: Template/Element/Partial/header.ctp:73 Template/Galleries/index.ctp:9
+msgid "Galleries"
+msgstr "Galeri"
+
+#: Template/Element/Partial/header.ctp:74 Template/Stockist/index.ctp:9
+msgid "Stockist"
+msgstr "Stokis"
+
+#: Template/Element/Partial/header.ctp:77 Template/Login/index.ctp:41
+#: Template/SignUp/index.ctp:89
+msgid "Sign In"
+msgstr "Login"
+
+#: Template/Faqs/index.ctp:10
+msgid "Frequently Asked Questions"
+msgstr "Pertanyaan Umum"
+
+#: Template/ForgotPassword/index.ctp:31
+msgid "Forgot password"
+msgstr "Lupa Password"
+
+#: Template/ForgotPassword/index.ctp:32
+msgid "To receive a new password, enter your email address below."
+msgstr "Masukan email untuk menerima password baru."
+
+#: Template/ForgotPassword/index.ctp:48
+msgid "Submit"
+msgstr "Kirim"
+
+#: Template/Login/index.ctp:15
+msgid "SIGN IN"
+msgstr "Login"
+
+#: Template/Login/index.ctp:34
+msgid "Forgot password?"
+msgstr "Lupa Password?"
+
+#: Template/Login/index.ctp:46
+msgid "Don't have an account yet?"
+msgstr "Belum memiliki akun ?"
+
+#: Template/Login/index.ctp:46
+msgid "Create new account"
+msgstr "Buat akun baru"
+
+#: Template/Reset/index.ctp:13;36
+msgid "Reset Password"
+msgstr "Reset Kata Sandi"
+
+#: Template/SignUp/index.ctp:31
+msgid "SIGN UP"
+msgstr "DAFTAR"
+
+#: Template/SignUp/index.ctp:32
+msgid "Create an new account by entering the information below."
+msgstr "Untuk membuat akun, lengkapi informasi berikut ini."
+
+#: Template/SignUp/index.ctp:89
+msgid "Already have an account?"
+msgstr "Sudah memiliki akun?"
+
+#: Template/Stockist/index.ctp:20
+msgid "Stockist List"
+msgstr "Daftar Stokis"
+
+#: Template/Stockist/index.ctp:25
+msgid "Name"
+msgstr "Nama"
+
+#: Template/Stockist/index.ctp:26
+msgid "Province"
+msgstr "Provinsi"
+
+#: Template/Stockist/index.ctp:27
+msgid "City"
+msgstr "Kota"
+
+#: Template/Stockist/index.ctp:28
+msgid "Address"
+msgstr "Alamat"
+
+#: Template/Stockist/index.ctp:29
+msgid "Phone 1"
+msgstr "No. Telepon 1"
+
+#: Template/Stockist/index.ctp:30
+msgid "Phone 2"
+msgstr "No. Telepon 2"
+
+#: Template/Stockist/index.ctp:31
+msgid "Zip Code"
+msgstr "Kode Pos"
+
+#: Template/Error/error400.ctp:36 Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Error"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "Alamat  {0} tidak ditemukan."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "Terjadi kesalahan internal"
+
+msgid "We present the best ROTAMA product ever"
+msgstr "Kami persembahkan produk terbaik ROTAMA"
+
+msgid "Enjoy the benefits of being our member"
+msgstr "Nikmati keuntungan menjadi member"
+
+msgid "Rankings in the network can give you additional income"
+msgstr "Peringkat dalam jaringan dapat memberi anda penghasilan tambahan"
+
+msgid "Find various additional materials to help you increase sales"
+msgstr "Pelajari materi tambahan untuk meningkatkan penjualan"
+
+msgid "Link"
+msgstr "Tautan"
+
+msgid "SUPPORT"
+msgstr "BANTUAN"
+
+msgid "Troubleshooting"
+msgstr "Penanganan Masalah"
+
+msgid "Report a Bug"
+msgstr "Laporkan kesalahan"
+
+msgid "Contact Us"
+msgstr "Hubungi Kami"
+
+msgid "Sign Up For a Newsletter"
+msgstr "Daftar untuk berlangganan Newsletter"
+
+msgid "Weekly breaking news, analysis and cutting edge advices on marketing strategies."
+msgstr "Berita mingguan, analisa pasar dan saran pemasaran. "
+
+#: Template/SignUp/index.ctp:40
+msgid "First Name"
+msgstr "Nama Depan"
+
+#: Template/SignUp/index.ctp:43
+msgid "Last Name"
+msgstr "Nama Belakang"
+
+#: Template/SignUp/index.ctp:46
+msgid "Username"
+msgstr "Username"
+
+#: Template/SignUp/index.ctp:49
+msgid "Email"
+msgstr "Alamat Email"
+
+#: Template/SignUp/index.ctp:62
+msgid "Serial Number"
+msgstr "Nomor Serial"
+
+#: Template/SignUp/index.ctp:65
+msgid "Password"
+msgstr "Kata Sandi"
+
+#: Template/SignUp/index.ctp:68
+msgid "Phone"
+msgstr "Telepon"
+
+#: Template/SignUp/index.ctp:71
+msgid "Name of Inheritance"
+msgstr "Nama Ahli Waris"
+
+#: Template/SignUp/index.ctp:74
+msgid "Inheritance Relation"
+msgstr "Hubungan Ahli Waris"
+
+#=====Admin String=====#
+
+#: Controller/BlogsController.php:188;220
+msgid "The blog has been saved."
+msgstr "Blog berhasil disimpan"
+
+#: Controller/BlogsController.php:192;224
+msgid "The blog could not be saved. Please, try again."
+msgstr "Blog gagal disimpan. Silahkan coba lagi."
+
+#: Controller/BlogsController.php:244
+msgid "The blog has been deleted."
+msgstr "Blog berhasil dihapus."
+
+#: Controller/BlogsController.php:246;249
+msgid "The blog could not be deleted. Please, try again."
+msgstr "Blog tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/CardsController.php:229
+msgid "Success generate serial registrations card"
+msgstr "Berhasil generate serial pendaftaran"
+
+#: Controller/CardsController.php:268
+msgid "Success generate serial repeat orders card"
+msgstr "Berhasil generate serial repeat order"
+
+#: Controller/CardsController.php:300
+msgid "The card has been saved."
+msgstr "Serial kartu berhasil disimpan"
+
+#: Controller/CardsController.php:304
+msgid "The card could not be saved. Please, try again."
+msgstr "Serial kartu tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/CardsController.php:323
+msgid "The card has been deleted."
+msgstr "Serial kartu telah dihapus."
+
+#: Controller/CardsController.php:325
+msgid "The card could not be deleted. Please, try again."
+msgstr "Serial kartu tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/CustomersController.php:108
+msgid "The customer has been saved."
+msgstr "Data pelanggan berhasil disimpan."
+
+#: Controller/CustomersController.php:112
+msgid "The customer could not be saved. Please, try again."
+msgstr "Data pelanggan tidak dapat disimpan. Silahkan coba lagi."
+
+
+#: Controller/DownloadsController.php:96;116
+msgid "The category has been saved."
+msgstr "Kategori berhasil disimpan."
+
+#: Controller/DownloadsController.php:100;120
+msgid "The category could not be saved. Please, try again."
+msgstr "Kategori tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/DownloadsController.php:131
+msgid "The category has been deleted."
+msgstr "Kategori telah dihapus."
+
+#: Controller/DownloadsController.php:133;136
+msgid "The category could not be deleted. Please, try again."
+msgstr "Kategori tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/DownloadsController.php:218
+msgid "The files has been deleted."
+msgstr "File telah dihapus."
+
+#: Controller/DownloadsController.php:220;223
+msgid "The files could not be deleted. Please, try again."
+msgstr "File tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/FaqCategoriesController.php:110;136
+msgid "The faq category has been saved."
+msgstr "Kategori faq berhasil disimpan."
+
+#: Controller/FaqCategoriesController.php:114;140
+msgid "The faq category could not be saved. Please, try again."
+msgstr "Kategori faq tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/FaqCategoriesController.php:158
+msgid "The faq category has been deleted."
+msgstr "Kategori faq telah dihapus."
+
+#: Controller/FaqCategoriesController.php:160;163
+msgid "The faq category could not be deleted. Please, try again."
+msgstr "Kategori faq tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/FaqsController.php:109;136
+msgid "The faq has been saved."
+msgstr "Faq berhasil disimpan."
+
+#: Controller/FaqsController.php:113;140
+msgid "The faq could not be saved. Please, try again."
+msgstr "Faq tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/FaqsController.php:159
+msgid "The faq has been deleted."
+msgstr "Faq telah dihapus."
+
+#: Controller/FaqsController.php:161;164
+msgid "The faq could not be deleted. Please, try again."
+msgstr "Faq tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/GalleriesController.php:99
+msgid "The album has been saved."
+msgstr "Album berhasil disimpan."
+
+#: Controller/GalleriesController.php:103
+msgid "The album could not be saved. Please, try again."
+msgstr "Album tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/GalleriesController.php:125
+msgid "The Albums has been saved."
+msgstr "Album berhasil disimpan."
+
+#: Controller/GalleriesController.php:129
+msgid "The Albums could not be saved. Please, try again."
+msgstr "Album tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/GalleriesController.php:147
+msgid "The Albums has been deleted."
+msgstr "Album telah dihapus."
+
+#: Controller/GalleriesController.php:149;152
+msgid "The Albums could not be deleted. Please, try again."
+msgstr "Album tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/GalleriesController.php:165
+msgid "The Image has been deleted."
+msgstr "Gambar telah dihapus."
+
+#: Controller/GalleriesController.php:167;170
+msgid "The Image could not be deleted. Please, try again."
+msgstr "Gambar tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/GroupsController.php:101
+msgid "Aco Syncronize has been complete"
+msgstr "Sinkronisasi Aco telah selesai."
+
+#: Controller/GroupsController.php:121;154
+msgid "The group has been saved."
+msgstr "Grup berhasil disimpan."
+
+#: Controller/GroupsController.php:125;158
+msgid "The group could not be saved. Please, try again."
+msgstr "Grup tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/GroupsController.php:147;185
+#: Controller/UsersController.php:238
+msgid "Your privilege not enough to edit this user."
+msgstr "Anda tidak memiliki izin untuk melakukan perubahan ini."
+
+#: Controller/GroupsController.php:189
+msgid "The group has been deleted."
+msgstr "Grup telah dihapus."
+
+#: Controller/GroupsController.php:191
+msgid "The group could not be deleted. Please, try again."
+msgstr "Grup tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/MenuAdminsController.php:124;149
+msgid "The menu admin has been saved."
+msgstr "Menu admin berhasil disimpan."
+
+#: Controller/MenuAdminsController.php:128;153
+msgid "The menu admin could not be saved. Please, try again."
+msgstr "Menu admin tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/MenuAdminsController.php:172
+msgid "The menu admin has been deleted."
+msgstr "Menu admin telah dihapus."
+
+#: Controller/MenuAdminsController.php:174;177
+msgid "The menu admin could not be deleted. Please, try again."
+msgstr "Menu admin tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/OrdersController.php:37
+msgid "The order could not be process. Please, enter Airway Bill number."
+msgstr "Pesanan tidak dapat diproses. Silahkan masukan nomor resi."
+
+#: Controller/OrdersController.php:99;109
+msgid "The order has been update."
+msgstr "Pesanan telah diperbarui."
+
+#: Controller/PagesController.php:107;132
+msgid "The page has been saved."
+msgstr "Halaman berhasil disimpan."
+
+#: Controller/PagesController.php:111;136
+msgid "The page could not be saved. Please, try again."
+msgstr "Halaman tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/PagesController.php:154
+msgid "The page has been deleted."
+msgstr "Halaman telah dihapus."
+
+#: Controller/PagesController.php:156;159
+msgid "The page could not be deleted. Please, try again."
+msgstr "Halaman tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/ProductUnitsController.php:105;129
+msgid "The product unit has been saved."
+msgstr "Unit produk berhasil disimpan."
+
+#: Controller/ProductUnitsController.php:109;133
+msgid "The product unit could not be saved. Please, try again."
+msgstr "Unit produk tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/ProductUnitsController.php:151
+msgid "The product unit has been deleted."
+msgstr "Unit produk telah dihapus."
+
+#: Controller/ProductUnitsController.php:153;156
+msgid "The product unit could not be deleted. Please, try again."
+msgstr "Unit produk tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/ProductsController.php:106;132
+msgid "The product has been saved."
+msgstr "Produk berhasil disimpan."
+
+#: Controller/ProductsController.php:110;136
+msgid "The product could not be saved. Please, try again."
+msgstr "Produk tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/ProductsController.php:156
+msgid "The product has been deleted."
+msgstr "Produk telah dihapus."
+
+#: Controller/ProductsController.php:158;161
+msgid "The product could not be deleted. Please, try again."
+msgstr "Produk tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/ProvincesController.php:104;128
+msgid "The province has been saved."
+msgstr "Provinsi berhasil disimpan."
+
+#: Controller/ProvincesController.php:108;132
+msgid "The province could not be saved. Please, try again."
+msgstr "Provinsi tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/ProvincesController.php:150
+msgid "The province has been deleted."
+msgstr "Provinsi telah dihapus."
+
+#: Controller/ProvincesController.php:152;155
+msgid "The province could not be deleted. Please, try again."
+msgstr "Provinsi tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/SuppliersController.php:105;129
+msgid "The supplier has been saved."
+msgstr "Supplier berhasil disimpan."
+
+#: Controller/SuppliersController.php:109;133
+msgid "The supplier could not be saved. Please, try again."
+msgstr "Supplier tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/SuppliersController.php:151
+msgid "The supplier has been deleted."
+msgstr "Supplier telah dihapus."
+
+#: Controller/SuppliersController.php:153;156
+msgid "The supplier could not be deleted. Please, try again."
+msgstr "Supplier tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/TagsController.php:107;132
+msgid "The tag has been saved."
+msgstr "Tag berhasil disimpan."
+
+#: Controller/TagsController.php:111;136
+msgid "The tag could not be saved. Please, try again."
+msgstr "Tag tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/TagsController.php:154
+msgid "The tag has been deleted."
+msgstr "Tag telah dihapus."
+
+#: Controller/TagsController.php:156;159
+msgid "The tag could not be deleted. Please, try again."
+msgstr "Tag tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/TopicsController.php:107;132
+msgid "The topic has been saved."
+msgstr "Topik berhasil disimpan."
+
+#: Controller/TopicsController.php:111;136
+msgid "The topic could not be saved. Please, try again."
+msgstr "Topik tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/TopicsController.php:154
+msgid "The topic has been deleted."
+msgstr "Topik telah dihapus."
+
+#: Controller/TopicsController.php:156;159
+msgid "The topic could not be deleted. Please, try again."
+msgstr "Topik tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/TransactionMutationsController.php:109
+msgid "The transaction mutation has been deleted."
+msgstr "Mutasi transaksi telah dihapus."
+
+#: Controller/TransactionMutationsController.php:111;114
+msgid "The transaction mutation could not be deleted. Please, try again."
+msgstr "Mutasi transaksi tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/UsersController.php:136
+msgid "The password has been changed."
+msgstr "Kata sandi berhasil disimpan."
+
+#: Controller/UsersController.php:138
+msgid "The password could not be saved. Please, try again."
+msgstr "Kata sandi tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/UsersController.php:205;249
+msgid "The user has been saved."
+msgstr "User berhasil disimpan."
+
+#: Controller/UsersController.php:209;253
+msgid "The user could not be saved. Please, try again."
+msgstr "User tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/UsersController.php:285
+msgid "The user has been deleted."
+msgstr "User telah dihapus."
+
+#: Controller/UsersController.php:287
+msgid "The user could not be deleted. Please, try again."
+msgstr "User tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/UsersController.php:310
+msgid "Username or password is incorrect"
+msgstr "Username atau password salah"
+
+#: Controller/WithdrawalsController.php:178
+msgid "The withdrawal has been deleted."
+msgstr "Penarikan telah dihapus."
+
+#: Controller/WithdrawalsController.php:180;183
+msgid "The withdrawal could not be deleted. Please, try again."
+msgstr "Penarikan tidak dapat dihapus. Silahkan coba lagi."
+
+#: Model/Table/CustomersTable.php:173
+msgid "Please enter alphaNumeric format"
+msgstr "Masukan format alphaNumeric"
+
+#: Model/Table/CustomersTable.php:174
+msgid "Please enter 6 - 16 characters"
+msgstr "Masukan 6 - 16 karakter"
+
+#: Model/Table/CustomersTable.php:176
+msgid "Please enter a valid name"
+msgstr "Nama tidak boleh kosong"
+
+msgid "This field cannot be left empty"
+msgstr "Field tidak boleh kosong"
+
+#: Model/Table/CustomersTable.php:181
+msgid "Please enter a valid email"
+msgstr "Masukan format email yang benar"
+
+#: Model/Table/CustomersTable.php:199;200;203
+msgid "Please enter a valid phone"
+msgstr "Masukan nomor telepon"
+
+#: Model/Table/CustomersTable.php:201
+msgid "Please enter a valid phone number"
+msgstr "Masukan format nomor telepon yang benar"
+
+#: Model/Table/CustomersTable.php:209;272
+#: Model/Table/CustomersTable.php:256
+msgid "password min 6 char at least one uppercase letter, one lowercase letter and one number"
+msgstr "Min.6 karakter, harus mengandung huruf besar, huruf kecil dan angka"
+
+#: Model/Table/CustomersTable.php:211
+msgid "Please enter a valid password"
+msgstr "Masukan kata sandi yang benar"
+
+#: Model/Table/CustomersTable.php:214
+msgid "Please upload a avatar."
+msgstr "Silahkan unggah foto"
+
+#: Model/Table/CustomersTable.php:270
+msgid "password min 6 - 20 character"
+msgstr "Password Min. 6 - 20 karakter"
+
+#: Model/Table/CustomersTable.php:275
+msgid "Confirmation password does not match with your password"
+msgstr "Kata sandi tidak cocok dengan kata sandi sebelumnya."
+
+#: Template/Blogs/add.ctp:29
+msgid "Add Blog"
+msgstr "Tambah blog"
+
+#: Template/Blogs/edit.ctp:29
+msgid "Edit Blog"
+msgstr "Edit blog"
+
+#: Template/Blogs/index.ctp:32
+msgid "List Blogs"
+msgstr "Daftar blog"
+
+#: Template/Blogs/index.ctp:38
+msgid "New Blog"
+msgstr "Blog baru"
+
+#: Template/Blogs/view.ctp:13
+msgid "Topic"
+msgstr "Topik"
+
+#: Template/Blogs/view.ctp:17
+msgid "User"
+msgstr "User"
+
+#: Template/Blogs/view.ctp:21
+msgid "Image"
+msgstr "Gambar"
+
+#: Template/Blogs/view.ctp:25
+#: Template/FaqCategories/view.ctp:17
+#: Template/Faqs/view.ctp:29
+#: Template/MenuAdmins/view.ctp:29
+#: Template/Pages/view.ctp:29
+#: Template/ProductUnits/view.ctp:17
+#: Template/Products/view.ctp:29
+#: Template/Provinces/view.ctp:17
+#: Template/Suppliers/view.ctp:25
+#: Template/Tags/view.ctp:17
+#: Template/Topics/view.ctp:17
+#: Template/Withdrawals/view.ctp:53
+msgid "Id"
+msgstr "Id"
+
+#: Template/Blogs/view.ctp:29
+msgid "View"
+msgstr "Lihat detil"
+
+#: Template/Blogs/view.ctp:33
+msgid "Status"
+msgstr "Status"
+
+#: Template/Blogs/view.ctp:37
+#: Template/Pages/view.ctp:37
+#: Template/Withdrawals/view.ctp:61
+msgid "Created"
+msgstr "Tanggal dibuat"
+
+#: Template/Blogs/view.ctp:41
+#: Template/Pages/view.ctp:41
+#: Template/Withdrawals/view.ctp:65
+msgid "Modified"
+msgstr "Tanggal diubah"
+
+#: Template/Cards/edit.ctp:29
+msgid "Edit Cards"
+msgstr "Edit serial kartu"
+
+#: Template/Cards/generate.ctp:29
+#: Template/Cards/index.ctp:38
+msgid "Generate Serial Registers"
+msgstr "Generate Serial Pendaftaran"
+
+#: Template/Cards/generates.ctp:29
+#: Template/Cards/repeat_orders.ctp:38
+msgid "Generate Serial Repeat Orders"
+msgstr "Generate Serial Repeat Order"
+
+#: Template/Cards/index.ctp:32
+msgid "List Serial Registers"
+msgstr "Daftar Serial Pendaftaran"
+
+#: Template/Cards/repeat_orders.ctp:32
+msgid "List Serial Repeat Orders"
+msgstr "Daftar Serial Repeat Order"
+
+#: Template/Customers/edit.ctp:29
+msgid "Edit Customer"
+msgstr "Edit Customer"
+
+#: Template/Customers/index.ctp:32
+msgid "List Customers"
+msgstr "Daftar Customer"
+
+#: Template/Downloads/add_category.ctp:29
+msgid "Add Category Downloads"
+msgstr "Tambah Kategori download"
+
+#: Template/Downloads/category.ctp:32
+msgid "Categories Download"
+msgstr "Kategori Download"
+
+#: Template/Downloads/category.ctp:38
+msgid "New Categories"
+msgstr "Kategori Baru"
+
+#: Template/Downloads/edit_category.ctp:29
+msgid "Edit Category Downloads"
+msgstr "Edit Kategori Download"
+
+#: Template/Downloads/files.ctp:65
+msgid "New Files"
+msgstr "File Baru"
+
+#: Template/FaqCategories/add.ctp:29
+msgid "Add Faq Category"
+msgstr "Tambah Kategori Faq"
+
+#: Template/FaqCategories/edit.ctp:29
+msgid "Edit Faq Category"
+msgstr "Edit Kategori Faq"
+
+#: Template/FaqCategories/index.ctp:32
+msgid "List Faq Categories"
+msgstr "Daftar Kategori Faq"
+
+#: Template/FaqCategories/index.ctp:38
+msgid "New Faq Category"
+msgstr "Kategori Faq Baru"
+
+#: Template/FaqCategories/view.ctp:13
+#: Template/MenuAdmins/view.ctp:17
+#: Template/ProductUnits/view.ctp:13
+#: Template/Products/view.ctp:13
+#: Template/Provinces/view.ctp:13
+#: Template/Suppliers/view.ctp:13
+#: Template/Tags/view.ctp:13
+#: Template/Topics/view.ctp:13
+msgid "Name"
+msgstr "Nama"
+
+#: Template/Faqs/add.ctp:29
+msgid "Add Faq"
+msgstr "Tambah Faq"
+
+#: Template/Faqs/edit.ctp:29
+msgid "Edit Faq"
+msgstr "Edit Faq"
+
+#: Template/Faqs/index.ctp:32
+msgid "List Faqs"
+msgstr "Daftar Faq"
+
+#: Template/Faqs/index.ctp:38
+msgid "New Faq"
+msgstr "Faq Baru"
+
+#: Template/Faqs/view.ctp:13
+msgid "Faq Category"
+msgstr "Kategori Faq"
+
+#: Template/Faqs/view.ctp:17
+msgid "Question"
+msgstr "Pertanyaan"
+
+#: Template/Faqs/view.ctp:21
+msgid "Faqs Question Translation"
+msgstr "Terjemahan Pertanyaan Faq"
+
+#: Template/Faqs/view.ctp:25
+msgid "Faqs Answer Translation"
+msgstr "Terjemahan Jawaban Faq"
+
+#: Template/Galleries/add_album.ctp:29
+msgid "Add Album"
+msgstr "Tambah Album"
+
+#: Template/Galleries/album.ctp:32
+msgid "List Albums"
+msgstr "Daftar Album"
+
+#: Template/Galleries/album.ctp:38
+msgid "New Album"
+msgstr "Album Baru"
+
+#: Template/Galleries/edit_album.ctp:29
+msgid "Edit Album"
+msgstr "Edit Album"
+
+#: Template/Galleries/index.ctp:66
+msgid "New Images"
+msgstr "Gambar Baru"
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Kembali"
+
+#: Template/MenuAdmins/add.ctp:29
+msgid "Add Menu Admin"
+msgstr "Tambah Menu Admin"
+
+#: Template/MenuAdmins/edit.ctp:29
+msgid "Edit Menu Admin"
+msgstr "Edit Menu Admin"
+
+#: Template/MenuAdmins/index.ctp:32
+msgid "List Menu Admins"
+msgstr "Daftar Menu Admin"
+
+#: Template/MenuAdmins/index.ctp:38
+msgid "New Menu Admin"
+msgstr "Menu Admin Baru"
+
+#: Template/MenuAdmins/view.ctp:13
+msgid "Parent Menu Admin"
+msgstr "Induk Admin Menu"
+
+#: Template/MenuAdmins/view.ctp:21
+msgid "Controller"
+msgstr "Controller"
+
+#: Template/MenuAdmins/view.ctp:25
+msgid "Action"
+msgstr "Aksi"
+
+#: Template/MenuAdmins/view.ctp:33
+msgid "Icon"
+msgstr "Ikon"
+
+#: Template/MenuAdmins/view.ctp:37
+msgid "Lft"
+msgstr ""
+
+#: Template/MenuAdmins/view.ctp:41
+msgid "Rght"
+msgstr ""
+
+#: Template/Orders/index.ctp:32
+msgid "List Orders"
+msgstr "Daftar Pesanan"
+
+#: Template/Pages/add.ctp:29
+#: Template/Pages/edit.ctp:29
+msgid "Add Page"
+msgstr "Tambah Halaman"
+
+#: Template/Pages/index.ctp:32
+msgid "List Pages"
+msgstr "Daftar Halaman"
+
+#: Template/Pages/index.ctp:38
+msgid "New Page"
+msgstr "Halaman Baru"
+
+#: Template/Pages/view.ctp:13
+msgid "Title"
+msgstr "Judul"
+
+#: Template/Pages/view.ctp:17
+msgid "Slug"
+msgstr "Slug"
+
+#: Template/Pages/view.ctp:21
+msgid "Pages Title Translation"
+msgstr "Terjemahan Judul Halaman"
+
+#: Template/Pages/view.ctp:25
+msgid "Pages Content Translation"
+msgstr "Terjemahan Konten Halaman"
+
+#: Template/Pages/view.ctp:33
+msgid "Enable"
+msgstr ""
+
+#: Template/ProductInquery/index.ctp:32
+msgid "Purchasing"
+msgstr "Pembelian"
+
+#: Template/ProductStocks/index.ctp:32
+msgid "Product Stock"
+msgstr "Stok Produk"
+
+#: Template/ProductUnits/add.ctp:29
+msgid "Add Product Unit"
+msgstr "Tambah Unit Produk"
+
+#: Template/ProductUnits/edit.ctp:29
+msgid "Edit Product Unit"
+msgstr "Edit Unit Produk"
+
+#: Template/ProductUnits/index.ctp:32
+msgid "List Product Units"
+msgstr "Daftar Unit Produk"
+
+#: Template/ProductUnits/index.ctp:38
+msgid "New Product Unit"
+msgstr "Unit Produk Baru"
+
+#: Template/Products/add.ctp:29
+msgid "Add Product"
+msgstr "Tambah Produk"
+
+#: Template/Products/edit.ctp:29
+msgid "Edit Product"
+msgstr "Edit Produk"
+
+#: Template/Products/index.ctp:32
+msgid "List Products"
+msgstr "Daftar Produk"
+
+#: Template/Products/index.ctp:38
+msgid "New Product"
+msgstr "Produk Baru"
+
+#: Template/Products/view.ctp:17
+msgid "Sku"
+msgstr "Sku"
+
+#: Template/Products/view.ctp:21
+msgid "Supplier"
+msgstr "Supplier"
+
+#: Template/Products/view.ctp:25
+msgid "Product Unit"
+msgstr "Unit Produk"
+
+#: Template/Products/view.ctp:33
+msgid "Price"
+msgstr "Harga"
+
+#: Template/Products/view.ctp:37
+msgid "Point"
+msgstr "Poin"
+
+#: Template/Provinces/add.ctp:12;26
+#: Template/Provinces/edit.ctp:12;26
+msgid "Province"
+msgstr "Provinsi"
+
+#: Template/Provinces/add.ctp:36
+#: Template/Provinces/edit.ctp:36
+msgid "List Province"
+msgstr "Daftar Provinsi"
+
+#: Template/Provinces/add.ctp:46;61
+msgid "Add Province"
+msgstr "Tambah Provinsi"
+
+#: Template/Provinces/add.ctp:84
+#: Template/Provinces/edit.ctp:84
+msgid "Submit"
+msgstr "Kirim"
+
+#: Template/Provinces/edit.ctp:46;61
+msgid "Edit Province"
+msgstr "Edit Provinsi"
+
+#: Template/Provinces/index.ctp:13;27
+msgid "Provinces"
+msgstr "Provinsi"
+
+#: Template/Provinces/index.ctp:37;52
+msgid "List Provinces"
+msgstr "Daftar Provinsi"
+
+#: Template/Provinces/index.ctp:62
+msgid "New Province"
+msgstr "Provinsi Baru"
+
+#: Template/Suppliers/add.ctp:29
+msgid "Add Supplier"
+msgstr "Tambah Supplier"
+
+#: Template/Suppliers/edit.ctp:29
+msgid "Edit Supplier"
+msgstr "Edit Supplier"
+
+#: Template/Suppliers/index.ctp:32
+msgid "List Suppliers"
+msgstr "Daftar Supplier"
+
+#: Template/Suppliers/index.ctp:38
+msgid "New Supplier"
+msgstr "Supplier Baru"
+
+#: Template/Suppliers/view.ctp:17
+msgid "Email"
+msgstr "Email"
+
+#: Template/Suppliers/view.ctp:21
+msgid "Phone"
+msgstr "Telepon"
+
+#: Template/Tags/add.ctp:29
+msgid "Add Tag"
+msgstr "Tambah Tag"
+
+#: Template/Tags/edit.ctp:29
+msgid "Edit Tag"
+msgstr "Edit Tag"
+
+#: Template/Tags/index.ctp:32
+msgid "List Tags"
+msgstr "Daftar Tag"
+
+#: Template/Tags/index.ctp:38
+msgid "New Tag"
+msgstr "Tag Baru"
+
+#: Template/Topics/add.ctp:29
+msgid "Add Topic"
+msgstr "Tambah Topik"
+
+#: Template/Topics/edit.ctp:29
+msgid "Edit Topic"
+msgstr "Edit Topik"
+
+#: Template/Topics/index.ctp:32
+msgid "List Topics"
+msgstr "Daftar Topik"
+
+#: Template/Topics/index.ctp:38
+msgid "New Topic"
+msgstr "Topik Baru"
+
+#: Template/TransactionMutations/index.ctp:32
+msgid "Transaction Logs"
+msgstr "Log Transaksi"
+
+#: Template/Withdrawals/add.ctp:29
+msgid "Add Withdrawal"
+msgstr "Tambah Penarikan"
+
+#: Template/Withdrawals/edit.ctp:29
+msgid "Edit Withdrawal"
+msgstr "Edit Penarikan"
+
+#: Template/Withdrawals/index.ctp:32
+msgid "List Withdrawals"
+msgstr "Daftar Penarikan"
+
+#: Template/Withdrawals/view.ctp:13
+msgid "Customer"
+msgstr "Customer"
+
+#: Template/Withdrawals/view.ctp:17
+msgid "Bank Name"
+msgstr "Nama Bank"
+
+#: Template/Withdrawals/view.ctp:21
+msgid "Bank City"
+msgstr "Kota Bank"
+
+#: Template/Withdrawals/view.ctp:25
+msgid "Bank Branch"
+msgstr "Cabang Bank"
+
+#: Template/Withdrawals/view.ctp:29
+msgid "Bank Account Name"
+msgstr "Nama Akun Bank"
+
+#: Template/Withdrawals/view.ctp:33
+msgid "Bank Account Number"
+msgstr "Nomor Rekening Bank"
+
+#: Template/Withdrawals/view.ctp:37
+msgid "Customer Bank"
+msgstr "Customer Bank"
+
+#: Template/Withdrawals/view.ctp:41
+msgid "Withdrawal Status"
+msgstr "Status Penarikan"
+
+#: Template/Withdrawals/view.ctp:45
+msgid "Transaction"
+msgstr "Transaksi"
+
+#: Template/Withdrawals/view.ctp:49
+msgid "Note"
+msgstr "Catatan"
+
+#: Template/Withdrawals/view.ctp:57
+msgid "Amount"
+msgstr "Jumlah"
+
+#: Controller/BlogsController.php:142
+#: Controller/DownloadsController.php:252
+#: Controller/GalleriesController.php:305
+msgid "Gagal upload"
+msgstr ""
+
+#: Controller/BlogsController.php:148
+#: Controller/DownloadsController.php:258
+#: Controller/GalleriesController.php:311
+msgid "file harus jpg, png"
+msgstr ""
+
+#: Template/Element/Email/header.ctp:45
+msgid "Change cigarettes and get money."
+msgstr "Ganti rokok dan dapatkan uang."
+
+#: Template/Email/html/notification.ctp:7
+msgid "Thank you"
+msgstr "Terima Kasih"
+
+#: Template/Withdrawals/index.ctp:65
+msgid "Pending Requests"
+msgstr "Penarikan Dana Tertunda"
+
+#: Template/Withdrawals/index.ctp:70
+msgid "Success Requests"
+msgstr "Penarikan Dana Berhasil"
+
+#: Template/Withdrawals/index.ctp:75
+msgid "Failed Requests"
+msgstr "Penarikan Dana Gagal"
+
+#: Model/Table/CustomersTable.php:254
+msgid "New password cannot match with your current password"
+msgstr "Kata Sandi yang anda masukan salah"
+
+#: Model/Table/CustomersTable.php:259
+msgid "Repeat password does not match with your password"
+msgstr "Ulangi kata sandi anda tidak cocok dengan kata sandi anda"
+
+#: Model/Table/CustomersTable.php:260
+msgid "Repeat password cannot match with your current password"
+msgstr "Ulangin kata sandi tidak cocok dengan kata sandi anda saat ini"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "Data tidak ditemukan."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "Data tidak ditemukan"
+
+msgid "Dashboard"
+msgstr "Beranda"
+
+msgid "Account Member"
+msgstr "Akun Member"
+
+msgid "The profile could not be saved. Please, try again."
+msgstr "Profil tidak dapat disimpan. Silahkan coba lagi."
+
+
+#======Member=======#
+
+#: Controller/BanksController.php:105;161;205;209
+#: Controller/ProfilesController.php:49
+#: Controller/StockistsController.php:103
+#: Controller/WithdrawalsController.php:152
+msgid "Invalid serial number"
+msgstr "Nomor serial tidak valid"
+
+#: Controller/BanksController.php:111;167
+msgid "The bank has been saved."
+msgstr "Bank berhasil disimpan."
+
+#: Controller/BanksController.php:115;171
+msgid "The bank could not be saved. Please, try again."
+msgstr "Bank tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/BanksController.php:221
+msgid "The bank has been deleted."
+msgstr "Bank telah dihapus."
+
+#: Controller/BanksController.php:223
+msgid "The bank could not be deleted. Please, try again."
+msgstr "Bank tidak dapat dihapus. Silahkan coba lagi."
+
+#: Controller/NetworksController.php:64
+msgid "The target not in your network."
+msgstr "Target tidak berada di jaringan anda."
+
+#: Controller/OrdersController.php:76
+msgid "Success added product to cart."
+msgstr "Sukses menambahkan produk ke troli."
+
+#: Controller/OrdersController.php:202
+#: Controller/WithdrawalsController.php:134
+msgid "This amount must be greater than {0}"
+msgstr "Jumlah harus lebih besar dari {0}"
+
+#: Controller/OrdersController.php:235
+msgid "Success payment confirmation."
+msgstr "Konfirmasi pembayaran berhasil."
+
+#: Controller/OrdersController.php:282
+msgid "Unable to process, please complete your address"
+msgstr "Tidak dapat memproses, silahkan lengkapi alamat anda"
+
+#: Controller/OrdersController.php:337
+msgid "The order {0} has been success, please do confirmation bank transfer."
+msgstr "Pesanan {0} telah berhasil, silahkan melakukan konfirmasi transfer."
+
+#: Controller/OrdersController.php:342
+msgid "The order has been failed"
+msgstr "Pesanan gagal"
+
+#: Controller/ProfilesController.php:66
+msgid "The profile has been changed."
+msgstr "Profil berhasil diubah."
+
+#: Controller/ProfilesController.php:74
+msgid "The profile could not be saved. Please, try again."
+msgstr "Profil tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/ProfilesController.php:107
+msgid "Old password doesn't match"
+msgstr "Password lama salah"
+
+#: Controller/ProfilesController.php:119
+msgid "The password has been changed."
+msgstr "Password berhasil diubah."
+
+#: Controller/ProfilesController.php:121
+msgid "The password could not be saved. Please, try again."
+msgstr "Password tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/RepeatOrdersController.php:107
+msgid "Invalid serial number."
+msgstr "Nomor serial tidak valid."
+
+#: Controller/RepeatOrdersController.php:116
+msgid "This serial has been used."
+msgstr "Serial ini telah digunakan."
+
+#: Controller/RepeatOrdersController.php:122
+msgid "This serial has not active."
+msgstr "Serial ini belum aktif."
+
+#: Controller/RepeatOrdersController.php:166
+msgid "The repeat order process was successfully redeemed"
+msgstr "Proses repeat order berhasil ditebus"
+
+#: Controller/RepeatOrdersController.php:168
+msgid "The repeat order process was failed redeemed"
+msgstr "Proses repeat order gagal ditebus"
+
+#: Controller/StockistsController.php:119
+msgid "The stockist has been saved."
+msgstr "Stokis berhasil disimpan."
+
+#: Controller/StockistsController.php:123
+msgid "The stockist could not be saved. Please, try again."
+msgstr "Stokis tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/WithdrawalsController.php:127
+msgid "This amount must be less than {0}"
+msgstr "Jumlah harus kurang dari {0}"
+
+#: Controller/WithdrawalsController.php:128
+msgid "Insufficient balance"
+msgstr "Saldo tidak mencukupi"
+
+#: Controller/WithdrawalsController.php:133
+msgid "This bank not allowed"
+msgstr "Bank ini tidak diizinkan"
+
+#: Controller/WithdrawalsController.php:211;220
+msgid "The withdrawal could not be saved. Please, try again."
+msgstr "Penarikan dana tidak dapat disimpan. Silahkan coba lagi."
+
+#: Controller/WithdrawalsController.php:216
+msgid "The withdrawal has been saved."
+msgstr "Penarikan dana berhasil disimpan."
+
+#: Controller/WithdrawalsController.php:242
+msgid "The withdrawal has been deleted."
+msgstr "Penarikan dana telah dihapus."
+
+#: Controller/WithdrawalsController.php:244
+msgid "The withdrawal could not be deleted. Please, try again."
+msgstr "Penarikan dana tidak dapat dihapus. Silahkan coba lagi."
+
+#: Template/Affiliates/index.ctp:16;22;39
+#: Template/Element/Menu/side-menu.ctp:47
+msgid "Affiliate"
+msgstr "Afiliasi"
+
+#: Template/Affiliates/index.ctp:45
+msgid "Refer to your friends, relatives or coworkers. You will get extra bonus by your refered members."
+msgstr "Rujuk ke teman, kerabat atau rekan kerja anda. Anda akan mendapatkan bonus tambahan oleh anggota yang anda referensikan."
+
+#: Template/Affiliates/index.ctp:50;92;95;98
+msgid "Copied!"
+msgstr "Tersalin!"
+
+#: Template/Affiliates/index.ctp:50;92;95;98
+msgid "Copy to clipboard"
+msgstr "Salin ke clipboard"
+
+#: Template/Affiliates/index.ctp:56
+msgid "If you have a blog or website, you can use banners below to promote and potentially earn lifetime passive income by introducing to your website's visitors."
+msgstr "Jika anda memiliki blog atau situs web, anda dapat menggunakan spanduk dibawah ini untuk mempromosikan dan berpotensi memperoleh penghasilan seumur hidup dengan memperkenalkan kepada pengunjung situs web anda."
+
+#: Template/Banks/add.ctp:17;48;65
+#: Template/Banks/edit.ctp:17;48;65
+#: Template/Banks/index.ctp:16;22;44;177
+#: Template/Element/Menu/side-menu.ctp:42
+#: Template/Withdrawals/add.ctp:68
+#: Template/Withdrawals/index.ctp:153
+msgid "Bank"
+msgstr "Bank"
+
+#: Template/Banks/add.ctp:23;54
+#: Template/Banks/edit.ctp:23;54
+msgid "List Bank"
+msgstr "Daftar Bank"
+
+#: Template/Banks/add.ctp:26
+#: Template/Banks/index.ctp:50
+msgid "Add Bank"
+msgstr "Tambah Bank"
+
+#: Template/Banks/add.ctp:70
+#: Template/Banks/edit.ctp:70
+#: Template/Orders/confirm_order.ctp:100
+#: Template/Withdrawals/add.ctp:73
+msgid "Please Select Bank"
+msgstr "Pilih Bank"
+
+#: Template/Banks/add.ctp:80
+#: Template/Banks/edit.ctp:80
+#: Template/Banks/index.ctp:181
+#: Template/Orders/detail_order.ctp:88
+#: Template/Orders/lists.ctp:197
+#: Template/Stockists/info.ctp:92
+#: Template/Withdrawals/index.ctp:157
+msgid "City"
+msgstr "Kota"
+
+#: Template/Banks/add.ctp:92
+#: Template/Banks/edit.ctp:92
+#: Template/Banks/index.ctp:185
+#: Template/Withdrawals/index.ctp:161
+msgid "Branch"
+msgstr "Cabang"
+
+#: Template/Banks/add.ctp:104
+#: Template/Banks/edit.ctp:104
+#: Template/Banks/index.ctp:189
+#: Template/Withdrawals/index.ctp:165
+msgid "Account Name"
+msgstr "Nama Akun"
+
+#: Template/Banks/add.ctp:116
+#: Template/Banks/edit.ctp:116
+#: Template/Banks/index.ctp:193
+#: Template/Withdrawals/index.ctp:169
+msgid "Account Number"
+msgstr "Nomor Rekening"
+
+#: Template/Banks/add.ctp:128;138
+#: Template/Banks/edit.ctp:128;138
+#: Template/Profiles/index.ctp:171;181
+#: Template/RepeatOrders/add.ctp:69
+#: Template/RepeatOrders/index.ctp:161
+#: Template/Stockists/info.ctp:157;167
+#: Template/Withdrawals/add.ctp:97;107
+msgid "Serial Number"
+msgstr "Nomor Serial"
+
+#: Template/Banks/add.ctp:152
+#: Template/Banks/edit.ctp:152
+#: Template/Dashboard/add.ctp:33
+#: Template/Dashboard/edit.ctp:39
+#: Template/Orders/confirm_order.ctp:158
+#: Template/Profiles/change_password.ctp:140
+#: Template/Profiles/index.ctp:200
+#: Template/RepeatOrders/add.ctp:89
+#: Template/Stockists/info.ctp:183
+#: Template/Withdrawals/add.ctp:123
+msgid "Submit"
+msgstr "Kirim"
+
+#: Template/Banks/edit.ctp:26
+msgid "Edit Bank"
+msgstr "Edit Bank"
+
+#: Template/Banks/index.ctp:82
+msgid "Confirm serial number"
+msgstr "Konfirmasi nomor serial"
+
+#: Template/Banks/index.ctp:85
+msgid "Please input your serial number"
+msgstr "Masukan nomor serial anda"
+
+#: Template/Banks/index.ctp:197
+#: Template/Orders/lists.ctp:237
+#: Template/Transactions/index.ctp:169
+#: Template/Withdrawals/index.ctp:208
+msgid "Date"
+msgstr "Tanggal"
+
+#: Template/Banks/index.ctp:204
+#: Template/Dashboard/add.ctp:9
+#: Template/Dashboard/edit.ctp:9
+#: Template/Dashboard/view.ctp:9
+#: Template/Generations/index.ctp:142
+#: Template/Orders/lists.ctp:244
+msgid "Actions"
+msgstr "Aksi"
+
+#: Template/Dashboard/add.ctp:10
+#: Template/Dashboard/edit.ctp:16
+#: Template/Dashboard/view.ctp:12
+msgid "List Customers"
+msgstr "Daftar Customer"
+
+#: Template/Dashboard/add.ctp:16
+msgid "Add Customer"
+msgstr "Tambah Customer"
+
+#: Template/Dashboard/edit.ctp:11
+msgid "Delete"
+msgstr "Hapus"
+
+#: Template/Dashboard/edit.ctp:13
+#: Template/Dashboard/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Anda yakin ingin menghapus ini # {0} ?"
+
+#: Template/Dashboard/edit.ctp:22
+#: Template/Dashboard/view.ctp:10
+msgid "Edit Customer"
+msgstr "Edit Customer"
+
+#: Template/Dashboard/view.ctp:11
+msgid "Delete Customer"
+msgstr "Hapus Customer"
+
+#: Template/Dashboard/view.ctp:13
+msgid "New Customer"
+msgstr "Customer Baru"
+
+#: Template/Dashboard/view.ctp:20
+#: Template/Generations/detail.ctp:131
+#: Template/Transactions/detail.ctp:131
+msgid "Username"
+msgstr "Username"
+
+#: Template/Dashboard/view.ctp:24
+#: Template/Profiles/index.ctp:160
+msgid "Email"
+msgstr "Email"
+
+#: Template/Dashboard/view.ctp:28
+#: Template/Generations/detail.ctp:135
+#: Template/Profiles/index.ctp:100;106
+#: Template/Transactions/detail.ctp:135
+msgid "First Name"
+msgstr "Nama Depan"
+
+#: Template/Dashboard/view.ctp:32
+#: Template/Generations/detail.ctp:139
+#: Template/Profiles/index.ctp:112;118
+#: Template/Transactions/detail.ctp:139
+msgid "Last Name"
+msgstr "Nama Belakang"
+
+#: Template/Dashboard/view.ctp:36
+#: Template/Profiles/index.ctp:140
+msgid "Phone"
+msgstr "Telepon"
+
+#: Template/Dashboard/view.ctp:40
+msgid "Password"
+msgstr "Password"
+
+#: Template/Dashboard/view.ctp:44
+msgid "Activation Code"
+msgstr "Kode Aktivasi"
+
+#: Template/Dashboard/view.ctp:48
+#: Template/Profiles/index.ctp:85
+msgid "Avatar"
+msgstr "Foto"
+
+#: Template/Dashboard/view.ctp:52
+msgid "Id"
+msgstr "Id"
+
+#: Template/Dashboard/view.ctp:56
+msgid "Country Id"
+msgstr "Kode Negara"
+
+#: Template/Dashboard/view.ctp:60
+msgid "Is Active"
+msgstr "Aktif"
+
+#: Template/Dashboard/view.ctp:64
+msgid "Dob"
+msgstr "Tanggal Lahir"
+
+#: Template/Dashboard/view.ctp:68
+msgid "Created"
+msgstr "Tanggal dibuat"
+
+#: Template/Dashboard/view.ctp:72
+msgid "Last Login"
+msgstr "Login Terakhir"
+
+#: Template/Dashboard/view.ctp:76
+msgid "Timeout"
+msgstr "Waktu telah habis"
+
+#: Template/Element/Header/top-bar.ctp:99
+msgid "My Profile"
+msgstr "Profil Saya"
+
+#: Template/Element/Header/top-bar.ctp:115
+#: Template/Element/Menu/top-menu.ctp:103
+msgid "Sign Out"
+msgstr "Keluar"
+
+#: Template/Element/Menu/setting.ctp:14
+msgid "Acccount Information"
+msgstr "Informasi Akun"
+
+#: Template/Element/Menu/setting.ctp:23
+#: Template/Element/Partial/Profiles/menu.ctp:51
+#: Template/Profiles/change_password.ctp:29;65
+msgid "Change Password"
+msgstr "Ubah Password"
+
+#: Template/Element/Menu/setting.ctp:32
+msgid "Change Email"
+msgstr "Ubah Email"
+
+#: Template/Element/Menu/setting.ctp:41
+msgid "Change Phone Number"
+msgstr "Ubah Nomor Telepon"
+
+#: Template/Element/Menu/setting.ctp:50
+msgid "Change Address"
+msgstr "Ubah Alamat"
+
+#: Template/Element/Menu/setting.ctp:59
+msgid "Security"
+msgstr "Keamanan"
+
+#: Template/Element/Menu/setting.ctp:68
+msgid "Bank Account"
+msgstr "Akun Bank"
+
+#: Template/Element/Menu/setting.ctp:77
+msgid "Language & Timezone"
+msgstr "Bahasa & Zona Waktu"
+
+#: Template/Element/Menu/side-menu.ctp:32
+msgid "Dashboard"
+msgstr "Beranda"
+
+#: Template/Element/Menu/side-menu.ctp:37
+msgid "Change Profile"
+msgstr "Ubah Profil"
+
+#: Template/Element/Menu/side-menu.ctp:102
+msgid "Account Member"
+msgstr "Akun Member"
+
+#: Template/Element/Menu/side-menu.ctp:106
+#: Template/Orders/confirm_order.ctp:18
+#: Template/Stockists/info.ctp:16;44
+msgid "Stockist"
+msgstr "Stokis"
+
+#: Template/Element/Menu/side-menu.ctp:109
+#: Template/Stockists/info.ctp:22
+msgid "Stockist Address"
+msgstr "Alamat Stokis"
+
+#: Template/Element/Menu/side-menu.ctp:114
+msgid "Order Product"
+msgstr "Pesan Produk"
+
+#: Template/Element/Menu/side-menu.ctp:119
+#: Template/Orders/confirm_order.ctp:24;55
+msgid "Order List"
+msgstr "Daftar Pemesanan"
+
+#: Template/Element/Menu/side-menu.ctp:127
+#: Template/Generations/detail.ctp:16
+#: Template/Generations/index.ctp:16
+#: Template/Transactions/detail.ctp:16
+msgid "Network"
+msgstr "Jaringan"
+
+#: Template/Element/Menu/side-menu.ctp:130
+msgid "Network Diagram"
+msgstr "Diagram Jaringan"
+
+#: Template/Element/Menu/side-menu.ctp:135
+#: Template/Generations/index.ctp:44
+msgid "Generation"
+msgstr "Generasi"
+
+#: Template/Element/Menu/side-menu.ctp:143
+#: Template/Transactions/index.ctp:16;22;44
+msgid "Transactions"
+msgstr "Transaksi"
+
+#: Template/Element/Menu/side-menu.ctp:148
+msgid "Withdrawals"
+msgstr "Penarikan Dana"
+
+#: Template/Element/Menu/side-menu.ctp:153
+#: Template/RepeatOrders/index.ctp:22;44
+msgid "Repeat Order"
+msgstr "Repeat Order"
+
+#: Template/Element/Menu/top-menu.ctp:19
+msgid "Client"
+msgstr "Klien"
+
+#: Template/Element/Menu/top-menu.ctp:88
+msgid "Assets"
+msgstr "Aset"
+
+#: Template/Element/Menu/top-menu.ctp:91
+msgid "Verification"
+msgstr "Verifikasi"
+
+#: Template/Element/Menu/top-menu.ctp:95
+msgid "Notifications"
+msgstr "Notifikasi"
+
+#: Template/Element/Menu/top-menu.ctp:99
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: Template/Element/Partial/Profiles/menu.ctp:44
+#: Template/Profiles/index.ctp:61
+msgid "Personal Information"
+msgstr "Informasi Pribadi"
+
+#: Template/Generations/detail.ctp:22
+#: Template/Transactions/detail.ctp:22
+msgid "Detail Generation"
+msgstr "Detil Generasi"
+
+#: Template/Generations/detail.ctp:44
+#: Template/Transactions/detail.ctp:44
+msgid "Detail Generation Level {0}"
+msgstr "Level Generasi Detil {0}"
+
+#: Template/Generations/detail.ctp:52
+msgid "Back"
+msgstr "Kembali"
+
+#: Template/Generations/detail.ctp:143
+msgid "Rank"
+msgstr "Rank"
+
+#: Template/Generations/detail.ctp:147
+#: Template/Transactions/detail.ctp:143
+msgid "Join On"
+msgstr "Bergabunglah"
+
+#: Template/Generations/index.ctp:22
+msgid "Generations"
+msgstr "Generasi"
+
+#: Template/Generations/index.ctp:128
+msgid "Generation Level"
+msgstr "Level Generasi"
+
+#: Template/Generations/index.ctp:135
+#: Template/Orders/cart.ctp:89
+#: Template/Orders/detail_order.ctp:91;126
+#: Template/Orders/lists.ctp:206
+msgid "Total"
+msgstr "Total"
+
+#: Template/Networks/index.ctp:17;23;45
+msgid "Networks"
+msgstr "Jaringan"
+
+#: Template/Networks/index.ctp:65
+msgid "Upline"
+msgstr "Upline"
+
+#: Template/Networks/index.ctp:81
+msgid "Downline"
+msgstr "Downline"
+
+#: Template/Orders/cart.ctp:16
+#: Template/Orders/detail_order.ctp:16
+#: Template/Orders/index.ctp:16
+msgid "Orders"
+msgstr "Pesanan"
+
+#: Template/Orders/cart.ctp:22;44
+msgid "Cart"
+msgstr "Keranjang Belanja"
+
+#: Template/Orders/cart.ctp:62
+#: Template/Orders/detail_order.ctp:105
+msgid "Product Name"
+msgstr "Nama Produk"
+
+#: Template/Orders/cart.ctp:63
+#: Template/Orders/detail_order.ctp:106
+msgid "Qty"
+msgstr "Jumlah"
+
+#: Template/Orders/cart.ctp:64
+#: Template/Orders/detail_order.ctp:107
+msgid "Price"
+msgstr "Harga"
+
+#: Template/Orders/cart.ctp:65
+#: Template/Orders/detail_order.ctp:108
+msgid "Sub Total"
+msgstr "Sub Total"
+
+#: Template/Orders/cart.ctp:66
+msgid "Action"
+msgstr "Aksi"
+
+#: Template/Orders/cart.ctp:99
+msgid "Order Now"
+msgstr "Pesan Sekarang"
+
+#: Template/Orders/confirm_order.ctp:27
+msgid "Confirmation"
+msgstr "Konfirmasi"
+
+#: Template/Orders/confirm_order.ctp:49
+msgid "Confirmation Order"
+msgstr "Konfirmasi Pesanan"
+
+#: Template/Orders/confirm_order.ctp:67
+#: Template/Orders/detail_order.ctp:67
+#: Template/Orders/lists.ctp:187
+msgid "Invoice"
+msgstr "Faktur"
+
+#: Template/Orders/confirm_order.ctp:81
+msgid "Confirmation Date"
+msgstr "Tanggal Konfirmasi"
+
+#: Template/Orders/confirm_order.ctp:95
+msgid "Transfer From Bank"
+msgstr "Transfer Dari Bank"
+
+#: Template/Orders/confirm_order.ctp:112
+#: Template/Transactions/index.ctp:155
+#: Template/Withdrawals/add.ctp:83
+#: Template/Withdrawals/index.ctp:173
+msgid "Amount"
+msgstr "Jumlah"
+
+#: Template/Orders/confirm_order.ctp:124
+msgid "Note"
+msgstr "Catatan"
+
+#: Template/Orders/confirm_order.ctp:137
+msgid "File Browser"
+msgstr "File Browser"
+
+#: Template/Orders/confirm_order.ctp:148
+msgid "Choose file"
+msgstr "Pilih File"
+
+#: Template/Orders/detail_order.ctp:22;44
+msgid "Detail Order"
+msgstr "Detil Pesanan"
+
+#: Template/Orders/detail_order.ctp:51
+msgid "Back Orders"
+msgstr "Pesanan Kembali"
+
+#: Template/Orders/detail_order.ctp:70
+#: Template/Orders/lists.ctp:73;215
+#: Template/Withdrawals/index.ctp:188
+msgid "Status"
+msgstr "Status"
+
+#: Template/Orders/detail_order.ctp:73
+#: Template/Orders/lists.ctp:192
+#: Template/Stockists/info.ctp:76
+msgid "Province"
+msgstr "Provinsi"
+
+#: Template/Orders/detail_order.ctp:76
+#: Template/Orders/lists.ctp:202
+#: Template/Stockists/info.ctp:144
+msgid "Address"
+msgstr "Alamat"
+
+#: Template/Orders/detail_order.ctp:85
+msgid "AWB (air waybill)"
+msgstr "Nomor Resi"
+
+#: Template/Orders/detail_order.ctp:100
+msgid "Detail Product"
+msgstr "Produk Detil"
+
+#: Template/Orders/index.ctp:22
+#: Template/RepeatOrders/index.ctp:153
+msgid "Product"
+msgstr "Produk"
+
+#: Template/Orders/index.ctp:44
+#: Template/Orders/lists.ctp:16;44
+msgid "Order"
+msgstr "Pesanan"
+
+#: Template/Orders/index.ctp:52
+msgid "Checkout"
+msgstr "Checkout"
+
+#: Template/Orders/index.ctp:84
+msgid "PURCHASE"
+msgstr "Pembelian"
+
+#: Template/Orders/lists.ctp:22
+msgid "List"
+msgstr "Daftar"
+
+#: Template/Orders/lists.ctp:92
+msgid "New Order"
+msgstr "Pesanan Baru"
+
+#: Template/Profiles/change_password.ctp:16;22
+#: Template/Profiles/index.ctp:16;22
+msgid "Profiles"
+msgstr "Profil"
+
+#: Template/Profiles/change_password.ctp:25
+#: Template/Profiles/index.ctp:25
+msgid "Edit Profile"
+msgstr "Edit Profil"
+
+#: Template/Profiles/change_password.ctp:84;92
+msgid "Current Password"
+msgstr "Password Lama"
+
+#: Template/Profiles/change_password.ctp:99;107
+msgid "New Password"
+msgstr "Password Baru"
+
+#: Template/Profiles/change_password.ctp:114;122
+msgid "Repeat Password"
+msgstr "Ulangi Password"
+
+#: Template/Profiles/change_password.ctp:141
+msgid "Cancel"
+msgstr "Batal"
+
+#: Template/Profiles/index.ctp:61
+msgid "update your personal informaiton"
+msgstr "Perbarui informasi pribadi anda"
+
+#: Template/Profiles/index.ctp:81
+msgid "Customer Info"
+msgstr "Info Customer"
+
+#: Template/Profiles/index.ctp:127
+msgid "Contact Info"
+msgstr "Info Kontak"
+
+#: Template/Profiles/index.ctp:131
+msgid "Contact Phone"
+msgstr "Nomor Telepon"
+
+#: Template/Profiles/index.ctp:151
+msgid "Email Address"
+msgstr "Alamat Email"
+
+#: Template/RepeatOrders/add.ctp:16
+#: Template/RepeatOrders/index.ctp:16
+msgid "Transaction"
+msgstr "Transaksi"
+
+#: Template/RepeatOrders/add.ctp:22
+msgid "List Repeat Order"
+msgstr "Daftar Repeat Order"
+
+#: Template/RepeatOrders/add.ctp:25;47
+#: Template/RepeatOrders/index.ctp:50
+msgid "New Repeat Order"
+msgstr "Repeat Order Baru"
+
+#: Template/RepeatOrders/add.ctp:53
+msgid "List Repeat Orders"
+msgstr "Daftar Repeat Order"
+
+#: Template/RepeatOrders/index.ctp:157
+msgid "Card"
+msgstr "Kartu"
+
+#: Template/RepeatOrders/index.ctp:165
+msgid "Repeat Date"
+msgstr "Tanggal Pengulangan"
+
+#: Template/Stockists/info.ctp:64
+msgid "Title"
+msgstr "Judul"
+
+#: Template/Stockists/info.ctp:81
+msgid "Please Select Province"
+msgstr "Pilih Provinsi"
+
+#: Template/Stockists/info.ctp:97
+msgid "Please Select City"
+msgstr "Pilih Kota"
+
+#: Template/Stockists/info.ctp:108
+msgid "Phone 1"
+msgstr "Nomor Telepon 1"
+
+#: Template/Stockists/info.ctp:120
+msgid "Phone 2"
+msgstr "Nomor Telepon 2"
+
+#: Template/Stockists/info.ctp:132
+msgid "Zip"
+msgstr "Kode Pos"
+
+#: Template/Transactions/index.ctp:129
+msgid "Transaction Type"
+msgstr "Tipe Transaksi"
+
+#: Template/Transactions/index.ctp:151
+msgid "Description"
+msgstr "Deskripsi"
+
+#: Template/Transactions/index.ctp:162
+msgid "Balance"
+msgstr "Saldo"
+
+#: Template/Withdrawals/add.ctp:17
+#: Template/Withdrawals/index.ctp:16;22;44
+msgid "Withdrawal"
+msgstr "Penarikan Dana"
+
+#: Template/Withdrawals/add.ctp:23;54
+msgid "List Withdrawal"
+msgstr "Daftar Penarikan Dana"
+
+#: Template/Withdrawals/add.ctp:26;48
+#: Template/Withdrawals/index.ctp:50
+msgid "Request Withdrawal"
+msgstr "Permintaan Penarikan Dana"
+
+#: Template/Withdrawals/add.ctp:92
+msgid "Your balance"
+msgstr "Saldo Anda"
+
+#: Template/Withdrawals/index.ctp:180
+msgid "Fee"
+msgstr "Biaya"
+
+msgid "Activation of {0} serial was successful"
+msgstr "{0} serial berhasil di aktivasi"
+
+msgid "The activation process has been carried out"
+msgstr "Proses aktivasi telah di lakukan sebelumnya"
+
+msgid "Invalid Secret key."
+msgstr "Serial key tidak valid"
+
+msgid "Activation Serial"
+msgstr "Aktivasi serial"
+
+
+msgid "Card Number"
+msgstr "Nomor Kartu"
+
+msgid "Serial"
+msgstr "Serial"
+
+msgid "Minimum serial repeat order, total quantity 30."
+msgstr "Minimum serial repeat order, total quantity 30."
+
+msgid "Minimum serial register package, total quantity 10."
+msgstr "Minimum serial paket registrasi, total quantity 10."
+
+msgid "Destination Transfer"
+msgstr "Tujuan Transfer"
+
+msgid "Company Bank Information"
+msgstr "Informasi Bank Perusahaan"
+
+msgid "Oops...Authorization need you become stokist first"
+msgstr "Oops...Zona otorisasi memerlukan anda sebagai stokis terlebih dahulu"
+
+msgid "National Alocated Repeat Order Bonus"
+msgstr "Alokasi Bonus Repeat Order Nasional"
+
+msgid "Your Balance"
+msgstr "Saldo Anda"
+
+msgid "Recent Ranks"
+msgstr "Peringkat Terbaru"
+
+msgid "Recent Ranks"
+msgstr "Peringkat Terbaru"
+
+msgid "Rank"
+msgstr "Peringkat"
+
+msgid "Serial Registration Lists"
+msgstr "Daftar Serial Registrasi"
+
+msgid "Serial Registration"
+msgstr "Serial Registrasi"
+
+msgid "Used By"
+msgstr "Digunakan Oleh"
+
+msgid "Used"
+msgstr "Sudah Dipakai"
+
+msgid "Active or Ready to use"
+msgstr "Aktif atau siap digunakan"
+
+msgid "Are you still confused with marketing strategies?"
+msgstr "Anda masih bingung dengan strategi marketing?"
+
+msgid "PT. Dwisukma Mitra Rotama (DAMAR) is a company that distributes products that are produced by PR. Makmur, which makes cigarette and filter cigarette products with guaranteed quality and taste, the types of cigarettes produced include: Rotama Pulen, Rotama Aksa, Rotama Arsen, Rotama Koper. While the four variants are distributed by us, and in the future we are preparing exclusive types of products such as herbal cigarettes with a composition of 100% of herbs and spices."
+msgstr "PT. Dwisukma Mitra Rotama (DAMAR) adalah perusahaan yang mendistribusikan produk yang di produksi oleh PR. Makmur, yang membuat produk rokok keretek dan filter dengan kualitas dan rasa yang terjamin, jenis-jenis rokok yang di produksi antara lain diantaranya adalah: Rotama Pulen, Rotama Aksa, Rotama Arsen, Rotama Koper. Sementara ke empat varian tersebut yang didistribusikan oleh kami, dan kedepannya kami sedang mempersiapkan jenis-jenis produk exlusive seperti rokok herbal dengan kandungan komposisi 100% rempah-rempah."
+
+msgid "Aiming to manage the Indonesian business sector through the work of the local products of the nation, Dwisukma Mitra Rotama give a chance to the people of Indonesia to take advantage of consumer needs a source of income."
+msgstr "Dengan tujuan untuk mengelola sektor bisnis Indonesia melalui produk lokal hasil karya anak bangsa, Dwisukma Mitra Rotama hadir memberikan kesempatan kepada masyarakat Indonesia untuk memanfaatkan kebutuhan konsumtif menjadi sumber penghasilan."
+
+msgid "HIGH QUALITY TASTE AT LOW PRICES"
+msgstr "SELERA PEJABAT HARGA MERAKYAT"
+
+msgid "TURN EXPENSES INTO INCOME"
+msgstr "MENGUBAH PENGELUARAN MENJADI PENGHASILAN"
+
+msgid "Proven with an affordable price, not doubted in a matter of taste"
+msgstr "Terbukti dengan harga yang sangat terjangkau tapi soal selera jangan ditanya"
+
+msgid "Habit is something that is difficult to get rid of, and therefore take advantage of your spending habits into opportunities for earning income"
+msgstr "Kebiasaan adalah suatu hal yang sulit untuk dihilangkan, maka dari itu manfaatkan kebiasaan dari pengeluaran anda menjadi peluang untuk mendapatkan penghasilan"
+
+msgid "Notice"
+msgstr "Pemberitahuan"
+
+msgid "Important"
+msgstr "Penting"
+
+msgid "Filter Month"
+msgstr "Filter Berdasarkan Bulan"
+
+msgid "Because the information on the value of the 'repeat order group' user does not fix every month, the allocation value of the 'national repeat order' can be used as a benchmark for the value of the bonus 'repeat order group'. And the results of the value of your 'repeat order group' can be seen from the 'Transactions' menu in the 'Description' column at the beginning of the month."
+msgstr "Dikarenakan informasi nilai 'repeat order group' user tidak fix pada setiap bulan bejalan, maka nilai alokasi 'repeat order nasional' dapat anda jadikan sebagai tolak ukur atas nilai bonus 'repeat order group'. Dan hasil dari nilai 'repeat order group anda' dapar dilihat dari menu 'Transaksi' di kolom 'Deskripsi'  per awal bulan."
+
+msgid "Current Rank"
+msgstr "Peringkat Anda Saat Ini"
+
+msgid "The value of the repeat order bonus can change at any time, the value is influenced by the ranking position of your downline. A fixed value is determined in the initial period of the following month."
+msgstr "Nilai bonus repeat order dapat berubah sewaktu-waktu, Nilai tersebut di pengaruhi oleh posisi peringkat downline anda. Nilai yang tetap ditentukan dalam periode awal bulan berikutnya."
+
+msgid "Serial Repeat Order Lists"
+msgstr "Daftar Serial Repeat Order"
+
+msgid "Activation Products"
+msgstr "Aktivasi Produk"
+
+msgid "Transfer"
+msgstr "Pengiriman Dana"
+
+msgid "List Transfer"
+msgstr "Daftar Pengiriman"
+
+msgid "New Transfer"
+msgstr "Transfer Baru"
+
+msgid "Destination Username"
+msgstr "Username Tujuan"
+
+msgid "From"
+msgstr "Dari"
+
+msgid "To"
+msgstr "Kepada"
+
+msgid "Type"
+msgstr "Tipe"
+
+msgid "Statistic Informations"
+msgstr "Informasi Statistik"
+
+msgid "Current user"
+msgstr "Pengguna saat ini"
+
+msgid "Site Traffic"
+msgstr "Trafik Website"
+
+msgid "Top 10 Position"
+msgstr "Top 10 Posisi"
+
+msgid "Ranks"
+msgstr "Peringkat"
+
+msgid "Congratulations to "
+msgstr "Selamat kepada "
+
+msgid "are ranked in "
+msgstr "berada dalam peringkat"
+
+msgid "Visitor Statistics"
+msgstr "Statistik Kunjungan"
+
+msgid "Big opportunities await you, changing hobbies to passive sustainable incomes. what are you waiting immediately register yourself now."
+msgstr "Peluang besar menanti anda, mengganti hobi menjadi pasif income yang berkelanjutan. tunggu apa lagi segera daftarkan diri anda sekarang juga."
