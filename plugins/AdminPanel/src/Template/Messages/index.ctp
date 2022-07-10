@@ -155,8 +155,8 @@
                     },
 
                     {
-                        field: 'Messages.message',
-                        title: 'Message',
+                        field: 'Messages.subject',
+                        title: 'Subject',
                         autoHide: true,
                         template: function(row) {
                             return row.message;
@@ -171,7 +171,7 @@
                         sortable: false,
                         overflow: 'visible',
                         template: function (row, index, datatable) {
-                            return '<a href="javascript:delete_data('+row.id+');" onclick="return confirm(\'Are you sure delete #'+row.id+'\');" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete"><i class="la la-trash"></i></a>';
+                            return '<a href="<?= $this->Url->build(['action' => 'view']); ?>/'+ row.id +'"class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View"><i class="la la-search"></i></a><a href="javascript:delete_data('+row.id+');" onclick="return confirm(\'Are you sure delete #'+row.id+'\');" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete"><i class="la la-trash"></i></a>';
                         }
                     }
                 ]

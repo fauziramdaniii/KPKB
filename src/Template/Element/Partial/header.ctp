@@ -24,24 +24,9 @@
                         <ul>
                             <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index' ]); ?>">Beranda</a></li>
                             <li><a href="<?= $this->Url->build(['controller' => 'Pages', 'action' => 'view', 'tentang-kami' ]); ?>">Tentang Kami</a></li>
-                            <li class="dropdown"><a href="#">Turnamen</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'liveBagan' ]); ?>">Live Bagan</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'matchRules' ]); ?>">Aturan Pertandingan</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'registrationRules' ]); ?>">Aturan Pendaftaran</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'matchSchedule' ]); ?>">Jadwal Pertandingan</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>">Berita</a></li>
                             <li><a href="<?= $this->Url->build(['controller' => 'Faq', 'action' => 'index' ]); ?>">FAQ</a></li>
-                            <li class="dropdown"><a href="#">Pendaftaran</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Registration', 'action' => 'pes' ]); ?>">PES 2021</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Registration', 'action' => 'ml' ]); ?>">Mobile Legends</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Registration', 'action' => 'pubgm' ]); ?>">PUBG Mobile</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Registration', 'action' => 'ff' ]); ?>">Free Fire</a></li>
-                                    <li><a href="<?= $this->Url->build(['controller' => 'Registration', 'action' => 'valorant' ]); ?>">Valorant</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="<?= $this->Url->build(['controller' => 'Contacts', 'action' => 'index' ]); ?>">Kontak Kami</a></li>
                         </ul>
                     </nav>
                 </div>

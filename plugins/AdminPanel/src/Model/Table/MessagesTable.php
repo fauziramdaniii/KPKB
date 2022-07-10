@@ -17,6 +17,8 @@ use Cake\Validation\Validator;
  * @method \AdminPanel\Model\Entity\Message patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \AdminPanel\Model\Entity\Message[] patchEntities($entities, array $data, array $options = [])
  * @method \AdminPanel\Model\Entity\Message findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class MessagesTable extends Table
 {
@@ -33,6 +35,8 @@ class MessagesTable extends Table
         $this->setTable('messages');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
     }
 
     /**
@@ -49,7 +53,7 @@ class MessagesTable extends Table
 
         $validator
             ->scalar('name')
-            ->maxLength('name', 50)
+            ->maxLength('name', 150)
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
@@ -57,6 +61,12 @@ class MessagesTable extends Table
             ->email('email')
             ->requirePresence('email', 'create')
             ->notEmptyString('email');
+
+        $validator
+            ->scalar('subject')
+            ->maxLength('subject', 150)
+            ->requirePresence('subject', 'create')
+            ->notEmptyString('subject');
 
         $validator
             ->scalar('message')
@@ -73,10 +83,10 @@ class MessagesTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
-    // public function buildRules(RulesChecker $rules)
-    // {
-        // $rules->add($rules->isUnique(['email']));
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->isUnique(['email']));
 
-        // return $rules;
-    // }
+        return $rules;
+    }
 }

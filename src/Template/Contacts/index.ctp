@@ -1,93 +1,106 @@
-<!--  section  -->
-<section class="parallax-section single-par" data-scrollax-parent="true">
-	<div class="bg par-elem "  data-bg="<?= $this->Url->build('/front-assets/images/bg/11.jpg');?>" data-scrollax="properties: { translateY: '30%' }"></div>
-	<div class="overlay op7"></div>
-	<div class="container">
-		<div class="section-title center-align big-title">
-			<h2><span>Our Contacts</span></h2>
-			<span class="section-separator"></span>
-			<div class="breadcrumbs fl-wrap"><a href="#">Home</a><span>Contacts</span></div>
-		</div>
-	</div>
-	<div class="header-sec-link">
-		<a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a> 
-	</div>
+<section id="page-title" class="text-light" style="background-image:url('<?= $this->Url->build('/front-assets-new/TentangKami_2.png'); ?>'); background-size: cover; background-position: center center;">
+    <div class="container">
+        <div class="bg-overlay"></div>
+        <div class="page-title">
+            <h1>Kontak Kami</h1>
+            <span>Koperasi Pegawai Pemerintahan Kota Bandung</span>
+        </div>
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index' ]); ?>">Beranda</a>
+                </li>
+                <li class="active"><a href="<?= $this->Url->build(['controller' => 'Contacts', 'action' => 'index' ]); ?>">Kontak Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<!--  section  end-->               
-<!--  section  -->
-<section   id="sec1" data-scrollax-parent="true">
-	<div class="container">
-		<!--about-wrap -->
-		<div class="about-wrap">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="ab_text-title fl-wrap">
-						<h3>Informasi Kontak</h3>
-						<span class="section-separator fl-sec-sep"></span>
-					</div>
-					<!--box-widget-item -->                                       
-					<div class="box-widget-item fl-wrap block_box">
-						<div class="box-widget">
-							<div class="box-widget-content bwc-nopad">
-								<div class="list-author-widget-contacts list-item-widget-contacts bwc-padside">
-									<ul class="no-list-style">
-										<li><span><i class="fal fa-map-marker"></i> Alamat :</span> <a href="#" class="custom-scroll-link"><?= \Cake\Core\Configure::read('EmailConfig.address');?></a></li>
-										<li><span><i class="fal fa-phone"></i> Nomor Telepon :</span> <a href="#"><?= \Cake\Core\Configure::read('EmailConfig.phone');?></a></li>
-										<li><span><i class="fal fa-envelope"></i> E-Mail :</span> <a href="#"><?= \Cake\Core\Configure::read('EmailConfig.emailInfo');?></a></li>
-									</ul>
-								</div>
-								<div class="list-widget-social bottom-bcw-box  fl-wrap">
-									<ul class="no-list-style">
-										<li><a href="<?= \Cake\Core\Configure::read('SocialMedia.facebook');?>" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="<?= \Cake\Core\Configure::read('SocialMedia.twitter');?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="<?= \Cake\Core\Configure::read('SocialMedia.instagram');?>" target="_blank" ><i class="fab fa-instagram"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--box-widget-item end -->  
-					<!--box-widget-item -->
-					<div class="box-widget-item fl-wrap" style="margin-top:20px;">
-						<div class="banner-wdget fl-wrap">
-							<div class="overlay op4"></div>
-							<div class="bg"  data-bg="<?= $this->Url->build('/front-assets/images/bg/18.jpg');?>"></div>
-							<div class="banner-wdget-content fl-wrap">
-								<h4>Participate in our loyalty program. Refer a friend and get a discount.</h4>
-								<a href="#" class="color-bg">Read more</a>
-							</div>
-						</div>
-					</div>
-					<!--box-widget-item end -->                                            
-				</div>
-				<div class="col-md-8">
-					<div class="ab_text">
-						<div class="ab_text-title fl-wrap">
-							<h3>Drop us a line</h3>
-							<span class="section-separator fl-sec-sep"></span>
-						</div>
-						<p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida.</p>
-						<div id="contact-form">
-							<div id="message"></div>
-							<?= $this->Flash->render() ?>
-							<br />
-							<?php echo $this->Form->create('Contacts',['class' => 'custom-form']);?>
-								<fieldset>
-									<label><i class="fal fa-user"></i></label>
-									<input type="text" name="name" id="name" placeholder="Nama Lengkap" required />
-									<div class="clearfix"></div>
-									<label><i class="fal fa-envelope"></i>  </label>
-									<input type="text"  name="email" id="email" placeholder="Email" required />
-									<textarea name="message"  id="message" cols="40" rows="3" placeholder="Pesan :" required></textarea>
-								</fieldset>
-								<button type="submit" class="btn float-btn color2-bg">Kirim<i class="fal fa-paper-plane"></i></button>
-							<?php echo $this->Form->end();?>
-						</div>
-						<!-- contact form  end--> 
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- about-wrap end  --> 
-	</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-uppercase">Kontak Kami</h3>
+                <p>Jika ada keluhan atau pertanyaan yang ingin disampaikan, silahkan kirim pesan dengan mengisi formulir dibawah ini.</p>
+                <div class="m-t-30">
+                    <?php echo $this->Form->create('Contacts',['url' => ['action' => 'index'], 'id' => 'form1', 'class' => 'form-validate', 'type' => 'file']);?>
+                        <?= $this->Flash->render(); ?>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" class="form-control" name="name" placeholder="Masukan Nama Lengkap" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" placeholder="Masukan Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="subject">Subjek Pesan</label>
+                                <input type="text" class="form-control" name="subject" placeholder="Masukan Subjek Pesan" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea type="text" name="message" required rows="5" class="form-control required" placeholder="Masukan Pesan"></textarea>
+                        </div>
+
+                        <button class="btn" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Kirim Pesan</button>
+<!--                        <button type="submit" class="btn m-t-30 mt-3">Submit</button>-->
+                    <?php echo $this->Form->end();?>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="text-uppercase">Peta dan Alamat</h3>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <address>
+                            <strong>Kantor Koperasi Pegawai Pemerintahan Kota Bandung.</strong><br>
+                            Jl. xxxxx no.123<br>
+                            Bandung, 40123<br>
+                            <h4>Telp:</h4> (022) 123-4567
+                        </address>
+                    </div>
+                </div>
+
+<!--                <div class="map" data-latitude="-37.817240" data-longitude="144.955826" data-style="light" data-info="Hello from &lt;br&gt; Inspiro Themes"></div>-->
+
+            </div>
+        </div>
+    </div>
 </section>
+<?php /*
+    <section id="page-content">
+    <div class="container">
+        <!--Images -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>PES</h2>
+                <p>Jadwal Pertandingan kategori game PES.</p>
+                <a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'schedulePes' ]); ?>"><img src="<?= $this->Url->build('/front-assets-new/pes-2021.jpg'); ?>" class="img-fluid rounded" alt=""> </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Valorant</h2>
+                <p>Jadwal Pertandingan kategori game Valorant.</p>
+                <a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'scheduleValorant' ]); ?>"><img src="<?= $this->Url->build('/front-assets-new/valorant.jpg'); ?>" class="img-fluid rounded" alt=""> </a>
+            </div>
+            <hr class="space">
+            <div class="col-lg-4">
+                <h2>Mobile Legends</h2>
+                <p>Jadwal Pertandingan kategori game Mobile Legend.</p>
+                <a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'scheduleMole' ]); ?>"><img src="<?= $this->Url->build('/front-assets-new/mobile-legend.jpg'); ?>" class="img-fluid rounded" alt=""> </a>
+            </div>
+            <div class="col-lg-4">
+                <h2>Free Fire</h2>
+                <p>Jadwal Pertandingan kategori game Free Fire.</p>
+                <a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'scheduleFreefire' ]); ?>"><img src="<?= $this->Url->build('/front-assets-new/free-fire.jpg'); ?>" class="img-fluid rounded" alt=""> </a>
+            </div>
+            <div class="col-lg-4">
+                <h2>PUBG Mobile</h2>
+                <p>Jadwal Pertandingan kategori game PUBG Mobile.</p>
+                <a href="<?= $this->Url->build(['controller' => 'Tournament', 'action' => 'schedulePubg' ]); ?>"><img src="<?= $this->Url->build('/front-assets-new/pubg-mobile.jpg'); ?>" class="img-fluid rounded" alt=""> </a>
+            </div>
+        </div>
+    </div>
+</section>
+ */ ?>

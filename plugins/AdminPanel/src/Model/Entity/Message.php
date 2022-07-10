@@ -9,7 +9,9 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property string $email
+ * @property string $subject
  * @property string $message
+ * @property \Cake\I18n\FrozenTime|null $created
  */
 class Message extends Entity
 {
@@ -25,6 +27,8 @@ class Message extends Entity
     protected $_accessible = [
         'name' => true,
         'email' => true,
+        'subject' => true,
         'message' => true,
+        'created' => true,
     ];
 }

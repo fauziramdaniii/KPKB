@@ -25,7 +25,7 @@ use Cake\View\Exception\MissingTemplateException;
  * This controller will render views from Template/Pages/
  *
  * @link https://book.cakephp.org/3.0/en/controllers/pages-controller.html
- * @property \AdminPanel\Model\Table\PagesTable $Pages
+ * @property \AdminPanel\Model\Table\MessagesTable $Messages
  */
 class ContactsController extends AppController
 {
@@ -41,18 +41,18 @@ class ContactsController extends AppController
     public function index()
     {
         $this->viewBuilder()->setLayout('pages');
-		
+
         $message = $this->Messages->newEntity();
         if ($this->request->is('post')) {
             $message = $this->Messages->patchEntity($message, $this->request->getData());
             if ($this->Messages->save($message)) {
-                $this->Flash->success_front(__('Pesan berhasil dikirim.'));
+                $this->Flash->success_front(__('Pesan Telah Terkirim. Silahkan tunggu informasi selanjutnya via email yang tertera.'));
             }else{
-				$this->Flash->error_front(__('Form pengiriman pesan gagal di proses, silahkan ulangi kembali'));
+				$this->Flash->error_front(__('Pesan gagal dikirim, silahkan ulangi kembali'));
 			}
         }
 
     }
 
-    
+
 }

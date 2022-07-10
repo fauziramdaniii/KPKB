@@ -12,13 +12,11 @@ use AdminPanel\Controller\AppController;
  */
 class MessagesController extends AppController
 {
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
+
     public function index()
     {
+
+
         if ($this->request->is('ajax')) {
             $this->viewBuilder()->setLayout('ajax');
 
@@ -38,7 +36,11 @@ class MessagesController extends AppController
                     custom field for general search
                     ex : 'Users.email LIKE' => '%' . $search .'%'
                      **/
-                    $data->where(['Messages.name LIKE' => '%' . $search .'%', 'Messages.email LIKE' => '%' . $search .'%']);
+                    $data->where([
+                        'Messages.name LIKE' => '%' . $search .'%',
+                        'Messages.email LIKE' => '%' . $search .'%',
+                        'Messages.subject LIKE' => '%' . $search .'%'
+                    ]);
                 }
                 $data->where($query);
             }
@@ -67,35 +69,22 @@ class MessagesController extends AppController
             return $this->response->withType('application/json')
                 ->withStringBody(json_encode($result));
         }
-
-
-        $this->set(compact('messages'));
     }
 
     /**
      * View method
      *
-     * @param string|null $id Supplier id.
+     * @param string|null $id Product Unit id.
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $this->viewBuilder()->setLayout('ajax');
-        $message = $this->Messages->get($id, [
-//            'contain' => ['Products']
-        ]);
+        $message = $this->Messages->get($id);
 
         $this->set('message', $message);
     }
 
-    /**
-     * Delete method
-     *
-     * @param string|null $id Message id.
-     * @return \Cake\Http\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
@@ -112,4 +101,5 @@ class MessagesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
 }

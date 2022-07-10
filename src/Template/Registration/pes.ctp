@@ -26,11 +26,12 @@
                         <span class="h4">Pendaftaran Peserta Kategori Console (PES 2021)</span>
                     </div>
                     <div class="card-body">
-                        <div role="alert" class="alert alert-danger alert-dismissible mb-5">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
-                            <strong><i class="fa fa-info-circle"></i> Peringatan!</strong><br /> <br/> Pendaftaran Telah Ditutup! Terima Kasih Telah Berpartisipasi Dalam Piala Gubernur Esport Jawa Barat Ini! </div>
+<!--                        <div role="alert" class="alert alert-danger alert-dismissible mb-5">-->
+<!--                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button>-->
+<!--                            <strong><i class="fa fa-info-circle"></i> Peringatan!</strong><br /> <br/> Pendaftaran Telah Ditutup! Terima Kasih Telah Berpartisipasi Dalam Piala Gubernur Esport Jawa Barat Ini! -->
+<!--                        </div>-->
 <!--                        <form id="form1" class="form-validate">-->
-                        <?php /*
+
                         <?php echo $this->Form->create('Registration',['url' => ['action' => 'pes'], 'id' => 'form1', 'class' => 'form-validate', 'type' => 'file']);?>
                             <?= $this->Flash->render(); ?>
                             <div class="form-row">
@@ -66,7 +67,6 @@
                             <button type="submit" class="btn m-t-30 mt-3">Submit</button>
 <!--                        </form>-->
                         <?php echo $this->Form->end();?>
-                        */ ?>
                     </div>
                 </div>
             </div>

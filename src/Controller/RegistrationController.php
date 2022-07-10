@@ -81,10 +81,10 @@ class RegistrationController extends AppController
                         ->where(['id' => $pes->id])
                         ->execute();
 
-                    $this->Mailer->setVar([
-                        'name' => $pes->name,
-                        'message' => 'Terima kasih telah mendaftar menjadi peserta Piala Gubernur Esport Jawa Barat Nomor Pertandingan PES 2021, Selanjutnya data akan diverifikasi oleh Admin. Tunggu informasi selanjutnya perihal hasil verifikasi data.'
-                    ])->send($pes->email, 'Notifikasi Pendaftaran','notification');
+//                    $this->Mailer->setVar([
+//                        'name' => $pes->name,
+//                        'message' => 'Terima kasih telah mendaftar menjadi peserta Piala Gubernur Esport Jawa Barat Nomor Pertandingan PES 2021, Selanjutnya data akan diverifikasi oleh Admin. Tunggu informasi selanjutnya perihal hasil verifikasi data.'
+//                    ])->send($pes->email, 'Notifikasi Pendaftaran','notification');
 
                     $this->Flash->success_front(__('Pendaftaran Berhasil. Silahkan Tunggu Informasi Selanjutnya.'));
                 }else{
