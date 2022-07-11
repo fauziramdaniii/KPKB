@@ -1,22 +1,22 @@
 <!--  section  -->
-<?php /* <section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/images/parallax/14.jpg'); ?>"> */?>
+<?php /* <section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/images/parallax/14.jpg'); ?>"> */ ?>
 <section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/TentangKami_2.png'); ?>">
-    <div class="bg-overlay"></div>
-    <div class="container">
-        <div class="page-title">
-            <h1 class="text-uppercase text-medium"><?= $title; ?></h1>
-        </div>
-        <div class="breadcrumb">
-            <ul>
-                <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index' ]); ?>">Beranda</a>
-                </li>
-                <li><a href="#">Halaman</a>
-                </li>
-                <li class="active"><a href="<?= $this->Url->build(['controller' => 'Pages', 'action' => 'view', 'tentang-kami' ]); ?>">Tentang Kami</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="bg-overlay"></div>
+	<div class="container">
+		<div class="page-title">
+			<h1 class="text-uppercase text-medium"><?= $title; ?></h1>
+		</div>
+		<div class="breadcrumb">
+			<ul>
+				<li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>">Beranda</a>
+				</li>
+				<li><a href="#">Halaman</a>
+				</li>
+				<li class="active"><a href="<?= $this->Url->build(['controller' => 'Pages', 'action' => 'view', 'tentang-kami']); ?>">Tentang Kami</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </section>
 <!--  section  end-->
 <?= $page['content']; ?>
