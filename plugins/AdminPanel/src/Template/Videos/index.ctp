@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \Cake\Datasource\EntityInterface[]|\Cake\Collection\CollectionInterface $suppliers
+ * @var \Cake\Datasource\EntityInterface[]|\Cake\Collection\CollectionInterface $productUnits
  * nevix
  */
 ?>
@@ -10,7 +10,7 @@
 <div class="kt-subheader   kt-grid__item" id="kt_subheader">
     <div class="kt-container ">
         <div class="kt-subheader__main">
-            <h3 class="kt-subheader__title">Daftar Pesan</h3>
+            <h3 class="kt-subheader__title">Video</h3>
             <span class="kt-subheader__separator kt-hidden"></span>
             <div class="kt-subheader__breadcrumbs">
                 <?= $this->Breadcrumb->display($BreadCrumbCrumbs);?>
@@ -29,10 +29,14 @@
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--lg">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('List Message') ?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Daftar Video') ?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
+                            <a href="<?= $this->Url->build(['action' => 'add']); ?>" class="btn btn-default btn-bold btn-upper btn-font-sm">
+                                <i class="flaticon2-add-1"></i>
+                                <?= __('Tambah Video') ?>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +65,7 @@
                     <!--end: Search Form -->
 
                     <!--begin: Datatable -->
-                    <div class="kt_datatable" id="table-messages"></div>
+                    <div class="kt_datatable" id="table-videos"></div>
                     <!--end: Datatable -->
 
 
@@ -83,7 +87,7 @@
 
     var DatatableRemoteAjaxDemo = function() {
         var demo = function() {
-            var datatable = $('#table-messages').KTDatatable({
+            var datatable = $('#table-videos').KTDatatable({
                 data: {
                     type: 'remote',
                     source: {
@@ -139,32 +143,15 @@
                         }
                     },
                     {
-                        field: 'Messages.name',
-                        title: 'Name',
+                        field: 'Videos.title',
+                        title: 'Judul',
                         template: function(row) {
-                            return row.name;
-                        }
-                    },
-
-                    {
-                        field: 'Messages.email',
-                        title: 'Email',
-                        template: function(row) {
-                            return row.email;
-                        }
-                    },
-
-                    {
-                        field: 'Messages.subject',
-                        title: 'Subject',
-                        autoHide: true,
-                        template: function(row) {
-                            return row.message;
+                            return row.title;
                         }
                     },
                     {
-                        field: 'Messages.created',
-                        title: 'Created',
+                        field: 'Videos.created',
+                        title: 'Tanggal Dibuat',
                         template: function(row) {
                             return moment(row.created).format('YYYY-MM-DD h:mm:ss');
                         }
@@ -178,7 +165,7 @@
                         sortable: false,
                         overflow: 'visible',
                         template: function (row, index, datatable) {
-                            return '<a href="<?= $this->Url->build(['action' => 'view']); ?>/'+ row.id +'"class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View"><i class="la la-search"></i></a><a href="javascript:delete_data('+row.id+');" onclick="return confirm(\'Are you sure delete #'+row.id+'\');" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete"><i class="la la-trash"></i></a>';
+                            return '<a href="<?= $this->Url->build(['action' => 'edit']); ?>/'+ row.id +'"class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Edit"><i class="la la-edit"></i></a><a href="javascript:delete_data('+row.id+');" onclick="return confirm(\'Are you sure delete #'+row.id+'\');" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete"><i class="la la-trash"></i></a>';
                         }
                     }
                 ]

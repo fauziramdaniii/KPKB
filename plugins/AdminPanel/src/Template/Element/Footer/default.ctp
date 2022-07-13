@@ -1,5 +1,5 @@
 <div class="kt-footer__bottom">
     <div class="kt-footer__copyright">
-        2022&nbsp;&copy;&nbsp;Dispora Jabar - Piala Gubernur Jawa Barat.
+        &nbsp;&copy;&nbsp; Copyright 2022 - Koperasi Pegawai Pemerintahan Kota Bandung.
     </div>
 </div>

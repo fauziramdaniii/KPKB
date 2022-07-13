@@ -9,14 +9,10 @@ use Cake\I18n\Time;
  * Dashboard Controller
  *
  * @property
- * @property \AdminPanel\Model\Table\GamesTable $Games
- * @property \AdminPanel\Model\Table\FfParticipantsTable $FfParticipants
- * @property \AdminPanel\Model\Table\MlParticipantsTable $MlParticipants
- * @property \AdminPanel\Model\Table\PesParticipantsTable $PesParticipants
- * @property \AdminPanel\Model\Table\PubgParticipantsTable $PubgParticipants
- * @property \AdminPanel\Model\Table\ValorantParticipantsTable $ValorantParticipants
- * @property \AdminPanel\Model\Table\LiveBagansTable $LiveBagans
- * @property \AdminPanel\Model\Table\MatchSchedulesTable $MatchSchedules
+ * @property \AdminPanel\Model\Table\BlogsTable $Blogs
+ * @property \AdminPanel\Model\Table\MessagesTable $Messages
+ * @property \AdminPanel\Model\Table\VideosTable $Videos
+ * @property \AdminPanel\Model\Table\FaqsTable $Faqs
  * @method \AdminPanel\Model\Entity\Dashboard[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class DashboardController extends AppController
@@ -26,14 +22,10 @@ class DashboardController extends AppController
     {
         parent::initialize();
 
-        $this->loadModel('AdminPanel.Games');
-        $this->loadModel('AdminPanel.FfParticipants');
-        $this->loadModel('AdminPanel.MlParticipants');
-        $this->loadModel('AdminPanel.PesParticipants');
-        $this->loadModel('AdminPanel.PubgParticipants');
-        $this->loadModel('AdminPanel.ValorantParticipants');
-        $this->loadModel('AdminPanel.LiveBagans');
-        $this->loadModel('AdminPanel.MatchSchedules');
+        $this->loadModel('AdminPanel.Blogs');
+        $this->loadModel('AdminPanel.Messages');
+        $this->loadModel('AdminPanel.Videos');
+        $this->loadModel('AdminPanel.Faqs');
     }
     /**
      * Index method
@@ -44,19 +36,17 @@ class DashboardController extends AppController
     {
 
         $dashboard = null;
-        $total_pes = $this->PesParticipants->find()->count();
-        $total_valorant = $this->ValorantParticipants->find()->count();
-        $total_mole = $this->MlParticipants->find()->count();
-        $total_ff = $this->FfParticipants->find()->count();
-        $total_pubg = $this->PubgParticipants->find()->count();
+        $total_berita = $this->Blogs->find()->count();
+        $total_pesan = $this->Messages->find()->count();
+        $total_video = $this->Videos->find()->count();
+        $total_faq = $this->Faqs->find()->count();
 
         $this->set(compact(
             'dashboard',
-            'total_pes',
-            'total_valorant',
-            'total_mole',
-            'total_ff',
-            'total_pubg'
+            'total_berita',
+            'total_pesan',
+            'total_video',
+            'total_faq'
         ));
 
     }

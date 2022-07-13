@@ -88,18 +88,18 @@
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--noborder">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('Total Peserta (PES)');?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Total Berita');?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
-                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Tournaments', 'action' => 'pes'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
+                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Blogs', 'action' => 'index'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
                         </div>
                     </div>
                 </div>
                 <div class="kt-portlet__body kt-portlet__body--fluid">
                     <div class="kt-widget-18">
                         <div class="kt-widget-18__summary">
-                            <div class="kt-widget-18__total"><?= $this->Number->format($total_pes);?></div>
+                            <div class="kt-widget-18__total"><?= $this->Number->format($total_berita);?></div>
                         </div>
                     </div>
                 </div>
@@ -111,87 +111,64 @@
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--noborder">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('Total Peserta (Valorant)');?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Total Pesan');?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
-                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Tournaments', 'action' => 'valorant'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
+                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Messages', 'action' => 'index'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
                         </div>
                     </div>
                 </div>
                 <div class="kt-portlet__body kt-portlet__body--fluid">
                     <div class="kt-widget-18">
                         <div class="kt-widget-18__summary">
-                            <div class="kt-widget-18__total"><?= $this->Number->format($total_valorant);?></div>
+                            <div class="kt-widget-18__total"><?= $this->Number->format($total_pesan);?></div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--end::Portlet-->
         </div>
-        <div class="col-lg-4 col-xl-4 order-lg-1 order-xl-1">
+        <div class="col-lg-6 col-xl-6 order-lg-1 order-xl-1">
             <!--begin::Portlet-->
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--noborder">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('Total Peserta (Mole)');?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Total Video Youtube');?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
-                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Tournaments', 'action' => 'mobileLegends'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
+                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Videos', 'action' => 'index'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
                         </div>
                     </div>
                 </div>
                 <div class="kt-portlet__body kt-portlet__body--fluid">
                     <div class="kt-widget-18">
                         <div class="kt-widget-18__summary">
-                            <div class="kt-widget-18__total"><?= $this->Number->format($total_mole);?></div>
+                            <div class="kt-widget-18__total"><?= $this->Number->format($total_video);?></div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--end::Portlet-->
         </div>
-        <div class="col-lg-4 col-xl-4 order-lg-1 order-xl-1">
+        <div class="col-lg-6 col-xl-6 order-lg-1 order-xl-1">
             <!--begin::Portlet-->
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--noborder">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('Total Peserta (Free Fire)');?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Total FAQ');?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
-                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Tournaments', 'action' => 'freeFire'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
+                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Faqs', 'action' => 'index'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
                         </div>
                     </div>
                 </div>
                 <div class="kt-portlet__body kt-portlet__body--fluid">
                     <div class="kt-widget-18">
                         <div class="kt-widget-18__summary">
-                            <div class="kt-widget-18__total"><?= $this->Number->format($total_ff);?></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end::Portlet-->
-        </div>
-        <div class="col-lg-4 col-xl-4 order-lg-1 order-xl-1">
-            <!--begin::Portlet-->
-            <div class="kt-portlet kt-portlet--height-fluid">
-                <div class="kt-portlet__head kt-portlet__head--noborder">
-                    <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('Total Peserta (PUBG)');?></h3>
-                    </div>
-                    <div class="kt-portlet__head-toolbar">
-                        <div class="kt-portlet__head-wrapper">
-                            <?= $this->Html->link('<i class="la la-arrow-right"></i>',['controller' => 'Tournaments', 'action' => 'pubgm'], ['class' => 'btn btn-clean btn-sm btn-icon btn-icon-md', 'escape' => false]);?>
-                        </div>
-                    </div>
-                </div>
-                <div class="kt-portlet__body kt-portlet__body--fluid">
-                    <div class="kt-widget-18">
-                        <div class="kt-widget-18__summary">
-                            <div class="kt-widget-18__total"><?= $this->Number->format($total_pubg);?></div>
+                            <div class="kt-widget-18__total"><?= $this->Number->format($total_faq);?></div>
                         </div>
                     </div>
                 </div>
