@@ -4,8 +4,8 @@
             <!--Logo-->
             <div id="logo">
                 <a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>">
-                    <span class="logo-default"><img src="<?= $this->Url->build('/front-assets-new/logo-white.jpeg'); ?>" height="50"></span>
-                    <span class="logo-dark"><img src="<?= $this->Url->build('/front-assets-new/logo-white.jpeg'); ?>" height="50"></span>
+                    <span class="logo-default"><img src="<?= $this->Url->build('/front-assets-new/logo-white.png'); ?>" height="50"></span>
+                    <span class="logo-dark"><img src="<?= $this->Url->build('/front-assets-new/logo-white.png'); ?>" height="50"></span>
 
                     <!--                    <span class="logo-default"><img class="m-b-20" src="https://disporallg.lubuklinggaukota.go.id/wp-content/uploads/2021/07/dispora-logo-transparan-1024x340.png" width="150px"></span>-->
                     <!--                    <span class="logo-dark"><img class="m-b-20" src="https://disporallg.lubuklinggaukota.go.id/wp-content/uploads/2021/07/dispora-logo-transparan-1024x340.png" width="150px"></span>-->

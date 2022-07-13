@@ -1,7 +1,6 @@
-
 <div class="kt-login-v2__container">
     <div class="text-center mt-5 p-5">
-        <?= $this->Html->image('/admin-assets/media/logos/logodark.png', array('height' => 'auto', 'width' => '250px'));?>
+        <?= $this->Html->image('/admin-assets/media/logos/logo-white.jpeg', array('height' => 'auto', 'width' => '150px')); ?>
     </div>
     <div class="kt-login-v2__title">
         <h3>Admin Panel</h3>

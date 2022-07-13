@@ -24,15 +24,28 @@
     /*.breakpoint-xs #header.dark .header-inner .lines:after {background-color: #484848 !important;}*/
 </style>
 
+
 <section class="m-0 p-0">
-    <div class="bg-overlay"></div>
-    <img class="home-img" src="<?= $this->Url->build('/front-assets-new/LandingPageUtama.jpeg'); ?>" width="100%">
+    <img class="home-img" src="" width="100%">
+    <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
+
+        <div class="slide kenburns" data-bg-image="<?= $this->Url->build('/front-assets-new/sikami.jpg'); ?>">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-center text-light">
+
+                    <h1>SELAMAT DATANG DI WEBSITE KPKB</h1>
+                    <div><a href="#welcome" class="btn scroll-to">EXPLORE HERE</a></div>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 <!--end: Inspiro Slider -->
-
-
-
-<section>
+<section id="welcome">
     <div class="container">
         <div class="heading-text heading-section text-center">
             <h2>LAYANAN KAMI</h2>
@@ -106,7 +119,7 @@
 
 
 <?php /* <section class="fullscreen" data-bg-parallax="https://c4.wallpaperflare.com/wallpaper/656/157/253/esport-electronic-sports-world-cup-dota-2-wallpaper-preview.jpg"> */ ?>
-<section class="fullscreen" data-bg-parallax="<?= $this->Url->build('/front-assets-new/LandingPageLiveBagan.png'); ?>">
+<section class="fullscreen" data-bg-parallax="<?= $this->Url->build('/front-assets-new/BaganYoutube.png'); ?>">
     <!--<div class="bg-overlay" data-style="13"></div>-->
     <div class="shape-divider" data-style="10"></div>
     <div class="container-wide">
@@ -117,7 +130,7 @@
                     <div class="card">
                         <div class="card-body text-center">
                             <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>">
-                                <img src="<?= $this->Url->build('/front-assets-new/youtubehd.jpg'); ?>" class="img-fluid" alt="" width="980">
+                                <img src="<?= $this->Url->build('/front-assets-new/youtubehd.jpg'); ?>" class="img-fluid" alt="" width="500">
                             </a>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <!--  section  -->
 <?php /* <section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/images/parallax/14.jpg'); ?>"> */ ?>
-<section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/TentangKami_2.png'); ?>">
+<section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/sikami.jpg'); ?>">
 	<div class="bg-overlay"></div>
 	<div class="container">
 		<div class="page-title">

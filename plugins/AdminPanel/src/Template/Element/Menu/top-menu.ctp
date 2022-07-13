@@ -2,8 +2,8 @@
 <div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
     <div class="kt-header__brand-logo">
         <a href="/">
-            <img alt="Logo" src="<?= $this->Url->build('/admin-assets/media/logos/logo-white.jpeg'); ?>" width="auto" height="60px" class="kt-header__brand-logo-default" />
-            <img alt="Logo" src="<?= $this->Url->build('/admin-assets/media/logos/logo-white.jpeg'); ?>" width="auto" height="60px" class="kt-header__brand-logo-sticky" />
+            <img alt="Logo" src="<?= $this->Url->build('/admin-assets/media/logos/logo-white.png'); ?>" width="auto" height="60px" class="kt-header__brand-logo-default" />
+            <img alt="Logo" src="<?= $this->Url->build('/admin-assets/media/logos/logo-white.png'); ?>" width="auto" height="60px" class="kt-header__brand-logo-sticky" />
         </a>
     </div>
 </div>
