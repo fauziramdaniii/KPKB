@@ -12,10 +12,7 @@ use App\Controller\AppController;
  * @property \AdminPanel\Model\Table\BlogTagsTable $BlogTags
  * @property \AdminPanel\Model\Table\CustomersTable $Customers
  * @property \AdminPanel\Model\Table\ImagesTable $Images
- * @property \AdminPanel\Model\Table\GamesTable $Games
- * @property \AdminPanel\Model\Table\LiveBagansTable $liveBagans
- * @property \AdminPanel\Model\Table\MatchSchedulesTable $MatchSchedules
- * @property \AdminPanel\Model\Table\MatchStatusesTable $MatchStatuses
+ * @property \AdminPanel\Model\Table\SlidesTable $Slides
  */
 class HomeController extends AppController
 {
@@ -26,10 +23,7 @@ class HomeController extends AppController
         $this->loadModel('AdminPanel.Blogs');
 		$this->loadModel('AdminPanel.Tags');
 		$this->loadModel('AdminPanel.Images');
-        $this->loadModel('AdminPanel.Games');
-        $this->loadModel('AdminPanel.LiveBagans');
-        $this->loadModel('AdminPanel.MatchSchedules');
-        $this->loadModel('AdminPanel.MatchStatuses');
+		$this->loadModel('AdminPanel.Slides');
     }
 
 	protected function getTags($limit = 4)
@@ -59,60 +53,7 @@ class HomeController extends AppController
     public function index()
     {
 
-        $pes_schedules = $this->MatchSchedules->find()
-            ->contain([
-                'MatchStatuses',
-                'Games'
-            ])
-            ->where([
-                'MatchSchedules.match_status_id !=' => 3,
-                'MatchSchedules.game_id' => 1
-            ])
-            ->limit(2)->toArray();
-
-        $ml_schedules = $this->MatchSchedules->find()
-            ->contain([
-                'MatchStatuses',
-                'Games'
-            ])
-            ->where([
-                'MatchSchedules.match_status_id !=' => 3,
-                'MatchSchedules.game_id' => 2
-            ])
-            ->limit(2)->toArray();
-
-        $pubg_schedules = $this->MatchSchedules->find()
-            ->contain([
-                'MatchStatuses',
-                'Games'
-            ])
-            ->where([
-                'MatchSchedules.match_status_id !=' => 3,
-                'MatchSchedules.game_id' => 3
-            ])
-            ->limit(2)->toArray();
-
-        $ff_schedules = $this->MatchSchedules->find()
-            ->contain([
-                'MatchStatuses',
-                'Games'
-            ])
-            ->where([
-                'MatchSchedules.match_status_id !=' => 3,
-                'MatchSchedules.game_id' => 4
-            ])
-            ->limit(2)->toArray();
-
-        $valorant_schedules = $this->MatchSchedules->find()
-            ->contain([
-                'MatchStatuses',
-                'Games'
-            ])
-            ->where([
-                'MatchSchedules.match_status_id !=' => 3,
-                'MatchSchedules.game_id' => 5
-            ])
-            ->limit(2)->toArray();
+        $slides = $this->Slides->find()->select()->toArray();
 
         $highlight = $this->Blogs->find()
             ->contain([
@@ -126,7 +67,7 @@ class HomeController extends AppController
 		$tags = $this->getTags();
 
 
-        $this->set(compact('highlight','tags','pes_schedules', 'ml_schedules', 'pubg_schedules', 'ff_schedules', 'valorant_schedules'));
+        $this->set(compact('highlight','tags','slides'));
 
 
     }

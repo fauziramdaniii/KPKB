@@ -7,7 +7,11 @@ use Cake\ORM\Entity;
  * Slide Entity
  *
  * @property int $id
- * @property string $image
+ * @property string $title
+ * @property string $subtitle
+ * @property $image
+ * @property \Cake\I18n\FrozenTime|null $created
+ * @property \Cake\I18n\FrozenTime|null $modified
  */
 class Slide extends Entity
 {
@@ -21,6 +25,10 @@ class Slide extends Entity
      * @var array
      */
     protected $_accessible = [
-        'image' => true
+        'title' => true,
+        'subtitle' => true,
+        'image' => true,
+        'created' => true,
+        'modified' => true,
     ];
 }

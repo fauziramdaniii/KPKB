@@ -18,8 +18,6 @@ class SlidesController extends AppController
     public function initialize()
     {
         parent::initialize();
-
-        $this->loadModel('AdminPanel.Images');
         $this->loadModel('AdminPanel.Slides');
         $this->allowedFileType = [
             'image/jpg',

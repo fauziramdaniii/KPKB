@@ -8,7 +8,7 @@
 <div class="kt-subheader   kt-grid__item" id="kt_subheader">
     <div class="kt-container ">
         <div class="kt-subheader__main">
-            <h3 class="kt-subheader__title">Edit Slide</h3>
+            <h3 class="kt-subheader__title">Slide</h3>
             <span class="kt-subheader__separator kt-hidden"></span>
             <div class="kt-subheader__breadcrumbs">
                 <?= $this->Breadcrumb->display($BreadCrumbCrumbs);?>
@@ -35,6 +35,8 @@
                     echo $this->Flash->render();
                     $default_class = 'form-control';
                     $this->Form->setConfig('errorClass', 'is-invalid');
+                    echo $this->Form->control('title',['class' => $default_class, 'label' => 'Title']);
+                    echo $this->Form->control('subtitle',['class' => $default_class, 'label' => 'Subtitle', 'type' => 'textarea']);
                     ?>
 
                     <div class="form-group row">

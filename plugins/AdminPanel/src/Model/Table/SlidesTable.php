@@ -17,6 +17,8 @@ use Cake\Validation\Validator;
  * @method \AdminPanel\Model\Entity\Slide patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \AdminPanel\Model\Entity\Slide[] patchEntities($entities, array $data, array $options = [])
  * @method \AdminPanel\Model\Entity\Slide findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class SlidesTable extends Table
 {
@@ -33,6 +35,8 @@ class SlidesTable extends Table
         $this->setTable('slides');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
 
         $this->addBehavior('Josegonzalez/Upload.Upload', [
             'image' => []
@@ -52,9 +56,22 @@ class SlidesTable extends Table
             ->allowEmptyString('id', null, 'create');
 
         $validator
-//            ->scalar('image')
+            //->scalar('title')
+            ->maxLength('title', 150)
+            //->requirePresence('title', 'create')
+            //->notEmptyString('title');
+            ->allowEmptyString('title');
+
+        $validator
+            //->scalar('subtitle')
+            ->maxLength('subtitle', 200)
+            //->requirePresence('subtitle', 'create')
+            //->notEmptyString('subtitle');
+            ->allowEmptyString('subtitle');
+
+        $validator
             ->requirePresence('image', 'create')
-            ->allowEmptyFile('image', true);
+            ->allowEmptyFile('image');
 
         return $validator;
     }

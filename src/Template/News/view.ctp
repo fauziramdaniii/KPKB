@@ -22,7 +22,7 @@
                                 <h2><?= __($blog->get('title')); ?></h2>
                                 <div class="post-meta">
                                     <span class="post-meta-date"><i class="fa fa-calendar-o"></i><?= $blog->created->format('M j, Y'); ?></span>
-                                    <span class="post-meta-category"><?php foreach($blog->tags as $tag) : ?><a href=""><i class="fa fa-tag"></i><?= $tag->name; ?></a><?php endforeach; ?></span>
+                                    <span class="post-meta-category"><?php foreach($blog->tags as $tag) : ?><a href=""><i class="fa fa-tag"></i><?= $tag->name; ?> </a><?php endforeach; ?></span>
                                 </div>
                                 <?= $blog->get('content'); ?>
                             </div>

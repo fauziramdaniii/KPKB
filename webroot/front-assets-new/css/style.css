@@ -1644,7 +1644,7 @@ Main Menu
 #mainMenu nav > ul > li.current > span, #mainMenu nav > ul > li:hover > a,
 #mainMenu nav > ul > li:hover > span, #mainMenu nav > ul > li:focus > a,
 #mainMenu nav > ul > li:focus > span {
-  color: #F6332D;
+  color: #0ee11e;
 }
 #mainMenu nav > ul > li.dropdown:before {
   content: "\e930";
@@ -4022,7 +4022,7 @@ del {
 a:not(.btn):not(.badge):hover, a:not(.btn):not(.badge):focus, a:not(.btn):not(.badge):active {
   text-decoration: none;
   outline: none;
-  color: #F6332D;
+  color: #0ee11e;
 }
 a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) {
   color: #484848;
@@ -5544,7 +5544,7 @@ Portfolio
 .post-item .post-video .post-meta-category,
 .post-item .post-audio .post-meta-category,
 .post-item .post-quote-img .post-meta-category {
-  background-color: #F6332D;
+  background-color: #0ee11e;
   color: #ffffff;
   font-size: 13px;
   padding: 2px 16px;
@@ -6887,8 +6887,8 @@ Portfolio
   transition: all 0.3s;
 }
 .tags a:hover, .tags a:focus, .tags a:active, .tags a.active {
-  background-color: #F6332D;
-  border-color: #F6332D;
+  background-color: #0ee11e;
+  border-color: #0ee11e;
   color: #ffffff !important;
 }
 
@@ -7431,7 +7431,7 @@ Scroll top
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #F6332D;
+  background-color: #0ee11e;
   transform: scale(0);
   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   border-radius: 100px;
@@ -11138,8 +11138,8 @@ a.btn:not([href]):not([tabindex]) {
   padding: 12px 18px;
   position: relative;
   text-transform: uppercase;
-  background-color: #F6332D;
-  border-color: #F6332D;
+  background-color: #0ee11e;
+  border-color: #0ee11e;
   border-width: 1px;
   border-style: solid;
   color: #ffffff;
@@ -12157,7 +12157,7 @@ a.btn:not([href]):not([tabindex]).disabled {
   position: absolute;
   height: 2px;
   width: 100px;
-  background-color: #F6332D;
+  background-color: #0ee11e;
   bottom: -30px;
   left: 0;
   right: 0;
@@ -14461,7 +14461,7 @@ Carousels
   color: #1f1f1f;
 }
 .flickity-button:hover {
-  background-color: #F6332D;
+  background-color: #0ee11e;
 }
 .flickity-button:hover:before {
   color: #ffffff;

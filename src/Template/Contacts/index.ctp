@@ -1,6 +1,5 @@
-<section id="page-title" class="text-light" style="background-image:url('<?= $this->Url->build('/front-assets-new/sikami.jpg'); ?>'); background-size: cover; background-position: center center;">
+<section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/sikami.jpg'); ?>">
     <div class="container">
-        <div class="bg-overlay"></div>
         <div class="page-title">
             <h1>Kontak Kami</h1>
             <span>Koperasi Pegawai Pemerintahan Kota Bandung</span>

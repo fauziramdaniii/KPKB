@@ -1,30 +1,55 @@
-<style>
-    .breakpoint-xl .body-inner section {
-        top: -80px;
-    }
+<div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
 
-    .breakpoint-xl #mainMenu nav>ul>li>a,
-    #mainMenu.dark nav>ul>li>a {
-        color: #fff;
-    }
+    <?php if($slides) : ?>
+        <?php foreach($slides as $k => $slide) : ?>
+            <div class="slide kenburns" data-bg-image="<?= $this->Url->build('/files/Slides/image/'.$slide->image); ?>">
+                <div class="bg-overlay"></div>
+                <div class="container">
+                    <div class="slide-captions text-center text-light">
 
-    .breakpoint-xl .header-sticky.sticky-active #mainMenu nav>ul>li>a,
-    #mainMenu.dark nav>ul>li>a {
-        color: #000;
-    }
+                        <h1><?= $slide->title; ?></h1>
+                        <p><?= $slide->subtitle; ?></p>
+                        </span>
 
-    /*.breakpoint-md #header.dark .header-inner .lines {background-color: #484848 !important;}*/
-    /*.breakpoint-md #header.dark .header-inner .lines:before {background-color: #484848 !important;}*/
-    /*.breakpoint-md #header.dark .header-inner .lines:after {background-color: #484848 !important;}*/
-    /*.breakpoint-sm #header.dark .header-inner .lines {background-color: #484848 !important;}*/
-    /*.breakpoint-sm #header.dark .header-inner .lines:before {background-color: #484848 !important;}*/
-    /*.breakpoint-sm #header.dark .header-inner .lines:after {background-color: #484848 !important;}*/
-    /*.breakpoint-xs #header.dark .header-inner .lines {background-color: #484848 !important;}*/
-    /*.breakpoint-xs #header.dark .header-inner .lines:before {background-color: #484848 !important;}*/
-    /*.breakpoint-xs #header.dark .header-inner .lines:after {background-color: #484848 !important;}*/
-</style>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    <?php endif; ?>
+
+    <?php /*
+    <div class="slide kenburns" data-bg-image="<?= $this->Url->build('/front-assets-new/images/slider/notgeneric_bg3.jpg'); ?>">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="slide-captions text-center text-light">
+
+                <h1>WELCOME TO THE WORLD OF POLO</h1>
+                <p>Say hello to the smartest and most flexible bootstrap template. Polo is an powerful template that can build any type of websites, and quite possibly the only one you will ever need.</p>
+                <div><a href="#welcome" class="btn scroll-to">Explore more</a></div>
+                </span>
+
+            </div>
+        </div>
+    </div>
 
 
+    <div class="slide" data-bg-video="video/pexels-waves.mp4">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="slide-captions text-left text-light">
+
+                <h1>220+ Laytout Demos</h1>
+                <p class="text-small">POLO is packed with 220+ pre-made layouts that allow you to quickly jumpstart your project. Completely customizable for creating your own designs.</p>
+                <div><a href="#welcome" class="btn scroll-to">Explore more</a></div>
+
+            </div>
+        </div>
+    </div>
+    */ ?>
+
+</div>
+
+<?php /*
 <section class="m-0 p-0">
     <img class="home-img" src="" width="100%">
     <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
@@ -43,6 +68,7 @@
         </div>
     </div>
 </section>
+*/ ?>
 
 <!--end: Inspiro Slider -->
 <section id="welcome">
@@ -183,7 +209,7 @@
                 </div>
                 <!-- end: Blog -->
             </div>
-            <div id="showMore m-b-40 text-center">
+            <div id="showMore m-b-40 text-center" style="margin: 0 auto;">
                 <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>" class="btn btn-rounded btn-light text-center"><i class="icon-refresh-cw"></i> Lihat Berita Lainnya</a>
             </div>
         </div>

@@ -29,13 +29,13 @@
             <div class="kt-portlet kt-portlet--height-fluid">
                 <div class="kt-portlet__head kt-portlet__head--lg">
                     <div class="kt-portlet__head-label">
-                        <h3 class="kt-portlet__head-title"><?= __('List Slides') ?></h3>
+                        <h3 class="kt-portlet__head-title"><?= __('Daftar Slide') ?></h3>
                     </div>
                     <div class="kt-portlet__head-toolbar">
                         <div class="kt-portlet__head-wrapper">
                             <a href="<?= $this->Url->build(['action' => 'add']); ?>" class="btn btn-default btn-bold btn-upper btn-font-sm">
                                 <i class="flaticon2-add-1"></i>
-                                <?= __('New Slide') ?>
+                                <?= __('Tambah Slide') ?>
                             </a>
                         </div>
                     </div>
@@ -144,10 +144,24 @@
                     },
 
                     {
-                        field: 'Slides.image',
-                        title: 'Image',
+                        field: 'Slides.title',
+                        title: 'Title',
                         template: function(row) {
-                            return row.image;
+                            return row.title;
+                        }
+                    },
+                    {
+                        field: 'Slides.subtitle',
+                        title: 'Subtitle',
+                        template: function(row) {
+                            return row.subtitle;
+                        }
+                    },
+                    {
+                        field: 'Slides.created',
+                        title: 'Created',
+                        template: function(row) {
+                            return moment(row.created).format('YYYY-MM-DD h:mm:ss');
                         }
                     },
 
