@@ -44,14 +44,21 @@ class ContactsController extends AppController
 
         $message = $this->Messages->newEntity();
         if ($this->request->is('post')) {
-            $message = $this->Messages->patchEntity($message, $this->request->getData());
-            if ($this->Messages->save($message)) {
-                $this->Flash->success_front(__('Pesan Telah Terkirim. Silahkan tunggu informasi selanjutnya via email yang tertera.'));
+            $secret = Configure::read('GoogleCaptcha.secretKey');
+            $gResponse = $this->request->getData('g-recaptcha-response');
+            $verify = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$gResponse);
+            $res = json_decode($verify);
+            if(@$res->success) {
+                $message = $this->Messages->patchEntity($message, $this->request->getData());
+                if ($this->Messages->save($message)) {
+                    $this->Flash->success_front(__('Pesan Telah Terkirim. Silahkan tunggu informasi selanjutnya via email yang tertera.'));
+                }else{
+                    $this->Flash->error_front(__('Pesan gagal dikirim, silahkan ulangi kembali'));
+                }
             }else{
-				$this->Flash->error_front(__('Pesan gagal dikirim, silahkan ulangi kembali'));
-			}
+                $this->Flash->error_front(__('Invalid Captcha.'));
+            }
         }
-
     }
 
 

@@ -152,11 +152,15 @@
         <div class="container-fullscreen">
             <div class="text-middle text-center">
                 <div class="heading-text text-light center">
-                    <h2 class="font-weight-800"><span>YOUTUBE</span></h2>
+                    <h2 class="font-weight-800"><span>VIDEO TERAKHIR UPLOAD</span></h2>
                     <div class="card">
                         <div class="card-body text-center">
                             <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>">
-                                <img src="<?= $this->Url->build('/front-assets-new/youtubehd.jpg'); ?>" class="img-fluid" alt="" width="500">
+                                <?php if($video) : ?>
+                                    <?php echo $video[0]->embed; ?>
+                                <?php else : ?>
+                                    <img src="<?= $this->Url->build('/front-assets-new/youtubehd.jpg'); ?>" class="img-fluid" alt="" width="500">
+                                <?php endif; ?>
                             </a>
                         </div>
                     </div>

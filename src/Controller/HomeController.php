@@ -13,6 +13,7 @@ use App\Controller\AppController;
  * @property \AdminPanel\Model\Table\CustomersTable $Customers
  * @property \AdminPanel\Model\Table\ImagesTable $Images
  * @property \AdminPanel\Model\Table\SlidesTable $Slides
+ * @property \AdminPanel\Model\Table\VideosTable $Videos
  */
 class HomeController extends AppController
 {
@@ -24,6 +25,7 @@ class HomeController extends AppController
 		$this->loadModel('AdminPanel.Tags');
 		$this->loadModel('AdminPanel.Images');
 		$this->loadModel('AdminPanel.Slides');
+		$this->loadModel('AdminPanel.Videos');
     }
 
 	protected function getTags($limit = 4)
@@ -54,6 +56,7 @@ class HomeController extends AppController
     {
 
         $slides = $this->Slides->find()->select()->toArray();
+        $video = $this->Videos->find()->select()->orderDesc('Videos.id')->limit(1)->toArray();
 
         $highlight = $this->Blogs->find()
             ->contain([
@@ -67,7 +70,7 @@ class HomeController extends AppController
 		$tags = $this->getTags();
 
 
-        $this->set(compact('highlight','tags','slides'));
+        $this->set(compact('highlight','tags','slides','video'));
 
 
     }
