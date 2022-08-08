@@ -56,7 +56,7 @@
 <!--                    <a href="#" class="kt-link kt-font-brand">Contact</a>-->
                 </div>
                 <div class="kt-login-v2__info">
-                    <a href="#" class="kt-link">&copy; 2022 Dispora Jabar - Piala Gubernur Jawa Barat.</a>
+                    <a href="#" class="kt-link">&copy; Copyright 2022 - Koperasi Pegawai Pemerintahan Kota Bandung.</a>
                 </div>
             </div>
         </div>
