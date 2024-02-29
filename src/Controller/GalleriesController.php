@@ -43,6 +43,7 @@ class GalleriesController extends AppController
 		$this->viewBuilder()->setLayout('pages');
 		
         // $albums = $this->request->getQuery('albums', 4);
+        $album = $this->Albums->find()->all()->toArray();
         $gallery = $this->Galleries->find()
             ->contain([
                 'Albums',
@@ -50,20 +51,24 @@ class GalleriesController extends AppController
             ])
             // ->where(['Galleries.album_id' => $albums])
             ->orderDesc('Galleries.id');
+            $galleries = $this->paginate($gallery, ['limit' => 9])
+    ->map(function (\AdminPanel\Model\Entity\Gallery $row) {
+        $path = explode(DS, $row->image->dir);
+        unset($path[0]);
+        $path = implode('/', $path);
+        $row->image->dir = $path;
+        
+        // Set a default value for title if it is null
+        $row->title = $row->title ?? 'Yo Check This Out';
 
-        $galleries = $this->paginate($gallery,['limit' => 9])
-            ->map(function (\AdminPanel\Model\Entity\Gallery $row){
-                $path = explode(DS,$row->image->dir);
-                unset($path[0]);
-                $path = implode('/',$path);
-                $row->image->dir = $path;
-                return $row;
-            })
-            ->toArray();
-		// debug($galleries);
-		// exit;
+        return $row;
+    })
+    ->toArray();
+
+            // debug($galleries);
+            // exit;
+            // dd($galleries);
 		
-        // $album = $this->Albums->find()->all()->toArray();
         $this->set(compact('galleries','album'));
 
     }

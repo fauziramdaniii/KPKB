@@ -23,10 +23,31 @@
                     <nav>
                         <ul>
                             <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>">Beranda</a></li>
-                            <li><a href="<?= $this->Url->build(['controller' => 'Pages', 'action' => 'view', 'tentang-kami']); ?>">Tentang Kami</a></li>
+                            <li class="dropdown"><a href="#">Profil</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?= $this->Url->build(['controller' => '', 'action' => 'sejarahKpkb']); ?>">Sejarah KPKB</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => '', 'action' => 'visi-misi']); ?>">Visi Misi</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => '', 'action' => 'struktur-organisasi']); ?>">Struktur Organisasi</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Produk</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'sejarahKpkb']); ?>">Arsip Paparan</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'visi-misi']); ?>">Dokumen Perencanaan</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'struktur-organisasi']); ?>">Dokumen KPKB</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Informasi Publik</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'sejarahKpkb']); ?>">Transparansi Anggaran</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'visi-misi']); ?>">Transparansi Kinerja</a></li>
+                                    <li><a href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'struktur-organisasi']); ?>">Program Unggulan</a></li>
+                                </ul>
+                            </li>
                             <li><a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>">Berita</a></li>
+                            <li><a href="<?= $this->Url->build(['controller' => 'Galleries', 'action' => 'index']); ?>">Galeri</a></li>
                             <li><a href="<?= $this->Url->build(['controller' => 'Faq', 'action' => 'index']); ?>">FAQ</a></li>
-                            <li><a href="<?= $this->Url->build(['controller' => 'Contacts', 'action' => 'index']); ?>">Kontak Kami</a></li>
+                            <!-- <li><a href="<?= $this->Url->build(['controller' => 'Contacts', 'action' => 'index']); ?>">Kontak Kami</a></li> -->
                         </ul>
                     </nav>
                 </div>

@@ -1,19 +1,18 @@
-<section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/sikami.jpg'); ?>">
+<section id="page-title" data-bg-parallax="<?= $this->Url->build('/front-assets-new/bg.jpg'); ?>">
     <div class="container">
         <div class="page-title">
-            <h1>FAQs</h1>
-            <span>Frequently Asked Questions</span>
+            <h1 style="color: black;">FAQs</h1>
+            <span style="color: black;">Frequently Asked Questions</span>
         </div>
         <div class="breadcrumb">
             <ul>
-                <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>">Beranda</a>
-                </li>
-                <li class="active"><a href="<?= $this->Url->build(['controller' => 'Faq', 'action' => 'index']); ?>">FAQs</a>
-                </li>
+                <li><a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>" style="color: black;">Beranda</a></li>
+                <li class="active"><a href="<?= $this->Url->build(['controller' => 'Faq', 'action' => 'index']); ?>" style="color: black;">FAQs</a></li>
             </ul>
         </div>
     </div>
 </section>
+
 <!-- end: Page title -->
 <!-- Section -->
 <section>
