@@ -14,6 +14,7 @@ use App\Controller\AppController;
  * @property \AdminPanel\Model\Table\ImagesTable $Images
  * @property \AdminPanel\Model\Table\SlidesTable $Slides
  * @property \AdminPanel\Model\Table\VideosTable $Videos
+ * @property \AdminPanel\Model\Table\GalleriesTable $Galleries
  */
 class HomeController extends AppController
 {
@@ -26,6 +27,9 @@ class HomeController extends AppController
 		$this->loadModel('AdminPanel.Images');
 		$this->loadModel('AdminPanel.Slides');
 		$this->loadModel('AdminPanel.Videos');
+        $this->loadModel('AdminPanel.Albums');
+        $this->loadModel('AdminPanel.Images');
+		$this->loadModel('AdminPanel.Galleries');
     }
 
 	protected function getTags($limit = 4)
@@ -56,7 +60,7 @@ class HomeController extends AppController
     {
 
         $slides = $this->Slides->find()->select()->toArray();
-        $video = $this->Videos->find()->select()->orderDesc('Videos.id')->limit(1)->toArray();
+        $video = $this->Videos->find()->select()->toArray();
 
         $highlight = $this->Blogs->find()
             ->contain([
@@ -69,8 +73,33 @@ class HomeController extends AppController
 
 		$tags = $this->getTags();
 
+        if ($this->request->is('ajax')) {
+            $this->viewBuilder()->setLayout('ajax'); // Use a different layout for Ajax requests
+        }
+        
+        $album = $this->Albums->find()->all()->toArray();
+        $gallery = $this->Galleries->find()
+            ->contain([
+                'Albums',
+                'Images'
+            ])
+            // ->where(['Galleries.album_id' => $albums])
+            ->orderDesc('Galleries.id');
+            $galleries = $this->paginate($gallery, ['limit' => 6])
+    ->map(function (\AdminPanel\Model\Entity\Gallery $row) {
+        $path = explode(DS, $row->image->dir);
+        unset($path[0]);
+        $path = implode('/', $path);
+        $row->image->dir = $path;
+        
+        // Set a default value for title if it is null
+        $row->title = $row->title ?? 'Yo Check This Out';
 
-        $this->set(compact('highlight','tags','slides','video'));
+        return $row;
+    })
+    ->toArray();
+
+        $this->set(compact('highlight','tags','slides','video', 'galleries','album'));
 
 
     }

@@ -18,7 +18,8 @@ use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
-
+use App\View\Helper\ToolsHelper;
+use Cake\View\View;
 /**
  * Static content controller
  *
@@ -38,40 +39,46 @@ class GalleriesController extends AppController
     }
 
 
-    public function index()
+    public function index($albumId = null)
     {
-		$this->viewBuilder()->setLayout('pages');
-		
-        // $albums = $this->request->getQuery('albums', 4);
-        $album = $this->Albums->find()->all()->toArray();
-        $gallery = $this->Galleries->find()
+        $this->viewBuilder()->setLayout('pages');
+    
+        $toolsHelper = new ToolsHelper(new View());
+        $this->set('toolsHelper', $toolsHelper);
+    
+        // Ambil semua album
+        $albums = $this->Albums->find()->all()->toArray();
+    
+        // Buat kondisi untuk filter berdasarkan album yang dipilih
+        $conditions = [];
+        if ($albumId) {
+            $conditions['Galleries.album_id'] = $albumId;
+        }
+    
+        // Query galeri dengan kondisi yang telah ditentukan
+        $galleryQuery = $this->Galleries->find()
             ->contain([
                 'Albums',
                 'Images'
             ])
-            // ->where(['Galleries.album_id' => $albums])
+            ->where($conditions)
             ->orderDesc('Galleries.id');
-            $galleries = $this->paginate($gallery, ['limit' => 9])
-    ->map(function (\AdminPanel\Model\Entity\Gallery $row) {
-        $path = explode(DS, $row->image->dir);
-        unset($path[0]);
-        $path = implode('/', $path);
-        $row->image->dir = $path;
-        
-        // Set a default value for title if it is null
-        $row->title = $row->title ?? 'Yo Check This Out';
-
-        return $row;
-    })
-    ->toArray();
-
-            // debug($galleries);
-            // exit;
-            // dd($galleries);
-		
-        $this->set(compact('galleries','album'));
-
-    }
-
     
+        // Paginasi hasil query
+        $galleries = $this->paginate($galleryQuery, ['limit' => 6])->map(function (\AdminPanel\Model\Entity\Gallery $row) {
+            $path = explode(DS, $row->image->dir);
+            unset($path[0]);
+            $path = implode('/', $path);
+            $row->image->dir = $path;
+    
+            $row->title = $row->title ?? 'Yo Check This Out';
+    
+            return $row;
+        })->toArray();
+    
+        // Kirim data ke tampilan
+        $this->set(compact('galleries', 'albums', 'albumId'));
+    }
+    
+
 }

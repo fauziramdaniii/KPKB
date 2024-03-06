@@ -14,3 +14,4 @@
  */
 
 echo $this->fetch('content');
+
