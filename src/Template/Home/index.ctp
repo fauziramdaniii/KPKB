@@ -46,6 +46,32 @@
     </div>
 </section>
 
+<section id="page-content">
+    <div class="heading-text heading-section text-center">
+        <h2>Video Terbaru</h2>
+    </div>
+    <div class="container">
+        <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="20">
+            <!-- portfolio item -->
+            <?php foreach ($video as $vid) : ?>
+            <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-image">
+                        <a href="#"><img src="<?= $vid->thumbnail_url ?>" alt=""></a>
+                    </div>
+                    <div class="portfolio-description">
+                        <a title="<?= $vid->title ?>" data-lightbox="iframe" href="<?= $vid->video_url ?>"><i
+                                class="icon-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach ?>
+            <!-- end: portfolio item -->
+        </div>
+    </div>
+</section> <!-- end: Content -->
+
+
 <section class="fullscreen" data-bg-parallax="<?= $this->Url->build('/front-assets-new/bg.jpg'); ?>">
     <!--<div class="bg-overlay" data-style="13"></div>-->
     <div class="shape-divider" data-style="10"></div>
@@ -127,7 +153,8 @@
             </div>
             <div id="showMore m-b-40 text-center" style="margin: 0 auto;">
                 <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>"
-                    class="btn btn-rounded btn-light text-center active"><i class="icon-refresh-cw"></i> Lihat Berita
+                    class="btn btn-rounded btn-light text-center active"><i class="icon-refresh-cw"></i> Lihat
+                    Berita
                     Lainnya</a>
             </div>
         </div>
@@ -142,7 +169,8 @@
         <div class="row">
             <div class="col-lg-6">
                 <h3 class="text-uppercase">Kontak Kami</h3>
-                <p>Jika ada keluhan atau pertanyaan yang ingin disampaikan, silahkan kirim pesan dengan mengisi formulir
+                <p>Jika ada keluhan atau pertanyaan yang ingin disampaikan, silahkan kirim pesan dengan mengisi
+                    formulir
                     dibawah ini atau bisa chat melalui popup whatsapp yang telah kami sediakan.</p>
                 <div class="m-t-30">
                     <?php echo $this->Form->create('Contacts', ['url' => ['action' => 'index'], 'id' => 'form1', 'class' => 'form-validate', 'type' => 'file']); ?>

@@ -79,6 +79,41 @@ class GalleriesController extends AppController
         // Kirim data ke tampilan
         $this->set(compact('galleries', 'albums', 'albumId'));
     }
-    
+  // Tambahkan method baru untuk mengambil data galeri berdasarkan kategori album yang dipilih
+  public function filterGalleryAjax($albumId) {
+    $this->autoRender = false; // Tidak perlu melakukan render tampilan
+    $this->viewBuilder()->setLayout(false); // Tidak perlu layout
+
+    // Ambil nomor halaman dan jumlah item per halaman dari permintaan AJAX
+    $page = $this->request->getQuery('page') ?: 1;
+    $limit = $this->request->getQuery('limit') ?: 6;
+
+    // Hitung offset berdasarkan nomor halaman
+    $offset = ($page - 1) * $limit;
+
+    // Query galeri dengan kondisi yang telah ditentukan dan lakukan paginasi
+    $galleryQuery = $this->Galleries->find()
+        ->contain([
+            'Albums',
+            'Images'
+        ])
+        ->where(['Galleries.album_id' => $albumId])
+        ->orderDesc('Galleries.id')
+        ->offset($offset)
+        ->limit($limit);
+
+    // Ambil jumlah total galeri untuk paginasi
+    $totalGalleries = $galleryQuery->count();
+
+    // Kirim data dalam format JSON
+    echo json_encode([
+        'galleries' => $galleryQuery->toArray(),
+        'total' => $totalGalleries,
+        'page' => $page,
+        'limit' => $limit
+    ]);
+}
+
+
 
 }
