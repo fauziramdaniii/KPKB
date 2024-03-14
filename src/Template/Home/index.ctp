@@ -17,6 +17,7 @@
     <?php endif; ?>
 </div>
 
+<!-- Galeri Foto -->
 <section id="welcome">
     <div class="container text-center">
         <div class="heading-text heading-section text-center">
@@ -42,74 +43,45 @@
         <hr class="space">
 
         <a href="<?= $this->Url->build(['controller' => 'Galleries', 'action' => 'index']); ?>"
-            class="btn btn-light btn-rounded active">Lihat Foto Lainnya</a>
+            class="btn btn-light btn-rounded active" target="_blank">Lihat Foto Lainnya</a>
     </div>
 </section>
+<!-- End Galeri Foto -->
 
+<!-- Video -->
+<div class="heading-text heading-section text-center">
+    <h2>Video Terbaru</h2>
+</div>
 <section id="page-content">
-    <div class="heading-text heading-section text-center">
-        <h2>Video Terbaru</h2>
-    </div>
     <div class="container">
-        <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="20">
-            <!-- portfolio item -->
-            <?php foreach ($video as $vid) : ?>
-            <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-                <div class="portfolio-item-wrap">
-                    <div class="portfolio-image">
-                        <a href="#"><img src="<?= $vid->thumbnail_url ?>" alt=""></a>
-                    </div>
-                    <div class="portfolio-description">
-                        <a title="<?= $vid->title ?>" data-lightbox="iframe" href="<?= $vid->video_url ?>"><i
-                                class="icon-play"></i></a>
-                    </div>
+        <div data-bg-video="https://inspirothemes.com/polo/video/pexels-waves.mp4">
+            <!-- Gallery -->
+            <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
+                <?php foreach($video as $vid) : ?>
+                <div class="grid-item">
+                    <a class="image-hover-zoom"
+                        href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>"
+                        data-lightbox="gallery-image">
+                        <?php echo $vid->embed; ?>
+
+                    </a>
                 </div>
+                <?php endforeach ?>
             </div>
-            <?php endforeach ?>
-            <!-- end: portfolio item -->
+
+            <hr class="space">
+            <div class="text-center">
+                <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>"
+                    class="btn btn-light btn-rounded justify-content-center" target="_blank">Lihat Selengkapnya</a>
+            </div>
+
         </div>
+        <!-- end: Gallery -->
     </div>
 </section> <!-- end: Content -->
+<!-- End Video -->
 
-
-<section class="fullscreen" data-bg-parallax="<?= $this->Url->build('/front-assets-new/bg.jpg'); ?>">
-    <!--<div class="bg-overlay" data-style="13"></div>-->
-    <div class="shape-divider" data-style="10"></div>
-    <div class="container-wide">
-        <div class="container-fullscreen">
-            <div class="text-middle text-center">
-                <div class="heading-text text-dark center">
-                    <h2 class="font-weight-750">
-                        <span>Video Terbaru</span>
-                    </h2>
-                    <?php if($video) : ?>
-                    <?php foreach ($video as $vid) : ?>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>">
-                                <?php echo $vid->embed; ?>
-                            </a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                    <?php else : ?>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>">
-                                <img src="<?= $this->Url->build('/front-assets-new/youtubehd.jpg'); ?>"
-                                    class="img-fluid" alt="" width="500">
-                            </a>
-                        </div>
-                    </div>
-                    <?php endif; ?>
-                    <a href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>"
-                        class="btn btn-light btn-rounded">Lihat Selengkapnya</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+<!-- Berita -->
 <section>
     <div class="container">
         <div class="row">
@@ -153,14 +125,17 @@
             </div>
             <div id="showMore m-b-40 text-center" style="margin: 0 auto;">
                 <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>"
-                    class="btn btn-rounded btn-light text-center active"><i class="icon-refresh-cw"></i> Lihat
+                    class="btn btn-rounded btn-light text-center active" target="_blank"><i class="icon-refresh-cw"></i>
+                    Lihat
                     Berita
                     Lainnya</a>
             </div>
         </div>
     </div>
 </section>
+<!-- End Berita -->
 
+<!-- Kontak -->
 <section>
     <div class="container">
         <div class="heading-text heading-section text-center">
@@ -238,7 +213,7 @@
         <i class="fab fa-whatsapp" placeholder="Chat With Us"></i>
     </div>
 </section>
-
+<!-- End Kontak -->
 
 <?php
 $this->Html->script(['https://www.google.com/recaptcha/api.js'],['block' => true]);

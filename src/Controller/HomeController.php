@@ -60,7 +60,11 @@ class HomeController extends AppController
     {
 
         $slides = $this->Slides->find()->select()->toArray();
-        $video = $this->Videos->find()->select()->toArray();
+
+        $video = $this->Videos->find()
+        ->select()
+        ->limit(6) 
+        ->toArray();
 
         $highlight = $this->Blogs->find()
             ->contain([
