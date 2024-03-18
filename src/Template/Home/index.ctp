@@ -263,10 +263,11 @@ document.getElementById('mapContainer').addEventListener('click', function() {
 
 function openWhatsApp() {
     // Ganti "6281234567890" dengan nomor WhatsApp Anda
-    var phoneNumber = "62895337732828";
-
+    <?php 
+        $noWhatsApp = $whatsapp[0]->no_whatsapp;
+    ?>
     // Buka link WhatsApp dengan nomor yang ditentukan
-    window.open("https://wa.me/" + phoneNumber, "_blank");
+    window.open("https://wa.me/+62" + <?php echo $noWhatsApp ?>, "_blank");
 }
 
 $(document).ready(function() {

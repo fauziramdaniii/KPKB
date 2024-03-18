@@ -15,6 +15,7 @@ use App\Controller\AppController;
  * @property \AdminPanel\Model\Table\SlidesTable $Slides
  * @property \AdminPanel\Model\Table\VideosTable $Videos
  * @property \AdminPanel\Model\Table\GalleriesTable $Galleries
+ * @property \AdminPanel\Model\Table\WhatsAppTable $WhatsApp
  */
 class HomeController extends AppController
 {
@@ -30,6 +31,7 @@ class HomeController extends AppController
         $this->loadModel('AdminPanel.Albums');
         $this->loadModel('AdminPanel.Images');
 		$this->loadModel('AdminPanel.Galleries');
+		$this->loadModel('AdminPanel.WhatsApp');
     }
 
 	protected function getTags($limit = 4)
@@ -65,6 +67,8 @@ class HomeController extends AppController
         ->select()
         ->limit(6) 
         ->toArray();
+
+        $whatsapp = $this->WhatsApp->find()->select()->toArray();
 
         $highlight = $this->Blogs->find()
             ->contain([
@@ -103,7 +107,7 @@ class HomeController extends AppController
     })
     ->toArray();
 
-        $this->set(compact('highlight','tags','slides','video', 'galleries','album'));
+        $this->set(compact('whatsapp', 'highlight','tags','slides','video', 'galleries','album'));
 
 
     }
