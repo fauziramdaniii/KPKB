@@ -26,9 +26,9 @@
         </div>
         <div class="btn-group">
             <a href="<?= $this->Url->build(['controller' => 'Galleries', 'action' => 'index']); ?>"
-                class="btn btn-info">Terbaru</a>
+                class="btn btn-info btn-rounded">Terbaru</a>
             <?php foreach ($albums as $albumItem) : ?>
-            <a href="#" class="btn btn-secondary album-link" data-album-id="<?= $albumItem->id ?>">
+            <a href="#" class="btn btn-secondary btn-rounded album-link" data-album-id="<?= $albumItem->id ?>">
                 <?= $albumItem->name ?>
             </a>
             <?php endforeach ?>
