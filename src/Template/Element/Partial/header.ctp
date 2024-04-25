@@ -52,7 +52,7 @@
                                             href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'struktur-organisasi']); ?>">Dokumen
                                             KPKB</a></li>
                                     <li><a
-                                            href="#">Toko Simpan Pinjam</a></li>
+                                            href="#">Simpan Pinjam</a></li>
                                     <li><a
                                             href="#">Toko Niaga</a></li>
                                 </ul>
