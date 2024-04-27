@@ -17,6 +17,60 @@
     <?php endif; ?>
 </div>
 
+<!-- Berita -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 m-b-40">
+                <div class="heading-text heading-section text-center">
+                    <h2>Berita Terkini</h2>
+                </div>
+                <div class="carousel" data-items="3">
+                    <?php foreach ($highlight as $news) : ?>
+                    <!-- Post item-->
+                    <div class="post-item border">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a
+                                    href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>">
+                                    <?php
+                                        $blog_image = $news->get('image') ?
+                                            $this->Url->build('/files/Blogs/image/' . $news->get('image'))
+                                            : $this->Url->build('/front-assets-new/images/blog/12.jpg');
+                                        if ($blog_image) :
+                                        ?>
+                                    <img src="<?= $blog_image; ?>" alt="">
+                                    <?php endif; ?>
+                                </a>
+                                <span class="post-meta-category"><a href="#"><?= $news->tags[0]->name; ?></a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i
+                                        class="fa fa-calendar-o"></i><?= $news->created->format('M j, Y'); ?></span>
+                                <h2><a
+                                        href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"><?= $news->get('title'); ?></a>
+                                </h2>
+                                <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"
+                                    class="item-link active">Baca Selengkapnya <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div id="showMore m-b-40 text-center" style="margin: 0 auto;">
+                <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>"
+                    class="btn btn-rounded btn-light text-center active" target="_blank"><i class="icon-refresh-cw"></i>
+                    Lihat
+                    Berita
+                    Lainnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Berita -->
+
 <!-- Galeri Foto -->
 <section id="welcome">
     <div class="container text-center">
@@ -80,60 +134,6 @@
     </div>
 </section> <!-- end: Content -->
 <!-- End Video -->
-
-<!-- Berita -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 m-b-40">
-                <div class="heading-text heading-section text-center">
-                    <h2>Berita Terkini</h2>
-                </div>
-                <div class="carousel" data-items="3">
-                    <?php foreach ($highlight as $news) : ?>
-                    <!-- Post item-->
-                    <div class="post-item border">
-                        <div class="post-item-wrap">
-                            <div class="post-image">
-                                <a
-                                    href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>">
-                                    <?php
-                                        $blog_image = $news->get('image') ?
-                                            $this->Url->build('/files/Blogs/image/' . $news->get('image'))
-                                            : $this->Url->build('/front-assets-new/images/blog/12.jpg');
-                                        if ($blog_image) :
-                                        ?>
-                                    <img src="<?= $blog_image; ?>" alt="">
-                                    <?php endif; ?>
-                                </a>
-                                <span class="post-meta-category"><a href="#"><?= $news->tags[0]->name; ?></a></span>
-                            </div>
-                            <div class="post-item-description">
-                                <span class="post-meta-date"><i
-                                        class="fa fa-calendar-o"></i><?= $news->created->format('M j, Y'); ?></span>
-                                <h2><a
-                                        href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"><?= $news->get('title'); ?></a>
-                                </h2>
-                                <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"
-                                    class="item-link active">Baca Selengkapnya <i class="icon-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end: Post item-->
-                    <?php endforeach; ?>
-                </div>
-            </div>
-            <div id="showMore m-b-40 text-center" style="margin: 0 auto;">
-                <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>"
-                    class="btn btn-rounded btn-light text-center active" target="_blank"><i class="icon-refresh-cw"></i>
-                    Lihat
-                    Berita
-                    Lainnya</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Berita -->
 
 <!-- Kontak -->
 <section>

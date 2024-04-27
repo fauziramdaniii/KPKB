@@ -66,9 +66,10 @@ class GalleriesController extends AppController
     
         // Paginasi hasil query
         $galleries = $this->paginate($galleryQuery, ['limit' => 6])->map(function (\AdminPanel\Model\Entity\Gallery $row) {
-            $path = explode(DS, $row->image->dir);
+            $path = explode('/', $row->image->dir);
             unset($path[0]);
             $path = implode('/', $path);
+            dd($path);
             $row->image->dir = $path;
     
             $row->title = $row->title ?? 'Yo Check This Out';
