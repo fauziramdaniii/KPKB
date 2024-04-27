@@ -69,7 +69,6 @@ class GalleriesController extends AppController
             $path = explode('/', $row->image->dir);
             unset($path[0]);
             $path = implode('/', $path);
-            dd($path);
             $row->image->dir = $path;
     
             $row->title = $row->title ?? 'Yo Check This Out';
