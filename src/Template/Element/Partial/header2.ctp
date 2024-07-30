@@ -40,19 +40,6 @@
                                             Organisasi</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">Produk</a>
-                                <ul class="dropdown-menu">
-                                    <li><a
-                                            href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'sejarahKpkb']); ?>">Arsip
-                                            Paparan</a></li>
-                                    <li><a
-                                            href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'visi-misi']); ?>">Dokumen
-                                            Perencanaan</a></li>
-                                    <li><a
-                                            href="<?= $this->Url->build(['controller' => 'tentang-kami', 'action' => 'struktur-organisasi']); ?>">Dokumen
-                                            KPKB</a></li>
-                                </ul>
-                            </li>
                             <li><a
                                     href="<?= $this->Url->build(['controller' => 'News', 'action' => 'index']); ?>">Berita</a>
                             </li>
