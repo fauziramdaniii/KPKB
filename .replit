@@ -1,0 +1,13 @@
+modules = ["nodejs-20", "web", "php-7.4", "php-7.4"]
+run = "bin/cake server"
+
+[nix]
+channel = "stable-22_05"
+
+[deployment]
+run = ["sh", "-c", "bin/cake server"]
+
+[[ports]]
+localPort = 8765
+externalPort = 80
+exposeLocalhost = true
