@@ -99,10 +99,11 @@
                     </div>
                     <div class="form-group row">
                         <label class="col-form-label col-lg-2">Image</label>
-                        <div class="col-lg-3">
-                            <div class="custom-file">
-                                <input type="file" name="image" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
+                        <input type="text" name="image" class="" hidden id="image">
+                        <div class="dropzone dropzone-default" id="kt_dropzone_3">
+                            <div class="dropzone-msg dz-message needsclick">
+                                <h3 class="dropzone-msg-title">Drop files here or click to upload.</h3>
+                                <span class="dropzone-msg-desc">Only image allowed for upload</span>
                             </div>
                         </div>
                     </div>
@@ -154,44 +155,63 @@ $this->Html->script([
 ?>
 <?php $this->append('script'); ?>
 <script>
+    var uploadedImageNames = [];
     $('.form-select').bootstrapDualListbox();
     $('#slug').slugify('#title');
     $('.select').selectpicker();
     $('.summernote').summernote({
         height: 150 ,
-        callbacks: {
-            onImageUpload: function(image) {
-                var id = $(this).data('id');
-                uploadImage(image[0], id);
-            }
-        }
+        callbacks: {}
     });
-    function uploadImage(image,id) {
-        var data = new FormData();
-        data.append("name", image);
-        data.append("_csrfToken", "<?= $this->request->params['_csrfToken']; ?>");
-        $.ajax({
-            url: "<?= $this->Url->build(['action' => 'upload']); ?>",
-            cache: false,
-            contentType: false,
-            processData: false,
-            data: data,
-            type: "post",
-            success: function(url) {
-                var image = $('<img>').attr('src', url.data.url +'/'+ url.data.name);
-                $('#content-'+id).summernote("insertNode", image[0]);
-            },
-            error: function(data) {
-                console.log(data);
-            }
-        });
-    }
 
     $("#blog-submit").click(function(){
         $(':required:invalid', '#form-blog').each(function () {
             var id = $('.tab-pane').find(':required:invalid').closest('.tab-pane').attr('id');
             $('.nav a[href="#' + id + '"]').tab('show');
         });
+    });
+
+    var KTDropzoneDemo = {
+        init: function() {
+            $("#kt_dropzone_3").dropzone({
+                url: "<?= $this->Url->build(['action' => 'upload']);?>",
+                params: {
+                    _csrfToken: '<?= $this->request->getParam('_csrfToken'); ?>'
+                },
+                paramName: "name",
+                maxFiles: 10,
+                maxFilesize: 10,
+                addRemoveLinks: !0,
+                acceptedFiles: "image/*",
+                accept: function(e, o) {
+                    "justinbieber.jpg" == e.name ? o("Naha, you don't.") : o()
+                },
+                init: function() {
+                    this.on("success", function(file, response) {
+                        uploadedImageNames.push(response.data.name);
+                        $('#image').val(uploadedImageNames.join(','));
+                    });
+
+                    this.on("error", function(file, response) {
+                    });
+
+                    this.on("complete", function(file) {
+                    });
+
+                    this.on("removedfile", function(file) {
+                        var filename = file.name;
+                        var index = uploadedImageNames.indexOf(filename);
+                        if (index > -1) {
+                            uploadedImageNames.splice(index, 1);
+                            $('#image').val(uploadedImageNames.join(','));
+                        }
+                    });
+                }
+            })
+        }
+    }
+    jQuery(document).ready(function() {
+        KTDropzoneDemo.init();
     });
 </script>
 <?php $this->end(); ?>

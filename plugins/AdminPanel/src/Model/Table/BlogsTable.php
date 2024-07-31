@@ -48,9 +48,9 @@ class BlogsTable extends Table
 
         $this->addBehavior('Timestamp');
 
-        $this->addBehavior('Josegonzalez/Upload.Upload', [
-            'image' => []
-        ]);
+        // $this->addBehavior('Josegonzalez/Upload.Upload', [
+        //     'image' => []
+        // ]);
 
 
         $this->belongsTo('Topics', [

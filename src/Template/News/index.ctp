@@ -26,11 +26,16 @@
                         <div class="post-item-wrap">
                             <div class="post-image">
                                 <?php
-                                    $blog_image = $news->get('image') ?
-                                        $this->Url->build('/files/Blogs/image/' . $news->get('image'))
-                                        : $this->Url->build('/front-assets-new/images/blog/12.jpg');
-                                    if ($blog_image) :
-                                        ?>
+                                $imageString = $news->get('image');
+                                $imageArray = explode(',', $imageString);
+                                $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
+
+                                $blog_image = $firstImage ? 
+                                    $this->Url->build('/files/Blogs/image/' . $firstImage) :
+                                    $this->Url->build('/front-assets-new/images/blog/12.jpg');
+
+                                if ($blog_image) :
+                                ?>
                                 <a href="<?= $blog_image; ?>">
                                     <img alt="" src="<?= $blog_image; ?>">
                                 </a>
@@ -69,9 +74,13 @@
                         <?php foreach($top_blogs as $other_blog) :?>
                         <div class="post-thumbnail-entry">
                             <?php
-                                    $blog_image = $other_blog->get('image') ?
-                                        $this->Url->build('/files/Blogs/image/' . $other_blog->get('image'))
-                                        : $this->Url->build('/front-assets-new/images/blog/12.jpg');
+                              $imageString = $other_blog->get('image');
+                                $imageArray = explode(',', $imageString);
+                                $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
+
+                                $blog_image = $firstImage ? 
+                                    $this->Url->build('/files/Blogs/image/' . $firstImage) :
+                                    $this->Url->build('/front-assets-new/images/blog/12.jpg');
                                     if ($blog_image) :
                                         ?>
                             <img src="<?= $blog_image; ?>" alt="">

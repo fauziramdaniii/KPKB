@@ -95,9 +95,10 @@ class BlogsController extends AppController
     public function upload(){
         $this->request->allowMethod('post');
         $this->disableAutoRender();
+        
+        $this->Images->removeBehavior('Upload');
 
         $file = $this->request->getData('name');
-
         $Response = $this->response->withType('application/json');
 
         $out = [];
@@ -119,40 +120,53 @@ class BlogsController extends AppController
             ];
 
             if ($width < $min_image_size['width'] && $height < $min_image_size['height']) {
-                $out['error'] = __( sprintf('minimal width %s dan height %s', $min_image_size['width'], $min_image_size['height']));
+                $out['error'] = __(sprintf('minimal width %s dan height %s', $min_image_size['width'], $min_image_size['height']));
                 $Response = $Response->withStatus('401');
-                return $Response
-                    ->withStringBody(json_encode($out));
+                return $Response->withStringBody(json_encode($out));
             }
-            $entity = $this->Images->newEntity();
-            $this->Images->patchEntity($entity, $this->request->getData());
-            if ($this->Images->save($entity)) {
 
-				$path = explode('/',$entity->get('dir'));
-				unset($path[0]);
-				$path = implode('/',$path);
-                $out['data'] = [
-                    'original_name' => $file['name'],
-                    'url' => $_SERVER[ 'HTTP_ORIGIN' ] . DS . $path,
-                    'name' => $entity->get('name'),
-                    'image_id' => $entity->get('id')
-                ];
-                $Response = $Response->withStatus('200');
+            // Manually handle the file upload
+            $targetDir = 'webroot' . DS . 'files' . DS . 'Blogs' . DS . 'image' . DS;
+            if (!file_exists($targetDir)) {
+                mkdir($targetDir, 0755, true);
+            }
+
+            $fileExtension = pathinfo($file['name'], PATHINFO_EXTENSION); 
+            $fileName = uniqid() . '.' . $fileExtension;
+            $filePath = $targetDir . $fileName;
+
+            if (move_uploaded_file($file['tmp_name'], $filePath)) {
+                $entity = $this->Images->newEntity();
+                $entity->name = $fileName;
+                $entity->dir = 'webroot' . DS . 'files' . DS . 'Blogs' . DS . 'image';
+                $entity->size = $file['size'];
+                $entity->type = $file['type'];
+
+                if ($this->Images->save($entity)) {
+                    $out['data'] = [
+                        'original_name' => $file['name'],
+                        'url' => $_SERVER['HTTP_ORIGIN'] . DS . 'files' . DS . 'Blogs' . DS . 'image' . DS . $fileName,
+                        'name' => $entity->name,
+                        'image_id' => $entity->id
+                    ];
+                    $Response = $Response->withStatus('200');
+                } else {
+                    $out['error'] = __('Gagal upload');
+                    $out['message'] = $entity->getErrors();
+                    $Response = $Response->withStatus('401');
+                }
             } else {
-                $out['error'] = __( 'Gagal upload');
-                $out['message'] = $entity->getErrors();
-
-                $Response = $Response->withStatus('401');
+                $out['error'] = __('Failed to move uploaded file.');
+                $Response = $Response->withStatus('500');
             }
         } else {
-            $out['error'] = __( 'file harus jpg, png');
+            $out['error'] = __('file harus jpg, png');
             $Response = $Response->withStatus('401');
         }
 
-
-        return $Response
-            ->withStringBody(json_encode($out));
+        return $Response->withStringBody(json_encode($out));
     }
+
 
     /**
      * View method
@@ -178,12 +192,17 @@ class BlogsController extends AppController
      */
     public function add()
     {
+        // debug($file);        
         $languages = Configure::read('App.Languages');
         $blog = $this->Blogs->newEntity();
         if ($this->request->is('post')) {
             $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated'=>['Tags']]);
             $blog->set('status', $this->request->getData('status'));
             $blog->set('user_id', $this->Auth->user('id'));
+            $blog->set('image', $this->request->getData('image'));
+
+            // dd($blog);
+
             if ($this->Blogs->save($blog, ['associated'=>['Tags']])) {
                 $this->Flash->success(__('The blog has been saved.'));
 
