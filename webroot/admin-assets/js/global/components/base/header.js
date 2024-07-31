@@ -1,12 +1,12 @@
 "use strict";
-var KTHeader = function (elementId, options) {
+var KTHeader = function(elementId, options) {
     // Main object
     var the = this;
     var init = false;
 
     // Get element object
     var element = KTUtil.get(elementId);
-    var body = KTUtil.get("body");
+    var body = KTUtil.get('body');
 
     if (element === undefined) {
         return;
@@ -17,12 +17,12 @@ var KTHeader = function (elementId, options) {
         classic: false,
         offset: {
             mobile: 150,
-            desktop: 200,
+            desktop: 200
         },
         minimize: {
             mobile: false,
-            desktop: false,
-        },
+            desktop: false
+        }
     };
 
     ////////////////////////////
@@ -34,9 +34,9 @@ var KTHeader = function (elementId, options) {
          * Run plugin
          * @returns {KTHeader}
          */
-        construct: function (options) {
-            if (KTUtil.data(element).has("header")) {
-                the = KTUtil.data(element).get("header");
+        construct: function(options) {
+            if (KTUtil.data(element).has('header')) {
+                the = KTUtil.data(element).get('header');
             } else {
                 // reset header
                 Plugin.init(options);
@@ -44,7 +44,7 @@ var KTHeader = function (elementId, options) {
                 // build header
                 Plugin.build();
 
-                KTUtil.data(element).set("header", the);
+                KTUtil.data(element).set('header', the);
             }
 
             return the;
@@ -54,7 +54,7 @@ var KTHeader = function (elementId, options) {
          * Handles subheader click toggle
          * @returns {KTHeader}
          */
-        init: function (options) {
+        init: function(options) {
             the.events = [];
 
             // merge default and user defined options
@@ -65,30 +65,24 @@ var KTHeader = function (elementId, options) {
          * Reset header
          * @returns {KTHeader}
          */
-        build: function () {
+        build: function() {
             var lastScrollTop = 0;
             var eventTriggerState = true;
             var viewportHeight = KTUtil.getViewPort().height;
             var documentHeight = KTUtil.getDocumentHeight();
 
-            if (
-                the.options.minimize.mobile === false &&
-                the.options.minimize.desktop === false
-            ) {
+            if (the.options.minimize.mobile === false && the.options.minimize.desktop === false) {
                 return;
             }
 
-            window.addEventListener("scroll", function () {
-                var offset = 0,
-                    on,
-                    off,
-                    st;
+            window.addEventListener('scroll', function() {
+                var offset = 0, on, off, st;
 
-                if (KTUtil.isInResponsiveRange("desktop")) {
+                if (KTUtil.isInResponsiveRange('desktop')) {
                     offset = the.options.offset.desktop;
                     on = the.options.minimize.desktop.on;
                     off = the.options.minimize.desktop.off;
-                } else if (KTUtil.isInResponsiveRange("tablet-and-mobile")) {
+                } else if (KTUtil.isInResponsiveRange('tablet-and-mobile')) {
                     offset = the.options.offset.mobile;
                     on = the.options.minimize.mobile.on;
                     off = the.options.minimize.mobile.off;
@@ -96,50 +90,46 @@ var KTHeader = function (elementId, options) {
 
                 st = KTUtil.getScrollTop();
 
+                // console.log('top:' + st);
+                // console.log('offset:' + offset);
+                // console.log('documentHeight:' + documentHeight);
+
                 if (
-                    (KTUtil.isInResponsiveRange("tablet-and-mobile") &&
-                        the.options.classic &&
-                        the.options.classic.mobile) ||
-                    (KTUtil.isInResponsiveRange("desktop") &&
-                        the.options.classic &&
-                        the.options.classic.desktop)
+                    (KTUtil.isInResponsiveRange('tablet-and-mobile') && the.options.classic && the.options.classic.mobile) ||
+                    (KTUtil.isInResponsiveRange('desktop') && the.options.classic && the.options.classic.desktop)
                 ) {
-                    if (st > offset) {
-                        // down scroll mode
+                    if (st > offset) { // down scroll mode
                         KTUtil.addClass(body, on);
                         KTUtil.removeClass(body, off);
 
                         if (eventTriggerState) {
-                            Plugin.eventTrigger("minimizeOn", the);
+                            Plugin.eventTrigger('minimizeOn', the);
                             eventTriggerState = false;
                         }
-                    } else {
-                        // back scroll mode
+                    } else { // back scroll mode
                         KTUtil.addClass(body, off);
                         KTUtil.removeClass(body, on);
 
                         if (eventTriggerState == false) {
-                            Plugin.eventTrigger("minimizeOff", the);
+                            Plugin.eventTrigger('minimizeOff', the);
                             eventTriggerState = true;
                         }
                     }
                 } else {
-                    if (st > offset && lastScrollTop < st) {
-                        // down scroll mode
+                    if (st > offset && lastScrollTop < st) { // down scroll mode
                         KTUtil.addClass(body, on);
                         KTUtil.removeClass(body, off);
 
                         if (eventTriggerState) {
-                            Plugin.eventTrigger("minimizeOn", the);
+                            Plugin.eventTrigger('minimizeOn', the);
                             eventTriggerState = false;
                         }
-                    } else {
-                        // back scroll mode
+                    } else { // back scroll mode
                         KTUtil.addClass(body, off);
                         KTUtil.removeClass(body, on);
 
                         if (eventTriggerState == false) {
-                            Plugin.eventTrigger("minimizeOff", the);
+                            Plugin.eventTrigger('minimizeOff', the);
                             eventTriggerState = true;
                         }
                     }
@@ -152,7 +142,7 @@ var KTHeader = function (elementId, options) {
         /**
          * Trigger events
          */
-        eventTrigger: function (name, args) {
+        eventTrigger: function(name, args) {
             for (var i = 0; i < the.events.length; i++) {
                 var event = the.events[i];
                 if (event.name == name) {
@@ -168,14 +158,14 @@ var KTHeader = function (elementId, options) {
             }
         },
 
-        addEvent: function (name, handler, one) {
+        addEvent: function(name, handler, one) {
             the.events.push({
                 name: name,
                 handler: handler,
                 one: one,
-                fired: false,
+                fired: false
             });
-        },
+        }
     };
 
     //////////////////////////
@@ -186,14 +176,14 @@ var KTHeader = function (elementId, options) {
      * Set default options
      */
 
-    the.setDefaults = function (options) {
+    the.setDefaults = function(options) {
         defaultOptions = options;
     };
 
     /**
      * Register event
      */
-    the.on = function (name, handler) {
+    the.on = function(name, handler) {
         return Plugin.addEvent(name, handler);
     };
 
@@ -212,6 +202,6 @@ var KTHeader = function (elementId, options) {
 };
 
 // webpack support
-if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
     module.exports = KTHeader;
 }
