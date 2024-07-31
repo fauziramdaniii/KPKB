@@ -31,10 +31,10 @@
         ]); ?>
 
     <?= $this->Html->meta(
-            'favicon.ico',
-            '/admin-assets/media/logos/logo.png',
-            ['type' => 'icon']
-        ); ?>
+        'favicon.ico',
+        '/front-assets-new/logo-white.png',
+        ['type' => 'icon']
+    ); ?>
 
     <?= $this->fetch('meta'); ?>
     <?= $this->fetch('css'); ?>
