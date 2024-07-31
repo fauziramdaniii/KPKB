@@ -192,7 +192,6 @@ class BlogsController extends AppController
      */
     public function add()
     {
-        // debug($file);        
         $languages = Configure::read('App.Languages');
         $blog = $this->Blogs->newEntity();
         if ($this->request->is('post')) {
@@ -200,8 +199,6 @@ class BlogsController extends AppController
             $blog->set('status', $this->request->getData('status'));
             $blog->set('user_id', $this->Auth->user('id'));
             $blog->set('image', $this->request->getData('image'));
-
-            // dd($blog);
 
             if ($this->Blogs->save($blog, ['associated'=>['Tags']])) {
                 $this->Flash->success(__('The blog has been saved.'));
@@ -235,6 +232,7 @@ class BlogsController extends AppController
             $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated'=>['Tags']]);
             $blog->set('status', $this->request->getData('status'));
             $blog->set('user_id', $this->Auth->user('id'));
+
             if ($this->Blogs->save($blog, ['associated'=>['Tags']])) {
                 $this->Flash->success(__('The blog has been saved.'));
 

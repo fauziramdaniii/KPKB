@@ -73,6 +73,9 @@ class NewsController extends AppController
     protected function getTopBlog($limit = 3)
     {
         return $this->Blogs->find()
+            ->where([
+                'status' => 1,
+            ])
             ->contain([
                 'Users'
             ])
@@ -96,7 +99,10 @@ class NewsController extends AppController
 		$title = 'Berita';
 		$description = 'Lorem Ipsum';
 
-        $blogs = $this->Blogs->find()
+        $blogs = $this->Blogs->find()            
+            ->where([
+                'status' => 1,
+            ])
             ->contain([
                 'Users',
                 'Topics',
@@ -130,7 +136,8 @@ class NewsController extends AppController
 
         $blog = $this->Blogs->find()
             ->where([
-                'slug' => $slug //TODO where status
+                'slug' => $slug,
+                'status' => 1,
             ])
             ->contain([
                 'Users',

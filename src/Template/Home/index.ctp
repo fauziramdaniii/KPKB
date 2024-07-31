@@ -34,8 +34,12 @@
                                 <a
                                     href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>">
                                     <?php
-                                        $blog_image = $news->get('image') ?
-                                            $this->Url->build('/files/Blogs/image/' . $news->get('image'))
+                                        $imageString = $news->get('image');
+                                        $imageArray = explode(',', $imageString);
+                                        $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
+                                    
+                                        $blog_image = $firstImage ?
+                                            $this->Url->build('/files/Blogs/image/' . $firstImage)
                                             : $this->Url->build('/front-assets-new/images/blog/12.jpg');
                                         if ($blog_image) :
                                         ?>

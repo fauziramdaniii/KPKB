@@ -44,6 +44,7 @@ class Blog extends Entity
         'modified' => true,
         'topic' => true,
         'user' => true,
+        'status' => true,
 //        'blog_tags' => true,
         'tags' => true,
         '_translations' => true

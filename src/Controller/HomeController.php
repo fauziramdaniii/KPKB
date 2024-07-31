@@ -60,7 +60,6 @@ class HomeController extends AppController
      */
     public function index()
     {
-
         $slides = $this->Slides->find()->select()->toArray();
 
         $video = $this->Videos->find()
@@ -71,6 +70,9 @@ class HomeController extends AppController
         $whatsapp = $this->WhatsApp->find()->select()->toArray();
 
         $highlight = $this->Blogs->find()
+            ->where([
+                'status' => 1,
+            ])
             ->contain([
                 'Users',
                 'Topics',
