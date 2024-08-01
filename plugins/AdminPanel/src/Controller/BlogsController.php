@@ -54,11 +54,7 @@ class BlogsController extends AppController
                 if (isset($query['generalSearch'])) {
                     $search = $query['generalSearch'];
                     unset($query['generalSearch']);
-                    /**
-                        custom field for general search
-                        ex : 'Users.email LIKE' => '%' . $search .'%'
-                    **/
-                    $data->where(['Blogs.name LIKE' => '%' . $search .'%']);
+                    $data->where(['Blogs.name LIKE' => '%' . $search . '%']);
                 }
                 $data->where($query);
             }
@@ -85,17 +81,18 @@ class BlogsController extends AppController
 
 
             return $this->response->withType('application/json')
-            ->withStringBody(json_encode($result));
+                ->withStringBody(json_encode($result));
         }
 
 
         //$this->set(compact('blogs'));
     }
 
-    public function upload(){
+    public function upload()
+    {
         $this->request->allowMethod('post');
         $this->disableAutoRender();
-        
+
         $this->Images->removeBehavior('Upload');
 
         $file = $this->request->getData('name');
@@ -125,13 +122,13 @@ class BlogsController extends AppController
                 return $Response->withStringBody(json_encode($out));
             }
 
-            // Manually handle the file upload
+            // Manually handle the file upload (for server remove the webroot/ part)
             $targetDir = 'webroot' . DS . 'files' . DS . 'Blogs' . DS . 'image' . DS;
             if (!file_exists($targetDir)) {
                 mkdir($targetDir, 0755, true);
             }
 
-            $fileExtension = pathinfo($file['name'], PATHINFO_EXTENSION); 
+            $fileExtension = pathinfo($file['name'], PATHINFO_EXTENSION);
             $fileName = uniqid() . '.' . $fileExtension;
             $filePath = $targetDir . $fileName;
 
@@ -195,12 +192,12 @@ class BlogsController extends AppController
         $languages = Configure::read('App.Languages');
         $blog = $this->Blogs->newEntity();
         if ($this->request->is('post')) {
-            $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated'=>['Tags']]);
+            $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated' => ['Tags']]);
             $blog->set('status', $this->request->getData('status'));
             $blog->set('user_id', $this->Auth->user('id'));
             $blog->set('image', $this->request->getData('image'));
 
-            if ($this->Blogs->save($blog, ['associated'=>['Tags']])) {
+            if ($this->Blogs->save($blog, ['associated' => ['Tags']])) {
                 $this->Flash->success(__('The blog has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -209,7 +206,7 @@ class BlogsController extends AppController
         }
         $topics = $this->Blogs->Topics->find('list', ['limit' => 200]);
         $listTags = $this->Tags->find('list', ['limit' => 200])->toArray();
-        $this->set(compact('blog', 'topics', 'languages','listTags'));
+        $this->set(compact('blog', 'topics', 'languages', 'listTags'));
     }
 
     /**
@@ -229,11 +226,11 @@ class BlogsController extends AppController
             ->first();
         if ($this->request->is(['patch', 'post', 'put'])) {
 
-            $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated'=>['Tags']]);
+            $blog = $this->Blogs->patchEntity($blog, $this->request->getData(), ['associated' => ['Tags']]);
             $blog->set('status', $this->request->getData('status'));
             $blog->set('user_id', $this->Auth->user('id'));
 
-            if ($this->Blogs->save($blog, ['associated'=>['Tags']])) {
+            if ($this->Blogs->save($blog, ['associated' => ['Tags']])) {
                 $this->Flash->success(__('The blog has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -242,7 +239,7 @@ class BlogsController extends AppController
         }
         $topics = $this->Blogs->Topics->find('list', ['limit' => 200]);
         $listTags = $this->Tags->find('list', ['limit' => 200])->toArray();
-        $this->set(compact('blog', 'topics', 'languages','listTags'));
+        $this->set(compact('blog', 'topics', 'languages', 'listTags'));
     }
 
     /**
