@@ -3,8 +3,8 @@
 
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $this->Html->meta(
         'keywords',
         'dispora,piala gubernur,esports'
@@ -18,15 +18,15 @@
     <?= $this->Html->meta(
         'author',
         'Dispora Jawa Barat'
-    );?>
-  <title><?= $this->fetch('title') ?></title>
+    ); ?>
+    <title><?= $this->fetch('title') ?></title>
 
 
     <?= $this->Html->css([
         '/front-assets-new/css/plugins',
         '/front-assets-new/css/style',
     ]); ?>
-    
+
     <?= $this->Html->meta(
         'favicon.ico',
         '/front-assets-new/logo-white.png',
@@ -34,16 +34,19 @@
     ); ?>
 
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
+
         .body-inner {
             min-height: 100%;
             display: flex;
             flex-direction: column;
         }
+
         .content-wrapper {
             flex: 1;
         }
@@ -62,13 +65,13 @@
         <?= $this->element('Partial/footer'); ?>
     </div>
 
-  <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+    <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
 
-  <?= $this->Html->script([
-      '/front-assets-new/js/jquery.js',
-      '/front-assets-new/js/plugins.js',
-      '/front-assets-new/js/functions.js'
-  ]); ?>
+    <?= $this->Html->script([
+        '/front-assets-new/js/jquery.js',
+        '/front-assets-new/js/plugins.js',
+        '/front-assets-new/js/functions.js'
+    ]); ?>
 
     <?= $this->fetch('script') ?>
 </body>
