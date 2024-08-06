@@ -3,15 +3,15 @@
     "plugins/AdminPanel/src/Controller/BlogsController.php": [
       {
         "id": "a3805da4-4b48-49d8-98b4-474899a84ad2",
-        "line": 195,
-        "version": 421,
-        "index": 6147
+        "line": 57,
+        "version": 422,
+        "index": 1481
       },
       {
         "id": "7f89959a-7fda-4374-a05b-8d3e8735e5c4",
-        "line": 197,
-        "version": 421,
-        "index": 6245
+        "line": 57,
+        "version": 422,
+        "index": 1481
       }
     ]
   }

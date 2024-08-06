@@ -215,5 +215,5 @@ $this->end();
 <h1><?= __d('cake', 'Error') ?> <?= h($message) ?></h1>
 <p class="zoom-area"><b><?= __d('cake', 'The requested address {0} was not found on this server.', "<strong>'{$url}'</strong>") ?> </p>
 <div class="link-container">
-  <a target="_blank" href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>" class="more-link">Beranda</a>
+  <a href="<?= $this->Url->build(['controller' => 'Home', 'action' => 'index']); ?>" class="more-link">Beranda</a>
 </div>
