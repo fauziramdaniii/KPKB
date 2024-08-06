@@ -7,26 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $this->Html->meta(
         'keywords',
-        'gardukita, gardukita dwisukma mitra rotama, gardukita rotama, dwisukma mitra rotama, rotama, ganti rokok rotama, ganti rokok dapat duit anda, ganti rokok dapat duit kita, mau dapat duit ya ganti rokok, multilevel rokok, rokok di multilevelin, rokok tasikmalaya, rotama rokok tasikmalaya, gardukita adalah rotama, rotama pulen, rotama, rotama arsen, rotama aksa, rotama koper, rokok rotama pulen, rokok rotama, rokok rotama arsen, rokok rotama aksa, rokok rotama koper, jaringan rotama pulen, jaringan rotama,jaringan  rotama arsen, jaringan rotama aksa, jaringan rotama koper'
+        'dispora,piala gubernur,esports'
     );
     ?>
     <?= $this->Html->meta(
         'description',
-        'ROTAMA adalah nama Merk rokok yang berasal dan diproduksi PR. Makmur di Tasikmalaya Jawa Barat sehingga disingkat menjadi RO TA MA (Rokok Tasik Malaya)'
+        'Company Profile Koperasi Pemerintah Kota Bandung'
     );
     ?>
     <?= $this->Html->meta(
         'author',
-        'Rotama'
+        'Dispora Jawa Barat'
     );?>
   <title><?= $this->fetch('title') ?></title>
 
 
     <?= $this->Html->css([
-            '/assets/css/plugins',
-            '/assets/css/style',
-            '/assets/css/responsive',
+        '/front-assets-new/css/plugins',
+        '/front-assets-new/css/style',
     ]); ?>
+    
+    <?= $this->Html->meta(
+        'favicon.ico',
+        '/front-assets-new/logo-white.png',
+        ['type' => 'icon']
+    ); ?>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .body-inner {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content-wrapper {
+            flex: 1;
+        }
+    </style>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -34,14 +55,12 @@
 
 <body>
     <div class="body-inner">
-        <?= $this->element('Partial/header'); ?>
-        <?= $this->fetch('content'); ?>
+        <?= $this->element('Partial/header2'); ?>
+        <div class="content-wrapper">
+            <?= $this->fetch('content'); ?>
+        </div>
+        <?= $this->element('Partial/footer'); ?>
     </div>
-
-
-  <?= $this->element('Partial/footer'); ?>
-  <!-- Core -->
-
 
   <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
 
@@ -53,5 +72,6 @@
 
     <?= $this->fetch('script') ?>
 </body>
+
 
 </html>
