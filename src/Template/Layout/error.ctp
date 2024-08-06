@@ -65,9 +65,9 @@
   <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
 
   <?= $this->Html->script([
-      '/assets/js/jquery.js',
-      '/assets/js/plugins.js',
-      '/assets/js/functions.js'
+      '/front-assets-new/js/jquery.js',
+      '/front-assets-new/js/plugins.js',
+      '/front-assets-new/js/functions.js'
   ]); ?>
 
     <?= $this->fetch('script') ?>
