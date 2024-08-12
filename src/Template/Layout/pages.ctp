@@ -9,26 +9,26 @@
     <meta charset="utf-8">
     <meta name="robots" content="index, follow" />
     <?= $this->Html->meta(
-            'keywords',
-            'dispora,piala gubernur,esports'
-        );
-        ?>
+        'keywords',
+        'dispora,piala gubernur,esports'
+    );
+    ?>
     <?= $this->Html->meta(
-            'description',
-            'Company Profile Koperasi Pemerintah Kota Bandung'
-        );
-        ?>
+        'description',
+        'Company Profile Koperasi Pemerintah Kota Bandung'
+    );
+    ?>
     <?= $this->Html->meta(
-            'author',
-            'Dispora Jawa Barat'
-        );?>
+        'author',
+        'Dispora Jawa Barat'
+    ); ?>
     <title><?= Cake\Core\Configure::read('SiteName'); ?> - <?= $this->fetch('title') ?></title>
 
 
     <?= $this->Html->css([
-            '/front-assets-new/css/plugins',
-            '/front-assets-new/css/style',
-        ]); ?>
+        '/front-assets-new/css/plugins',
+        '/front-assets-new/css/style',
+    ]); ?>
 
     <?= $this->Html->meta(
         'favicon.ico',
@@ -42,16 +42,20 @@
 
 <body>
     <div class="body-inner">
-        <?= $this->element('Partial/header'); ?>
-        <?= $this->fetch('content') ?>
+        <?= $this->element('Partial/header2'); ?>
+        <div class="content-wrapper">
+            <?= $this->fetch('content'); ?>
+        </div>
         <?= $this->element('Partial/footer'); ?>
     </div>
-    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+    <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
     <?= $this->Html->script([
-            '/front-assets-new/js/jquery.js',
-            '/front-assets-new/js/plugins.js',
-            '/front-assets-new/js/functions.js'
-        ]); ?>
+        '/front-assets-new/js/jquery.js',
+        '/front-assets-new/js/plugins.js',
+        '/front-assets-new/js/functions.js'
+    ]); ?>
 
     <?php $this->append('css'); ?>
     <!-- isi CSS untuk layout global -->
@@ -62,7 +66,6 @@
     <?php $this->end(); ?>
 
     <?= $this->fetch('script') ?>
-
 </body>
 
 </html>
