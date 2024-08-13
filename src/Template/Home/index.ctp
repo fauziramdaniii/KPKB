@@ -1,24 +1,24 @@
 <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-fade="true">
-    <?php if($slides) : ?>
-    <?php foreach($slides as $k => $slide) : ?>
-    <div class="slide kenburns" data-bg-image="<?= $this->Url->build('/files/Slides/image/'.$slide->image); ?>">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="slide-captions text-center text-light">
+    <?php if ($slides): ?>
+        <?php foreach ($slides as $k => $slide): ?>
+            <div class="slide kenburns" data-bg-image="<?= $this->Url->build('/files/Slides/image/' . $slide->image); ?>">
+                <div class="bg-overlay"></div>
+                <div class="container">
+                    <div class="slide-captions text-center text-light">
 
-                <h1><?= $slide->title; ?></h1>
-                <p><?= $slide->subtitle; ?></p>
-                </span>
+                        <h1><?= $slide->title; ?></h1>
+                        <p><?= $slide->subtitle; ?></p>
+                        </span>
 
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
     <?php endif; ?>
 </div>
 
 <!-- Berita -->
-<section>
+<section class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 m-b-40">
@@ -26,40 +26,40 @@
                     <h2>Berita Terkini</h2>
                 </div>
                 <div class="carousel" data-items="3">
-                    <?php foreach ($highlight as $news) : ?>
-                    <!-- Post item-->
-                    <div class="post-item border">
-                        <div class="post-item-wrap">
-                            <div class="post-image">
-                                <a
-                                    href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>">
-                                    <?php
+                    <?php foreach ($highlight as $news): ?>
+                        <!-- Post item-->
+                        <div class="post-item border">
+                            <div class="post-item-wrap">
+                                <div class="post-image">
+                                    <a
+                                        href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>">
+                                        <?php
                                         $imageString = $news->get('image');
                                         $imageArray = explode(',', $imageString);
                                         $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
-                                    
+
                                         $blog_image = $firstImage ?
                                             $this->Url->build('/files/Blogs/image/' . $firstImage)
                                             : $this->Url->build('/front-assets-new/images/blog/12.jpg');
-                                        if ($blog_image) :
-                                        ?>
-                                    <img src="<?= $blog_image; ?>" alt="">
-                                    <?php endif; ?>
-                                </a>
-                                <span class="post-meta-category"><a href="#"><?= $news->tags[0]->name; ?></a></span>
-                            </div>
-                            <div class="post-item-description">
-                                <span class="post-meta-date"><i
-                                        class="fa fa-calendar-o"></i><?= $news->created->format('M j, Y'); ?></span>
-                                <h2><a
-                                        href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"><?= $news->get('title'); ?></a>
-                                </h2>
-                                <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"
-                                    class="item-link active">Baca Selengkapnya <i class="icon-chevron-right"></i></a>
+                                        if ($blog_image):
+                                            ?>
+                                            <img src="<?= $blog_image; ?>" alt="">
+                                        <?php endif; ?>
+                                    </a>
+                                    <span class="post-meta-category"><a href="#"><?= $news->tags[0]->name; ?></a></span>
+                                </div>
+                                <div class="post-item-description">
+                                    <span class="post-meta-date"><i
+                                            class="fa fa-calendar-o"></i><?= $news->created->format('M j, Y'); ?></span>
+                                    <h2><a
+                                            href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"><?= $news->get('title'); ?></a>
+                                    </h2>
+                                    <a href="<?= $this->Url->build(['controller' => 'News', 'action' => 'view', $news->get('slug')]); ?>"
+                                        class="item-link active">Baca Selengkapnya <i class="icon-chevron-right"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end: Post item-->
+                        <!-- end: Post item-->
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -76,21 +76,21 @@
 <!-- End Berita -->
 
 <!-- Galeri Foto -->
-<section id="welcome">
+<section id="welcome" class="bg-light">
     <div class="container text-center">
         <div class="heading-text heading-section text-center">
             <h2>Galeri Foto</h2>
             <p> <b> Foto Kegiatan Koperasi Pegawai Pemerintah Kota Bandung </p>
         </div>
         <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
-            <?php foreach ($galleries as $gallery) : ?>
-            <?php
-                        $imagePath = $this->Url->build('/' . $gallery->image->dir . $gallery->image->name);
-                        ?>
-            <div class="grid-item">
-                <a class="image-hover-zoom" href="<?= $imagePath ?>" data-lightbox="gallery-image"><img
-                        src="<?= $imagePath ?>"></a>
-            </div>
+            <?php foreach ($galleries as $gallery): ?>
+                <?php
+                $imagePath = $this->Url->build('/' . $gallery->image->dir . $gallery->image->name);
+                ?>
+                <div class="grid-item">
+                    <a class="image-hover-zoom" href="<?= $imagePath ?>" data-lightbox="gallery-image"><img
+                            src="<?= $imagePath ?>"></a>
+                </div>
             <?php endforeach ?>
         </div>
         <!-- <div class="text-center">
@@ -107,23 +107,25 @@
 <!-- End Galeri Foto -->
 
 <!-- Video -->
-<div class="heading-text heading-section text-center">
-    <h2>Video Terbaru</h2>
-</div>
-<section id="page-content">
+<section class="bg-light">
+    <div class="heading-text heading-section text-center">
+        <h2>Video Terbaru</h2>
+    </div>
+</section>
+<section id="page-content" class="bg-light">
     <div class="container">
         <div data-bg-video="https://inspirothemes.com/polo/video/pexels-waves.mp4">
             <!-- Gallery -->
             <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
-                <?php foreach($video as $vid) : ?>
-                <div class="grid-item">
-                    <a class="image-hover-zoom"
-                        href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>"
-                        data-lightbox="gallery-image">
-                        <?php echo $vid->embed; ?>
+                <?php foreach ($video as $vid): ?>
+                    <div class="grid-item">
+                        <a class="image-hover-zoom"
+                            href="<?= $this->Url->build(['controller' => 'Videos', 'action' => 'index']); ?>"
+                            data-lightbox="gallery-image">
+                            <?php echo $vid->embed; ?>
 
-                    </a>
-                </div>
+                        </a>
+                    </div>
                 <?php endforeach ?>
             </div>
 
@@ -140,7 +142,7 @@
 <!-- End Video -->
 
 <!-- Kontak -->
-<section>
+<section class="bg-light">
     <div class="container">
         <div class="heading-text heading-section text-center">
             <h2>Kontak</h2>
@@ -220,99 +222,99 @@
 <!-- End Kontak -->
 
 <?php
-$this->Html->script(['https://www.google.com/recaptcha/api.js'],['block' => true]);
+$this->Html->script(['https://www.google.com/recaptcha/api.js'], ['block' => true]);
 $this->Html->script(['https://kit.fontawesome.com/d8bd919f93.js" crossorigin="anonymous"']);
 $this->Html->script('https://code.jquery.com/jquery-3.6.4.min.js', ['block' => true]);
 ?>
 
 <?php $this->append('css'); ?>
 <style>
-.grecaptcha-badge {
-    margin-bottom: 20px;
-}
+    .grecaptcha-badge {
+        margin-bottom: 20px;
+    }
 
-/* Styling untuk popup chat */
-#whatsapp-popup {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    padding: 15px;
-    background-color: #25D366;
-    /* Warna hijau WhatsApp */
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-}
+    /* Styling untuk popup chat */
+    #whatsapp-popup {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        padding: 15px;
+        background-color: #25D366;
+        /* Warna hijau WhatsApp */
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
 </style>
 <?php $this->end(); ?>
 <?php $this->append('script'); ?>
 <script>
-var onSubmit = function(response) {
-    document.getElementById("form1").submit();
-};
+    var onSubmit = function (response) {
+        document.getElementById("form1").submit();
+    };
 
-// Add an event listener to the map container
-document.getElementById('mapContainer').addEventListener('click', function() {
-    // Get the latitude and longitude of your location
-    var latitude = -6.928630602061996;
-    var longitude = 107.56597498609483;
+    // Add an event listener to the map container
+    document.getElementById('mapContainer').addEventListener('click', function () {
+        // Get the latitude and longitude of your location
+        var latitude = -6.928630602061996;
+        var longitude = 107.56597498609483;
 
-    // Open the Google Maps Directions link in a new tab
-    var directionsLink = 'https://www.google.com/maps/dir/?api=1&destination=' + latitude + ',' + longitude;
-    document.getElementById('directionsLink').href = directionsLink;
-});
+        // Open the Google Maps Directions link in a new tab
+        var directionsLink = 'https://www.google.com/maps/dir/?api=1&destination=' + latitude + ',' + longitude;
+        document.getElementById('directionsLink').href = directionsLink;
+    });
 
-function openWhatsApp() {
-    // Ganti "6281234567890" dengan nomor WhatsApp Anda
-    <?php 
+    function openWhatsApp() {
+        // Ganti "6281234567890" dengan nomor WhatsApp Anda
+        <?php
         $noWhatsApp = $whatsapp[0]->no_whatsapp;
-    ?>
-    // Buka link WhatsApp dengan nomor yang ditentukan
-    window.open("https://wa.me/+62" + <?php echo $noWhatsApp ?>, "_blank");
-}
-
-$(document).ready(function() {
-    // Function to handle the Ajax request and update content
-    function loadNextPage(url) {
-        $.ajax({
-            url: url,
-            type: 'get',
-            dataType: 'html',
-            success: function(data) {
-                // Replace the content of the gallery container with the loaded data
-                $('#gallery-container').html(data);
-
-                // Scroll to the top of the container to improve user experience
-                $('#gallery-container').scrollTop(0);
-
-                // Update the browser history with the new URL
-                history.pushState(null, null, url);
-            }
-        });
+        ?>
+        // Buka link WhatsApp dengan nomor yang ditentukan
+        window.open("https://wa.me/+62" + <?php echo $noWhatsApp ?>, "_blank");
     }
 
-    // Pagination links click event
-    $(document).on('click', '.pagination a', function(event) {
-        event.preventDefault();
+    $(document).ready(function () {
+        // Function to handle the Ajax request and update content
+        function loadNextPage(url) {
+            $.ajax({
+                url: url,
+                type: 'get',
+                dataType: 'html',
+                success: function (data) {
+                    // Replace the content of the gallery container with the loaded data
+                    $('#gallery-container').html(data);
 
-        // Get the pagination link URL
-        var url = $(this).attr('href');
+                    // Scroll to the top of the container to improve user experience
+                    $('#gallery-container').scrollTop(0);
 
-        // Load the next page content
-        loadNextPage(url);
+                    // Update the browser history with the new URL
+                    history.pushState(null, null, url);
+                }
+            });
+        }
+
+        // Pagination links click event
+        $(document).on('click', '.pagination a', function (event) {
+            event.preventDefault();
+
+            // Get the pagination link URL
+            var url = $(this).attr('href');
+
+            // Load the next page content
+            loadNextPage(url);
+        });
+
+        // Use the History API to handle back and forward buttons
+        $(window).on('popstate', function (event) {
+            // Get the current URL when using back or forward buttons
+            var url = location.pathname + location.search;
+
+            // Load the content for the current URL
+            loadNextPage(url);
+        });
     });
-
-    // Use the History API to handle back and forward buttons
-    $(window).on('popstate', function(event) {
-        // Get the current URL when using back or forward buttons
-        var url = location.pathname + location.search;
-
-        // Load the content for the current URL
-        loadNextPage(url);
-    });
-});
 </script>
 <?php $this->end(); ?>

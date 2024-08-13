@@ -1,4 +1,4 @@
-<section id="page-content" class="sidebar-right">
+<section id="page-content" class="sidebar-right bg-light">
     <div class="container">
         <div class="row">
             <!-- post content -->
@@ -30,7 +30,7 @@
                                 $imageArray = explode(',', $imageString);
                                 $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
 
-                                $blog_image = $firstImage ? 
+                                $blog_image = $firstImage ?
                                     $this->Url->build('/files/Blogs/image/' . $firstImage) :
                                     $this->Url->build('/front-assets-new/images/blog/12.jpg');
 
@@ -77,8 +77,8 @@
                                 $imageString = $other_blog->get('image');
                                 $imageArray = explode(',', $imageString);
                                 $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
-    
-                                $blog_image = $firstImage ? 
+
+                                $blog_image = $firstImage ?
                                     $this->Url->build('/files/Blogs/image/' . $firstImage) :
                                     $this->Url->build('/front-assets-new/images/blog/12.jpg');
                                 if ($blog_image) :

@@ -16,7 +16,7 @@
 <!-- end: Page title -->
 <!-- Section -->
 <section>
-    <div class="container">
+    <div class="container bg-light">
         <div class="row">
             <div class="col-lg-12">
                 <h3>Pertanyaan Umum</h3>

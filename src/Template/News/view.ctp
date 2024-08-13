@@ -57,7 +57,7 @@
 
 </style>
 
-<section id="page-content" class="sidebar-right">
+<section id="page-content" class="sidebar-right bg-light">
     <div class="container">
         <div class="row">
             <!-- content -->
@@ -123,7 +123,7 @@
                                     $imageString = $other_blog->get('image');
                                     $imageArray = explode(',', $imageString);
                                     $firstImage = !empty($imageArray[0]) ? $imageArray[0] : null;
-                                    
+
                                     $blog_image = $other_blog->get('image') ?
                                         $this->Url->build('/files/Blogs/image/' . $other_blog->get('image'))
                                         : $this->Url->build('/front-assets-new/images/blog/12.jpg');

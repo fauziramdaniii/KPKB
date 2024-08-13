@@ -28,7 +28,7 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-	
+
 	public function initialize()
     {
         parent::initialize();
@@ -45,12 +45,12 @@ class PagesController extends AppController
                 'enable' => 1
             ])
             ->first();
-		
+
 		$this->set('title', $page['title']);
         $this->set(compact('page'));
 
     }
-	
+
     /**
      * Displays a view
      *

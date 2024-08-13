@@ -40,7 +40,7 @@ class PagesTable extends Table
         $this->addBehavior('Timestamp');
         $this->addBehavior('Translate', [
             'fields' => ['title', 'content'],
-            'allowEmptyTranslations' => false,
+            'allowEmptyTranslations' => true,
             'validator' => 'translated'
         ]);
 

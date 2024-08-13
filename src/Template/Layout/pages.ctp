@@ -38,14 +38,41 @@
 
     <?= $this->fetch('meta'); ?>
     <?= $this->fetch('css'); ?>
+    <style>
+        body,
+        .body-inner {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Makes sure the body takes up at least the full viewport height */
+            margin: 0;
+        }
+
+        .content-wrapper {
+            flex-grow: 1;
+            /* Allows this section to grow and fill the remaining space */
+        }
+
+        footer {
+            /* Your existing footer styles here */
+        }
+        section {
+            background-color: #f8f9fa!important;
+            padding: 30px!important;
+        }
+    </style>
 </head>
 
 <body>
     <div class="body-inner">
         <?= $this->element('Partial/header2'); ?>
-        <div class="content-wrapper">
+
+        <!-- Add a wrapper with flex properties -->
+        <div class="content-wrapper bg-light" style="flex-grow: 1;">
             <?= $this->fetch('content'); ?>
         </div>
+
+        <!-- Footer element -->
         <?= $this->element('Partial/footer'); ?>
     </div>
 
