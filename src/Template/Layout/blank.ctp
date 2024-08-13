@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow" />
     <?= $this->Html->meta(
             'keywords',
-            'dispora,piala gubernur,esports'
+            'company profile koperasi pemerintah kota bandung,kpkb'
         );
         ?>
     <?= $this->Html->meta(
@@ -20,7 +20,7 @@
         ?>
     <?= $this->Html->meta(
             'author',
-            'Dispora Jawa Barat'
+            'Koperasi Pemerintah Kota Bandung'
         );?>
     <title><?= Cake\Core\Configure::read('SiteName'); ?> - <?= $this->fetch('title') ?></title>
 

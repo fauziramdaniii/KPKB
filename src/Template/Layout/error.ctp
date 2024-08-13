@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $this->Html->meta(
         'keywords',
-        'dispora,piala gubernur,esports'
+        'company profile koperasi pemerintah kota bandung,kpkb'
     );
     ?>
     <?= $this->Html->meta(
@@ -17,7 +17,7 @@
     ?>
     <?= $this->Html->meta(
         'author',
-        'Dispora Jawa Barat'
+        'Koperasi Pemerintah Kota Bandung'
     ); ?>
     <title><?= $this->fetch('title') ?></title>
 
