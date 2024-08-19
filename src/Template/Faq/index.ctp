@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h3>Pertanyaan Umum</h3>
-                <p>Pertanyaan mengenai segala hal yang berkaitan dengan turnamen Piala Gubernur Jawa Barat. </p>
+                <p>Pertanyaan mengenai segala hal yang berkaitan dengan Koperasi Pegawai Pemerintahan Kota Bandung (KPKB). </p>
                 <div class="accordion toggle fancy radius clean">
                     <?php foreach ($faqs as $k => $v) : ?>
                         <div class="ac-item">
