@@ -48,7 +48,12 @@ class GalleriesController extends AppController
         $this->set('toolsHelper', $toolsHelper);
 
         // Ambil semua album
-        $albums = $this->Albums->find()->all()->toArray();
+        $albums = $this->Albums->find()
+            ->select(['Albums.id', 'Albums.name']) // hanya kolom yang dibutuhkan
+            ->matching('Galleries')
+            ->group(['Albums.id'])
+            ->having(['COUNT(Galleries.id) >' => 0])
+            ->all();
 
         // Buat kondisi untuk filter berdasarkan album yang dipilih
         $conditions = [];
@@ -58,6 +63,7 @@ class GalleriesController extends AppController
 
         // Query galeri dengan kondisi yang telah ditentukan
         $galleryQuery = $this->Galleries->find()
+            ->matching('Albums') // join hanya album yang ada
             ->contain([
                 'Albums',
                 'Images'
@@ -84,7 +90,7 @@ class GalleriesController extends AppController
     public function filterGalleryAjax($albumId)
     {
         $this->autoRender = false; // Tidak perlu melakukan render tampilan
-        $this->viewBuilder()->setLayout(false); // Tidak perlu layout
+        $this->viewBuilder()->setLayout('pgae'); // Tidak perlu layout
 
         // Ambil nomor halaman dan jumlah item per halaman dari permintaan AJAX
         $page = $this->request->getQuery('page') ?: 1;
