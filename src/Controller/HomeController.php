@@ -87,12 +87,19 @@ class HomeController extends AppController
             $this->viewBuilder()->setLayout('ajax'); // Use a different layout for Ajax requests
         }
         
-        $album = $this->Albums->find()->all()->toArray();
+        $albums = $this->Albums->find()
+            ->select(['Albums.id', 'Albums.name']) // hanya kolom yang dibutuhkan
+            ->matching('Galleries')
+            ->group(['Albums.id'])
+            ->having(['COUNT(Galleries.id) >' => 0])
+            ->all();
+            
         $gallery = $this->Galleries->find()
             ->contain([
                 'Albums',
                 'Images'
             ])
+            ->matching('Albums')
             // ->where(['Galleries.album_id' => $albums])
             ->orderDesc('Galleries.id');
             $galleries = $this->paginate($gallery, ['limit' => 6])

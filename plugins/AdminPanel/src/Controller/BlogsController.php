@@ -123,7 +123,7 @@ class BlogsController extends AppController
             }
 
             // Manually handle the file upload (for server remove the webroot/ part)
-            $targetDir = 'webroot' . DS . 'files' . DS . 'Blogs' . DS . 'image' . DS;
+            $targetDir = WWW_ROOT . 'files' . DS . 'Blogs' . DS . 'image' . DS;
             if (!file_exists($targetDir)) {
                 mkdir($targetDir, 0755, true);
             }
