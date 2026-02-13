@@ -92,7 +92,7 @@
                         imagePath = imagePath.replace('/webroot',
                             ''); // Menghapus bagian '/webroot'
                         galleryHtml += '<div class="grid-item ' + gallery.album.name
-                            .toLowerCase().replace(" ", "-") + '">';
+                            .toLowerCase().replace(" ", "-") + '" style="padding-right:20px">';
                         galleryHtml += '<a class="image-hover-zoom" href="' + imagePath +
                             '" data-lightbox="gallery-image">';
                         galleryHtml += '<img src="' + imagePath + '">';
